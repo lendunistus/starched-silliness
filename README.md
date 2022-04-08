@@ -3,7 +3,7 @@ This repository contains assets (models, popfiles, sounds, maps, etc) from the 2
 
 I received these from the pineapple.tf support email. As far as I'm aware, these have not been made available for download anywhere else, so I'm making them available here.
 
-(rafmod)[https://github.com/ramirez-tf2/Rafmod] is required to run these missions. As such, the server must be running on a Linux machine. A dedicated server is not required; a listen server will do the job.
+[rafmod](https://github.com/ramirez-tf2/Rafmod) is required to run these missions. As such, the server must be running on a Linux machine. A dedicated server is not required; a listen server will do the job.
 
 If you need help setting this up on a dedicated server, feel free to reach out on Discord at lendun#3916 (although I do not guarantee in the slightest that I can fix your problem).
 
