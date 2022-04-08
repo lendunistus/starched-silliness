@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_splatoon/salmonid/steelhead/steelhead_weapon_illum"
+	"$bumpmap" "models/props_splatoon/salmonid/steelhead/steelhead_weapon_normal"
+
+	"$additive" "1"
+	"$selfillum" "1"
+	"$selfillumtint" "[5 5 5]"
+
+}

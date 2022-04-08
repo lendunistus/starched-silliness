@@ -1,0 +1,3411 @@
+
+// Petrolleum Pandemonium
+// Oilrig Meme Mission
+// Intermediate Difficulty
+// Made by																																															trollge
+
+
+#base robot_giant.pop
+#base robot_standard.pop
+
+
+COVERYOURSELFINOIL_COVERYOURSELFINOIL_COVERYOURSELFINOIL_COVERYOURSELFINOIL_COVERYOURSELFINOIL_COVERYOURSELFINOIL_COVERYOURSELFINOIL_COVERYOURSELFINOIL_COVERYOURSELFINOIL_COVERYOURSELFINOIL
+{
+	StartingCurrency	1
+	RespawnWaveTime		2
+	CanBotsAttackWhileInSpawnRoom	no
+	Advanced	1
+	
+	// WAVE 2
+	
+	PrecacheModel	"models/goofus/fortnite_card.mdl"
+	PrecacheModel	"models/items/currencypack_large.mdl"
+	PrecacheModel	"models/items/currencypack_medium.mdl"
+	PrecacheModel	"models/items/currencypack_small.mdl"
+	PrecacheModel	"models/items/crystal_ball_pickup_major.mdl"
+	
+	// WAVE 3
+	PrecacheModel	"models/player/items/taunts/chicken_bucket/chicken_bucket.mdl"
+	PrecacheModel	"models/player/gibs/gibs_burger.mdl"
+
+	// WAVE 5
+	PrecacheModel	"models/egypt/pyramid/pyramid_small.mdl"
+	PrecacheModel	"models/egypt/pyramid/pyramid.mdl"
+	PrecacheModel	"models/egypt/pyramid/pyramid_big.mdl"
+
+	PrecacheModel	"models/kleiner.mdl"
+	PrecacheModel	"models/props_urban/urban_crate_bazinga.mdl"
+	
+	// WAVE 6
+	PrecacheModel	"models/bots/boss_bot/boss_tank_color.mdl"
+
+	SentryBusterFriendlyFire		0	[$SIGSEGV]
+
+	NoReanimators 	1					[$SIGSEGV]
+	NoMvMDeathTune 	1					[$SIGSEGV]
+
+	NoRomevisionCosmetics 1				[$SIGSEGV]	// FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU FUCK YOU 
+
+	ItemBlacklist	[$SIGSEGV]	// no cheese
+	{
+		Name	"Power Up Canteen (MvM)"
+		Name	"Default Power Up Canteen (MvM)"
+		Name	"Battery Canteens"
+		Name	"Kritz Or Treat Canteen"
+	}
+	// The Funny Part
+	
+	ItemAttributes	[$SIGSEGV]
+	{
+		ItemName	"The Loose Cannon"
+		"override projectile type" 3
+		"custom projectile model" "models\weapons\w_models\w_cannonball.mdl"
+		"grenade launcher mortar mode"	0
+	}
+	
+	// Okay... I have a god tier idea for this mission since it's a sigmod meme mission.
+	// We do a little trolling. It's called we do a little trolling.
+	
+	ItemAttributes	[$SIGSEGV]	// Episode 1: The Meta Massacre
+	{
+		ItemName	"The Scottish Resistance"
+		"stickybomb fizzle time"	5
+	}
+	ItemAttributes	[$SIGSEGV]
+	{
+		ItemName	"The Kritzkrieg"
+		"uber duration bonus"	-4
+		"increase buff duration"	0.1
+	}
+	ItemAttributes	[$SIGSEGV]
+	{
+		ItemName	"The Brass Beast"
+		"minigun spinup time increased"	7.9
+		"aiming movespeed decreased"	0.01
+	}
+	ItemAttributes	[$SIGSEGV]
+	{
+		ItemName	"The Beggar's Bazooka"
+		"projectile spread angle penalty"	69
+	}
+	ItemAttributes	[$SIGSEGV]
+	{
+		ItemName	"The Fan O'War"
+		"hit self on miss"	1
+		"melee range multiplier"	0.001
+		"melee bounds multiplier"	0.001
+	}
+	ItemAttributes	[$SIGSEGV]
+	{
+		ItemName	"Mad Milk"
+		"override projectile type"	2
+		
+	}
+	ItemAttributes	[$SIGSEGV]
+	{
+		ItemName	"Jarate"
+		"override projectile type"	2
+	}
+	ItemAttributes	[$SIGSEGV]
+	{
+		ItemName	"The Phlogistinator"
+		"mod rage on hit penalty"	0
+		
+	}
+	PointTemplates	[$SIGSEGV]	// you are now entering the comedy zone
+	{
+		TeamEvangelion3
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/heavy.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"10.0"
+			}
+		}
+		Scout_Loss
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/scout.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"1.5"
+			}
+		}
+		Soldier_Loss
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/soldier.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"1.5"
+			}
+		}
+		Pyro_Loss
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/pyro.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"1.5"
+			}
+		}
+		Demoman_Loss
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/demo.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"1.5"
+			}
+		}
+		Engineer_Loss
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/engineer.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"1.5"
+			}
+		}
+		Medic_Loss
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/medic.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"1.5"
+			}
+		}
+		Sniper_Loss
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/sniper.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"1.5"
+			}
+		}
+		Fortnite_Card
+		{
+			prop_dynamic
+			{
+				"model"				"models/goofus/fortnite_card.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"5"
+			}
+		}
+		dummythicc
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/heavy.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"100.0"
+			}
+		}
+		dummythicc_dementia
+		{
+			prop_dynamic
+			{
+				"model"				"models/player/heavy.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"100.0"
+				"renderfx"			"15"
+				"rendercolor"		"130 120 120"
+			}
+		}
+		colortank
+		{
+			OnSpawnOutput
+			{
+				Target "!activator"
+				Action "color"
+				
+				//Change to any RGB value
+				Param "255 255 0"
+			}
+		}
+		fogedit1
+		{
+			OnSpawnOutput
+			{
+				Target	"fog_controller"
+				Action	"SetColor" 
+				Param	"123 0 0"
+			}
+		}
+		fogedit2
+		{
+			OnSpawnOutput
+			{
+				Target	"fog_controller"
+				Action	"SetColorSecondary" 
+				Param	"123 0 0"
+			}
+		}
+		fogedit3
+		{
+			OnSpawnOutput
+			{
+				Target	"fog_controller"
+				Action	"SetEndDist"
+				Param	"500"
+			}
+		}
+
+		fog_cleanup1
+		{
+			OnSpawnOutput
+			{
+				Target	"fog_controller"
+				Action	"SetColor" 
+				Param	"133 160 163"
+			}
+		}
+		fog_cleanup2
+		{
+			OnSpawnOutput
+			{
+				Target	"fog_controller"
+				Action	"SetColorSecondary" 
+				Param	"53 60 56"
+			}
+		}
+		fog_cleanup3
+		{
+			OnSpawnOutput
+			{
+				Target	"fog_controller"
+				Action	"SetEndDist"
+				Param	"4000"
+			}
+		}
+		ITS_TIME_TO_SHAKE
+        {
+            NoFixup 1
+            env_shake
+            {
+                "spawnflags" "1" 
+                "amplitude" "10"
+                "duration" "8"
+                "frequency" "40"
+                "targetname" "shake_effect"
+            }
+        }
+		Wave5_RealityBreakerEffect
+		{
+			OnSpawnOutput
+			{
+				Target	"shake_effect"
+				Action	"StartShake"
+			}
+		}
+		TitanSpawnShake
+        {
+            NoFixup 1
+            env_shake
+            {
+                "spawnflags" "1" 
+                "amplitude" "16"
+                "duration" "15"
+                "frequency" "40"
+                "targetname" "shake_effect_titan"
+            }
+        }
+		WhiteoutEffect
+		{
+            NoFixup 1
+			env_fade
+			{
+				"duration"	"2"
+				"holdtime"	"3"
+				"rendercolor"	"255 255 255"
+                "targetname"	"whiteout_trigger"
+			}
+		}
+		Oil
+        {
+            NoFixup 1
+            env_entity_maker
+            {
+                "targetname" "oil_remove_spawn"
+                "EntityTemplate" "OilRemove"
+                "spawnflags" "0"
+            }
+            trigger_push
+            {
+                "targetname" "oil_push"
+                "filtername" "oil_filter"
+                "speed" "1000"
+                "pushdir" "270 0 0"
+                "spawnflags" "1"
+                "origin" "0 0 0"
+                "mins" "-10000 -10000 -10000"
+                "maxs" "10000 10000 10000"
+            }
+            trigger_multiple
+            {
+                "targetname" "oil_launch"
+                "filtername" "oil_filter"
+                "spawnflags" "1"
+                "origin" "0 0 0"
+                "mins" "-10000 -10000 -10000"
+                "maxs" "10000 10000 10000"
+                "OnTrigger" "oil_remove_spawn,ForceSpawnAtEntityOrigin,!activator,3,-1"
+            }
+            filter_multi
+            {
+                "targetname" "oil_filter"
+                "FilterType" "0"
+                "Filter01" "jarate_filter"
+                "Filter02" "red_filter"
+            }
+            filter_tf_condition
+            {
+                "targetname" "jarate_filter"
+                "condition" "24"
+                "Negated" "0"
+            }
+            filter_activator_tfteam
+            {
+                "targetname" "red_filter"
+                "TeamNum" "2"
+                "Negated" "0"
+            }
+        }
+	}	
+
+	SpawnTemplate
+	{
+		Name	"TeamEvangelion3"
+		Origin	"-2150.0 512.0 7945.0"
+		Angles	"-90 90 0"
+		"scale"	"10"
+	}
+	SpawnTemplate
+	{
+		Name	"ITS_TIME_TO_SHAKE"
+		Origin	"0 0 0"
+	}
+	SpawnTemplate
+	{
+		Name	"TitanSpawnShake"
+		Origin	"0 0 0"
+	}
+	SpawnTemplate
+	{
+		Name	"WhiteoutEffect"
+		Origin	"0 0 0"
+	}
+
+	SpawnTemplate
+	{
+		Name	"Scout_Loss"
+		Origin	"-4000 -512 8298"
+	}
+	SpawnTemplate
+	{
+		Name	"Soldier_Loss"
+		Origin	"-4000 0 8298"
+	}
+	SpawnTemplate
+	{
+		Name	"Pyro_Loss"
+		Origin	"-4000 320 8298"
+	}
+	SpawnTemplate
+	{
+		Name	"Demoman_Loss"
+		Origin	"-4000 -512 8042"
+	}
+	SpawnTemplate
+	{
+		Name	"Engineer_Loss"
+		Origin	"-4000 -256 8042"
+	}
+	SpawnTemplate
+	{
+		Name	"Medic_Loss"
+		Origin	"-4000 0 8042"
+	}
+	SpawnTemplate
+	{
+		Name	"Sniper_Loss"
+		Origin	"-4000 298 8000"
+		Angles	"0 0 270"
+	}
+
+
+
+	ExtraTankPath [$SIGSEGV] // oil.
+	{
+		Name	"tank_path_coveryourselfinoil"
+		Node	"-1664 -5568 1856"
+		Node	"-1664 -4352 1856"
+		Node	"-960 -3904 1856"
+		Node	"-512 -3904 1856"
+		Node	"-320 -3712 1856"
+		Node	"-320 -2752 1856"
+		Node	"-320 -2624 1856"
+		Node	"-192 -2560 1856"
+		Node	"448 -2560 1856"
+		Node	"640 -2496 1856"
+		Node	"704 -2240 1856"
+		Node	"704 -1792 1856"
+		Node	"640 -1600 1856"
+		Node	"128 -704 1856"
+
+	}
+
+	// WAVE 1 JOKE SPAWNS
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name	"spawnbot_wave1_thejoke"
+        TeamNum	3
+        X		"-316.0"                     
+        Y		"-4500.0"                  
+        Z		"1092.0"        
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name	"spawnbot_wave1_thepunchline"
+        TeamNum	3
+        X		"-316.0"                     
+        Y		"-4600.0"                  
+        Z		"1092.0"    
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name	"spawnbot_fuckyourmoney_andfuckyoutoo"
+        TeamNum	3
+        X		"-3186.0"
+        Y		"207.0"
+        Z		"8160.0" 
+    }
+
+
+	// WAVE 3 JOKE SPAWNS
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name	"spawnbot_reprogrammed_1"
+        TeamNum	3
+        X		"-1100.0"                     
+        Y		"-1647.0"                  
+        Z		"1156.0"        
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name	"spawnbot_red_vented"
+        TeamNum	3
+        X		"930.0"                     
+        Y		"-1703.0"                  
+        Z		"1156.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name	"spawnbot_troller"
+        TeamNum	3
+        X		"-327.0"                     
+        Y		"-4925.0"                  
+        Z		"1132.0"        
+    }
+	Templates
+	{
+		T_TFBot_Giant_Heavyweapons_GRU_Alt	// W1
+		{
+			Class	Heavyweapons
+			Name	"Giant Lightweight Champ"
+			ClassIcon	heavy_gru_giant
+			Skill	Expert
+			Health	5000
+			Item	"Gloves of Running Urgently MvM"
+			Item	"Pugilist's Protector"
+			WeaponRestrictions	MeleeOnly
+			Attributes	MiniBoss
+			ItemAttributes
+			{
+				ItemName	"Gloves of Running Urgently MvM"
+				"fire rate bonus"	0.69
+				"damage penalty"	1
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.6
+				"damage force reduction" 0.3
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 2
+			}
+		}
+		T_TFBot_TheGamingFungus	// W2
+		{
+			Class	Heavy
+			Name	"TheGamingFungus"
+			ClassIcon	this_is_literally_ninjas_face
+			Scale	1.5
+			WeaponRestrictions	MeleeOnly
+			Health	900
+			Skill	Easy
+			Item	"The Toadstool Topper"
+			Action	Mobber	[$SIGSEGV]
+			CharacterAttributes
+			{
+				"torso scale"	0.1
+				"head scale"	2.5
+				"hand scale"	3
+			}
+		}
+		T_TFBot_MiniBoss_Stonks	// W2
+		{
+			Class		Demoman
+			Name		"Giant Stonks Demo"
+			ClassIcon	stonksguy
+			Health		6900
+			Skill		Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes 	MiniBoss
+			Attributes	HoldFireUntilFullReload
+			Attributes	UseBossHealthBar
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"custom projectile model"	"models/items/currencypack_medium.mdl"
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	4.0
+				"damage penalty"	0.5
+				"projectile spread angle penalty"	9
+				"fuse bonus"	2
+				"blast radius increased"	2
+				"Projectile speed increased"	1.1
+				"damage causes airblast"		1
+				"apply z velocity on damage"	1500
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"			0.5
+				"damage force reduction"	0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"	4
+			}
+		}
+		T_TFBot_Heavy_McDonaldsEmployee	// W3
+		{
+			Name	"Inverted McDonalds Employee"
+			Class	Heavyweapons
+			MaxVisionRange	1
+			WeaponRestrictions	MeleeOnly
+			ClassIcon	mcdonalds_blue
+			Item	"Mann Co. Cap"
+			Health	1500
+			Scale	1.5
+			Item	"The Sandvich"
+			ItemAttributes
+			{
+				ItemName 	"The Sandvich"
+				"mult_item_meter_charge_rate"	0.2
+				"active health degen"	-1
+				"max health additive bonus"	1
+			}
+			ItemAttributes
+			{
+				ItemName 	"Mann Co. Cap"
+				"set item tint RGB"	4863
+			}
+		}
+		T_TFBot_Giant_Sniper_KFC
+		{
+			Class	Sniper	// I think I dodged a bullet here. I would've went with a Demoman because it's easier that way but a KFC Demoman bot would probably spark controversy.
+			ClassIcon	kfc
+			Health	3000
+			Name	"Giant KFC Employee"
+			Skill	Expert
+			Attributes	MiniBoss
+			Item	"The Huntsman"
+			Action	Mobber	[$SIGSEGV]
+			Tag	giant
+			Item	"Mann Co. Cap"
+			//AddCond	[$SIGSEGV]
+			//{
+			//	Index	43
+			//	Delay	0.1
+			//	Duration	12798
+			//}
+			ItemAttributes
+			{
+				ItemName	"The Huntsman"
+				"override projectile type"	17
+				"custom projectile model"	"models/player/items/taunts/chicken_bucket/chicken_bucket.mdl"
+				"fuse bonus"	4
+				"dmg penalty vs players"	2
+				"grenade no spin"	1
+				"grenade no bounce"	1
+			}
+			// RIP the KFC colors
+			//ItemAttributes
+			//{
+			//	ItemName	"Mann Co. Cap"
+			//	"set item tint RGB"	16711680
+			//}
+			ItemAttributes
+			{
+				ItemName 	"Mann Co. Cap"
+				"set item tint RGB"	4863
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"	5
+				"health from packs decreased"	0.3
+			}
+		}
+		T_TFBot_Giant_Spy_Fast_Meme	// original template made by Bazooks - W3
+		{
+			Class	Spy
+			Name	"the imposter (sus!)"
+			ClassIcon	jerma_whentheimposterissus
+			Skill	Expert
+			Item	"The Hazmat Headcase"
+			Health	1200
+			WeaponRestrictions	MeleeOnly
+			Attributes	MiniBoss
+			Action Mobber	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"TF_WEAPON_KNIFE"
+				"fire rate bonus"	0.25
+				"melee range multiplier"	2
+				"damage bonus"	0.5
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"    2
+				"damage force reduction"	0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"	5
+				"cannot disguise"	1
+			}
+		}
+		T_TFBot_Giant_Spy_WHEN_YOU_GET_A_KILL_IN_ELECTICAL_AS_THE_IMPOSTER
+		{
+			Class	Spy
+			Name	"when you get a kill in electrical"
+			ClassIcon	jerma_whentheimposterissus
+			Skill	Expert
+			Item	"The Hazmat Headcase"
+			Health	3000
+			WeaponRestrictions	PrimaryOnly
+			Attributes	MiniBoss
+			Action	FetchFlag	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"TF_WEAPON_REVOLVER"
+				"fire rate bonus"	1.69
+				"damage bonus"	1.69
+				"reload time decreased"	2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"    0.5
+				"damage force reduction"	0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"	5
+				"cannot disguise"	1
+			}
+		}
+		// WAVE 4 FAKE GOLD TEMPLATES
+		debug_goldpan_bot	// template for gold pan weapon drop test
+		{
+			Name	"big fat meanie"	// test dummy
+			Class	Heavyweapons
+			Attributes	SuppressFire
+			Attributes	IgnoreFlag
+			BehaviorModifiers	Push
+			WeaponRestrictions	MeleeOnly
+			ClassIcon	jerma_whentheimposterissus
+			Item	"Mann Co. Cap"
+			Health	1
+			Item	"Gold Frying Pan"
+			Scale	1.5
+			DropWeapon	1	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"Gold Frying Pan"
+				"item style override"	0
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			ItemAttributes
+			{
+				ItemName 	"Mann Co. Cap"
+				"set item tint RGB"	10202326
+			}
+		}
+		T_TFBot_PyroMemeW4
+		{
+			Class	Pyro
+			Skill	Easy
+			Item	"Upgradeable TF_WEAPON_FLAMETHROWER"
+			DropWeapon	1	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_FLAMETHROWER"
+				"item style override"	1
+				"is australium item"	1
+				"move speed penalty"	0.001	// This is the only attribute that successfully gets canceled out by it's positive version when set at a higher number than it IIRC
+				"dmg from ranged reduced"	10
+				"dmg from melee increased"	10
+				"health from healers reduced"	0.01
+				"active health degen"	-1000
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1000
+				"health from healers increased"	100
+				"health regen"	1000
+			}
+		}
+		T_TFBot_Giant_Scout_FAN_MemeW4
+		{
+			Class	Scout
+			Name	"Force-a-Nature Super Scout"
+			ClassIcon	scout_fan_giant
+			Skill		Expert
+			Health		1200
+			WeaponRestrictions	PrimaryOnly
+			Attributes	MiniBoss
+			Attributes HoldFireUntilFullReload
+			MaxVisionRange 1200
+			DropWeapon	1	[$SIGSEGV]
+			Item	"The Force-a-Nature"	
+			ItemAttributes
+			{
+				ItemName	"The Force-a-Nature"
+				"item style override"	1
+				"is australium item"	1
+				"move speed penalty"	0.001
+				"health from healers reduced"	0.01
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"damage force reduction" 0.7
+				"airblast vulnerability multiplier" 0.7
+				"override footstep sound set" 5
+				"move speed bonus"	2000
+				"health from healers increased"	100
+			}
+		}
+		T_TFBot_Giant_Heavy_MemeW4
+		{
+			Class Heavyweapons
+			Name "Giant Heavy"
+			ClassIcon heavy_giant
+			Skill Expert
+			Health 5000
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 1200
+			Attributes MiniBoss
+			DropWeapon	1	[$SIGSEGV]
+			Item	"Upgradeable TF_WEAPON_MINIGUN"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_MINIGUN"
+				"damage bonus"	1.5
+				"item style override"	1
+				"is australium item"	1
+				"move speed penalty"	0.001
+				"health from healers reduced"	0.01
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	500
+				"damage force reduction" 0.3
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 2
+			}
+		}
+		T_TFBot_Giant_Soldier_BurstFire_MemeW4	// No, I am not simply going to just name it "burst fire meme".
+		{
+			Class Soldier
+			Name "Giant Burst Fire Soldier"
+			ClassIcon soldier_burstfire
+			Health 3800
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			Item	"Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+			DropWeapon	1	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+				"faster reload rate" 0.6
+				"fire rate bonus" 0.1
+				"clip size upgrade atomic" 5.0
+				"Projectile speed increased" 0.65
+				"item style override"	1
+				"is australium item"	1
+				"move speed penalty"	0.001
+				"health from healers reduced"	0.01
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	500
+				"damage force reduction" 0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set" 3
+				"health from healers increased"	100
+			}
+		}
+		T_TFBot_Giant_Demoknight_MemeW4
+		{
+			Class Demoman
+			ClassIcon demoknight_giant
+			Name "Giant Demoknight"
+			Skill Expert
+			Health 3300
+			Item "Prince Tavish's Crown"
+			Item "The Chargin' Targe"
+			Item "The Eyelander"
+			Item"Ali Baba's Wee Booties"
+			WeaponRestrictions MeleeOnly
+			DropWeapon	1	[$SIGSEGV]
+			Attributes MiniBoss
+			ItemAttributes
+			{
+				ItemName	"The Eyelander"
+				"critboost on kill" 3
+				"item style override"	1
+				"is australium item"	1
+				"move speed penalty"	0.001
+				"health from healers reduced"	0.01
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"move speed bonus" 500
+				"damage force reduction" 0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set" 4
+			}
+		}
+		T_TFBot_Soldier_MemeW4
+		{
+			Class	Soldier
+			Item	"Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+			DropWeapon	1	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+				"item style override"	1
+				"is australium item"	1
+				"move speed penalty"	0.001
+				"dmg from ranged reduced"	10
+				"dmg from melee increased"	10
+				"health from healers reduced"	0.01
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1000
+				"health from healers increased"	100
+			}
+		}
+		T_TFBot_Demoman_MemeW4
+		{
+			Class	Demoman
+			Item	"Upgradeable TF_WEAPON_PIPEBOMBLAUNCHER"
+			DropWeapon	1	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_PIPEBOMBLAUNCHER"
+				"item style override"	1
+				"is australium item"	1
+				"move speed penalty"	0.001
+				"dmg from ranged reduced"	10
+				"dmg from melee increased"	10
+				"health from healers reduced"	0.01
+				"active health degen"	-1000
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1000
+				"health from healers increased"	100
+				"health regen"	1000
+			}
+		}
+		T_TFBot_Medic_Meme_W4
+		{
+			Class	Medic
+			Item	"Upgradeable TF_WEAPON_MEDIGUN"
+			WeaponRestrictions	SecondaryOnly
+			DropWeapon	1	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_MEDIGUN"
+				"item style override"	1
+				"is australium item"	1
+				"move speed penalty"	0.001
+				"dmg from ranged reduced"	10
+				"dmg from melee increased"	10
+				"health from healers reduced"	0.01	// the irony of having this on Medic bots
+				"active health degen"	-1000
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1000
+				"health from healers increased"	100
+				"health regen"	1000
+			}
+		}
+		T_TFBot_Scout_Meme_W4
+		{
+			Class	Scout
+			Item	"Upgradeable TF_WEAPON_SCATTERGUN"
+			DropWeapon	1	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_SCATTERGUN"
+				"item style override"	1
+				"is australium item"	1
+				"move speed penalty"	0.001
+				"dmg from ranged reduced"	10
+				"dmg from melee increased"	10
+				"health from healers reduced"	0.01
+				"active health degen"	-1000
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1000
+				"health from healers increased"	100
+				"health regen"	1000
+			}
+		}
+		T_TFBot_Wave4_GoldenPanBoss
+		{
+			Class Demoman
+			ClassIcon pan_lite
+			Name "The Bearer of the Curse"
+			Skill Expert
+			Health 12000
+			Attributes	UseBossHealthBar
+			Item	"Treasure Hat 3"
+			Item	"The Tide Turner"
+			Item	"Gold Frying Pan"
+			Item	"Ali Baba's Wee Booties"
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			DropWeapon	1	[$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName	"Gold Frying Pan"
+				"critboost on kill" 3
+				"item style override"	0
+				"move speed penalty"	0.001
+				"health from healers reduced"	0.01
+				"blast dmg to self increased"	100
+				"is dropped weapon" 	1	[$SIGSEGV]
+				"cannot be upgraded"	1	[$SIGSEGV]
+			}
+			CharacterAttributes
+			{
+				"move speed bonus" 600
+				"damage force reduction" 0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set" 4
+			}
+		}
+		The_Final_Boss
+		{
+			Class	Sniper
+			ClassIcon	coveryourselfinoil
+			Health	42069
+			Name	"Titanic Oil Cannon"
+			Skill	Expert
+			Attributes	MiniBoss
+			Item	"The Sydney Sleeper"
+			Action	Mobber	[$SIGSEGV]
+			Attributes	AlwaysCrit
+			Attributes	UseBossHealthBar
+			Tag	giant
+			Scale	14
+			DamageAppliesCond	[$SIGSEGV]
+			{
+				Name		"TF_COND_PARACHUTE_ACTIVE"
+				Duration	10
+			}
+			DamageAppliesCond
+			{
+				Name		"TF_COND_URINE"
+				Duration	10
+			}
+			ItemAttributes
+			{
+				ItemName	"The Sydney Sleeper"
+				"damage causes airblast"	1
+				"fire rate penalty"	2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.0000001
+				"damage force reduction"	0.000001
+				"airblast vulnerability multiplier"	0.00001
+				"override footstep sound set"	5
+			}
+		}
+	}
+	Mission	// I CANNOT BELIEEEEEEEEEEVE I FORGOT THESE FUCKERS
+	{
+		Objective	DestroySentries
+		Where	spawnbot
+		CooldownTime	35
+		DesiredCount	1
+		BeginAtWave	1
+		RunForThisManyWaves	6
+		TFBot
+		{
+			Template T_TFBot_SentryBuster
+			Attributes	DisableDodge
+			Attributes	IgnoreEnemies
+			Name	"A Perfectly Ordinary Buster"
+			CharacterAttributes
+			{
+				"damage force reduction"	0.001
+				"airblast vulnerability multiplier"	0.0001
+				"rage giving scale"	0.0001
+			}
+		}
+	}
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput					
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		Explanation	[$SIGSEGV]
+		{
+			Line	"{red}You have been trolled! The robot force has tampered with your weapons, making certain items either useless or not functioning properly. They have also managed to totally trash certain devices like Reanimators. Be careful not to die!"
+			Line 	"{d69ffe}Note: This mission uses a LOT of custom sounds. Please make sure you installed them for maximum comedy!"
+		}
+		WaveSpawn
+		{
+			Name	wave1_medic_but_hes_gonna_fucking_die_soon
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			Where	spawnbot_wave1_thejoke
+			Support	Limited
+			FirstSpawnWarningSound	"vo/taunts/medic_taunts07.mp3"
+			DoneWarningSound		"vo/medic_paincrticialdeath03.mp3"
+			TFBot
+			{
+				Name	"The Medic"
+				Class	Medic
+				Health	1
+				MaxVisionRange	1
+				WeaponRestrictions	MeleeOnly
+				Attributes	UseBossHealthBar
+				Attributes	IgnoreFlag
+				Attributes	MiniBoss
+				Scale	1
+				Action	Mobber	[$SIGSEGV]
+				UseHumanModel 1
+				AddCond	[$SIGSEGV]
+				{
+					Index	43
+					Delay	0.1
+					Duration	12798
+				}
+				CharacterAttributes
+				{
+					"move speed bonus"	0.0001
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave1_message1
+			TotalCount	1
+			WaitBeforeStarting	7
+			Where	spawnbot_fuckyourmoney_andfuckyoutoo
+			Support	limited
+			TFBot
+			{
+				Name	"Just got money for Funko Pops!"
+				Class	Scout
+				ClassIcon	pyro_troll
+				Scale	0.00000001
+				Attributes	MiniBoss
+				Attributes	IgnoreFlag
+				CharacterAttributes
+				{
+					"active health degen"	-125
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave1_message2
+			TotalCount	1
+			WaitBeforeStarting	9
+			Where	spawnbot_fuckyourmoney_andfuckyoutoo
+			Support	limited
+			TFBot
+			{
+				Name	"I'm gonna consooooooooom"
+				Class	Scout
+				ClassIcon	pyro_troll
+				Scale	0.00000001
+				Attributes	MiniBoss
+				Attributes	IgnoreFlag
+				CharacterAttributes
+				{
+					"active health degen"	-125
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave1_ambience1
+			WaitBeforeStarting	12
+			FirstSpawnWarningSound	"vo/medic_sf12_badmagic10.mp3"
+			
+		}
+		WaveSpawn
+		{
+			Name	wave1_thepunchline
+			TotalCount	1
+			WaitBeforeStarting	18
+			Where	spawnbot_wave1_thepunchline
+			Support	limited
+			FirstSpawnWarningSound	"vo/mvm/mght/taunts/demoman_mvm_m_taunts15.mp3"
+			DoneWarningSound		"crin_ss_wave1_cyberpunk2077_spoiler.mp3"
+			TFBot
+			{
+				Class	Demoman
+				Name	"The Funko Pop-inator"
+				ClassIcon	pyro_troll
+				Skill	Expert
+				Health	100000
+				WeaponRestrictions	PrimaryOnly
+				Attributes	MiniBoss
+				Item	"The Loose Cannon"
+				MaxVisionRange	690
+				DamageAppliesCond [$SIGSEGV] //Adds conditions to players on hit
+				{
+					Name	"TF_COND_MELEE_ONLY"
+					Duration	300
+				}
+				ItemAttributes
+				{
+					ItemName	"The Loose Cannon"
+					"Blast radius increased"		691
+					"blast dmg to self increased"	690690691
+					"damage causes airblast"		1
+					"apply z velocity on damage"	1500
+					"apply look velocity on damage"	1500
+					"dmg penalty vs players"	0.01
+				}
+				CharacterAttributes
+				{
+					"move speed bonus"	0.001
+					"damage force reduction" 0.001
+					"airblast vulnerability multiplier" 0.001
+					"override footstep sound set" 4
+					"dmg taken increased"	0.01 
+					"dmg from melee increased"	100
+					"dmg from ranged reduced"	100
+					"boots falling stomp"	1
+				}
+			}
+		}
+///		// When the joke fails due to the game teleporting bots in the skybox back into the map! :angry:
+//		WaveSpawn
+//		{
+//			Name	wave1_when_the_scout_is_sus
+//			TotalCount	1
+//			WaitBeforeStarting	25
+//			Support	limited
+//			
+//			Where			spawnbot_fuckyourmoney_andfuckyoutoo
+//			TotalCurrency	999
+//			
+//			TFBot
+//			{
+//				Name	"HAHAHAHA FUCK YOUR MONEY"
+//				Class	Scout
+//				ClassIcon	pyro_troll
+//				Scale	0.00000001
+//				Attributes	MiniBoss
+//				CharacterAttributes
+//				{
+//					"active health degen"	-125
+//				}
+//			}
+//		}
+		WaveSpawn
+		{
+			Name	wave1a
+			TotalCount	36
+			MaxActive	12
+			SpawnCount	1
+			WaitBeforeStarting	26
+			WaitBetweenSpawns	1
+			Where	spawnbot
+			TFBot
+			{
+				Class	Scout
+				Skill	Easy
+				ClassIcon	scout_bat
+				Scale	0.7
+				Health	65
+				WeaponRestrictions	MeleeOnly
+				Name	"Funko Pop Scout Bot"
+				CharacterAttributes
+				{
+					"head scale"	2
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave1a
+			TotalCount	2
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	26
+			WaitBetweenSpawns	25
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Giant_Soldier
+				ClassIcon	soldier_shovel
+				Health	2000
+				Scale	1
+				WeaponRestrictions	MeleeOnly
+				Name	"Funko Pop Giant Soldier"
+				CharacterAttributes
+				{
+					"head scale"	2
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave1b
+			WaitForAllDead	wave1a
+			TotalCount	32
+			MaxActive	10
+			SpawnCount	2
+			WaitBetweenSpawns	2
+			Where	spawnbot
+			TFBot
+			{
+				Class	Demoman
+				WeaponRestrictions	MeleeOnly
+				ClassIcon	demo_knight_bottle
+				Health	100
+				Scale	0.7
+				Name	"Funko Pop Bottle Demoman"
+				CharacterAttributes
+				{
+					"head scale"	2
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave1b
+			WaitForAllDead	wave1a
+			TotalCount	2
+			SpawnCount	1
+			WaitBeforeStarting	14
+			WaitBetweenSpawns	20
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Giant_Heavyweapons_GRU_Alt
+				Scale	1
+				Health	3000
+				Name	"Giant Funko Pop Champ"	// popchamp
+				CharacterAttributes
+				{
+					"head scale"	2
+				}
+				
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave1_support
+			WaitForAllDead	wave1b
+			Support	1
+			TotalCount	7
+			MaxActive	7
+			SpawnCount	1
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	2.5
+			Where	spawnbot
+			TFBot
+			{
+				Class	Sniper
+				ClassIcon	sniper_kukri
+				WeaponRestrictions	MeleeOnly
+				Scale	0.7
+				Name	"Funko Pop Mundy"
+				Health	65
+				Action	FetchFlag
+				CharacterAttributes
+				{
+					"head scale"	2
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave1_funkopoptank
+			WaitForAllDead	wave1b
+			TotalCount	1
+			SpawnCount	1
+			Tank
+			{
+				Health	6900
+				Name	"tonk"
+				Speed	90
+				Scale	0.25	[$SIGSEGV]
+				StartingPathTrackNode	"tank_path_a_1"
+				OnBombDroppedOutput
+				{
+					Target	boss_deploy_relay
+					Action	Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave1_miniboss
+			WaitForAllDead	wave1b
+			TotalCount	1
+			SpawnCount	1
+			WaitBeforeStarting	15
+			Where	spawnbot_right
+			FirstSpawnWarningSound	"vo/medic_sf13_magic_reac07.mp3"
+			DoneWarningSound		"crin_ss_wave1_trollsong.mp3"
+			TFBot
+			{
+				Template	T_TFBot_Giant_Medic
+				WeaponRestrictions	MeleeOnly
+				Name	"medic is now a funko pop"
+				Action	FetchFlag	[$SIGSEGV]
+				Scale	0.9
+				Attributes	UseBossHealthBar
+				UseHumanModel 1
+				CharacterAttributes
+				{
+					"head scale"	2
+				}
+			}
+		}
+	}
+	Wave	// fortnite payday
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput					
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		Explanation
+		{
+			Line	"{yellow}I am genuinely sorry for all Scout players who have to play this wave."
+		}
+		WaveSpawn
+		{
+			Name	wave2_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	10
+			Support	Limited
+			FirstSpawnWarningSound	"crin_ss_fortnitecard1.mp3"
+		}
+		WaveSpawn
+		{
+			Name	wave2_fortnitecard
+			TotalCurrency	999
+			TotalCount	3
+			MaxActive	3
+			SpawnCount	1
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	0.8
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Giant_Scout
+				Name	"working free vbuck generator"
+				Attributes	SuppressFire
+				Attributes	IgnoreFlag
+				Action		Mobber
+				Attributes	AlwaysCrit
+				WeaponRestrictions	MeleeOnly
+				Health	420
+				ClassIcon	fortnitecard
+				UseCustomModel	"models/empty.mdl"
+				SpawnTemplate	
+				{
+					Name	"Fortnite_Card"
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave2_presound
+			WaitForAllDead	wave2_fortnitecard
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	3
+			FirstSpawnWarningSound	"crin_ss_fortnitecard2.mp3"
+		}
+		WaveSpawn
+		{
+			Name	wave2_troller1
+			WaitForAllDead	wave2_fortnitecard
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	8
+			FirstSpawnWarningSound	"vo/medic_mvm_collect_credits03.mp3"
+			Where	spawnbot_troller
+			TFBot
+			{
+				Name	"YOU FOOL YOU FELL FOR IT"
+				Class	Demoman
+				Attributes	IgnoreFlag
+				WeaponRestrictions	MeleeOnly
+				Health	2000
+				Scale	1.5
+				Item	"TF_WEAPON_BOTTLE"
+				UseCustomModel	"models/items/crystal_ball_pickup_major.mdl"
+				ItemAttributes
+				{
+					ItemName 	"TF_WEAPON_BOTTLE"
+					"damage bonus"	999
+					"ragdolls plasma effect"	1
+				}
+				CharacterAttributes
+				{
+					"move speed bonus"	0.0001
+					"damage force reduction" 0.001
+					"airblast vulnerability multiplier" 0.001
+					"cannot be backstabbed"	1
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave2a
+			WaitForAllDead	wave2_fortnitecard
+			TotalCurrency	200
+			TotalCount	20
+			MaxActive	8
+			SpawnCount	2
+			WaitBeforeStarting	8
+			WaitBetweenSpawns	2
+			Where	spawnbot
+			RandomChoice
+			{
+				TFBot
+				{
+					Class	Soldier
+					ClassIcon	soldier_pickaxe_dual
+					Name	"Bitcoin Miner"
+					Item	"The Escape Plan"
+					WeaponRestrictions	MeleeOnly
+					UseCustomModel	"models/items/currencypack_large.mdl"
+					
+				}
+				TFBot
+				{
+					Class	Soldier
+					ClassIcon	soldier_pickaxe_dual
+					Name	"Bitcoin Miner"
+					Item	"The Equalizer"
+					WeaponRestrictions	MeleeOnly
+					UseCustomModel	"models/items/currencypack_large.mdl"
+					
+				}
+
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave2a
+			WaitForAllDead	wave2_fortnitecard
+			TotalCurrency	200
+			TotalCount	2
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	15
+			Where	spawnbot_right
+			TFBot
+			{
+				Name	"fortnite smg"
+				Class	Sniper
+				ClassIcon	sniper_smg
+				Skill	Expert
+				Health	2500
+				Attributes	MiniBoss
+				WeaponRestrictions	SecondaryOnly
+				Tag	giant
+				UseCustomModel	"models/items/currencypack_large.mdl"
+				CharacterAttributes
+				{
+					"move speed bonus"	0.35
+					"damage penalty"	0.5
+					"damage force reduction"	0.01
+					"airblast vulnerability multiplier"	0.01
+					"override footstep sound set"	6
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave2b
+			WaitForAllDead	wave2a
+			TotalCurrency	200
+			TotalCount	24
+			MaxActive	9
+			SpawnCount	3
+			WaitBetweenSpawns	4
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Heavyweapons_Shotgun
+				Name	"fortnite shotgun"
+				Skill	Easy
+				UseCustomModel	"models/items/currencypack_large.mdl"
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave2b
+			WaitForAllDead	wave2a
+			TotalCurrency	200
+			TotalCount	2
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	25
+			Where	spawnbot_left
+			TFBot
+			{
+				Template	T_TFBot_Giant_Soldier
+				Name	"fortnite rocket launcher"
+				UseCustomModel	"models/items/currencypack_large.mdl"
+				CharacterAttributes
+				{
+					"move speed bonus"	0.35
+					"damage penalty"	0.75
+					"damage force reduction"	0.01
+					"airblast vulnerability multiplier"	0.01
+					"override footstep sound set"	6
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave2c
+			WaitForAllDead	wave2b
+			TotalCurrency	100
+			TotalCount	15
+			MaxActive	5
+			SpawnCount	1
+			WaitBetweenSpawns	1
+			Where	spawnbot
+			TFBot
+			{
+				Class	Scout
+				WeaponRestrictions	SecondaryOnly
+				ClassIcon	scout_pistol
+				Name	"fortnite pistol"
+				Skill	Easy
+				UseCustomModel	"models/items/currencypack_large.mdl"
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave2_miniboss
+			WaitForAllDead	wave2c
+			TotalCurrency	100
+			TotalCount	1
+			SpawnCount	1
+			WaitBeforeStarting	5
+			Where	spawnbot_right
+			FirstSpawnWarningSound	"crin_ss_wave2_stonks.mp3"
+			TFBot
+			{
+				Template	T_TFBot_MiniBoss_Stonks
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave2_thegamingfungi
+			Support	1
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	45
+			WaitBetweenSpawns	30
+			WaitForAllDead	wave2_fortnitecard
+			Where	spawnbot_red_vented
+			TFBot
+			{
+				Template	T_TFBot_TheGamingFungus
+			}
+		}
+
+
+	}
+	Wave	// The Among Us Happy Meal Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput					
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		Explanation	[$SIGSEGV]	//	Proof that I hate myself
+		{
+			Line	"{d69ffe}Red sus. Red suus. I said red, sus, hahahahaha."
+			Line 	"{d69ffe}Why arent you laughing? I just made a reference to the popular video game Among Us! How can you not laugh at it? Emergency meeting!"
+			Line 	"{d69ffe}Guys, this here guy doesnt laugh at my funny Among Us memes! Lets beat him to death! Dead body reported! Skip! Skip! Vote blue! Blue was not an impostor."
+			Line 	"{d69ffe}Among us in a nutshell hahaha. What?! You Are still not laughing your ass off? I made SEVERAL funny references to Among Us and YOU STILL ARENT LAUGHING??!!!"
+			Line 	"{d69ffe}Bruh. Ya hear that? Wo00000osh. Whats woooosh? Oh, nothing. Just the sound of a joke flying over your head. Whats that? You think im annoying? Kinda sus, bro."
+			Line 	"{d69ffe}Hahahaha! Anyway, yea, gotta go do tasks. Hahahaha!"
+		}
+		WaveSpawn
+		{
+			Name	fuckyou
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	10
+			Support	Limited
+			FirstSpawnWarningSound	"crin_ss_wave3_we_are_tired_of_among_us.mp3"
+		}
+		WaveSpawn
+		{
+			Name	fuckyou
+			TotalCount	1
+			WaitBeforeStarting	29
+			Where	spawnbot_fuckyourmoney_andfuckyoutoo
+			TFBot
+			{
+				Name	"Among Us ruined potato.tf"
+				Class	Scout
+				ClassIcon	crewmate_blue
+				Scale	0.00000001
+				Attributes	MiniBoss
+				Attributes	IgnoreFlag
+				CharacterAttributes
+				{
+					"active health degen"	-125
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	WHENTHEWAVEISFAKE
+			WaitForAllDead	WHENTHEWAVEISFAKE
+			TotalCount	48
+			MaxActive	12
+			SpawnCount	0
+			WaitBetweenSpawns	0.33
+			Where	spawnbot
+			FirstSpawnWarningSound	"crin_ss_wave3_intro_asscancer.mp3"
+			TFBot
+			{
+				Class	Pyro
+				ClassIcon	crewmate_blue
+				WeaponRestrictions	MeleeOnly
+				Item	"The Hazmat Headcase"
+				Name	"red sus"
+			}
+		}
+		WaveSpawn
+		{
+			Name	WHENTHEWAVEISFAKE
+			WaitForAllDead	WHENTHEWAVEISFAKE
+			TotalCount	25
+			MaxActive	6
+			SpawnCount	0
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	10
+			Where	spawnbot
+			Squad
+			{
+				TFBot
+				{
+					Template	T_TFBot_Heavy_McDonaldsEmployee
+				}
+				TFBot
+				{
+					Class	Pyro
+					ClassIcon	crewmate_blue
+					WeaponRestrictions	MeleeOnly
+					Item	"The Hazmat Headcase"
+					Name	"the imposter has a gun"
+				}
+				TFBot
+				{
+					Class	Pyro
+					ClassIcon	crewmate_blue
+					WeaponRestrictions	MeleeOnly
+					Item	"The Hazmat Headcase"
+					Name	"the imposter has a gun"
+				}
+				TFBot
+				{
+					Class	Pyro
+					ClassIcon	crewmate_blue
+					WeaponRestrictions	MeleeOnly
+					Item	"The Hazmat Headcase"
+					Name	"the imposter has a gun"
+				}
+				TFBot
+				{
+					Class	Pyro
+					ClassIcon	crewmate_blue
+					WeaponRestrictions	MeleeOnly
+					Item	"The Hazmat Headcase"
+					Name	"the imposter has a gun"
+					Skill	Expert
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	WHENTHEWAVEISFAKE
+			WaitForAllDead	WHENTHEWAVEISFAKE
+			TotalCount	32
+			MaxActive	8
+			SpawnCount	0
+			WaitBetweenSpawns	6.9
+			Where	spawnbot
+			Squad
+			{
+				TFBot
+				{
+					Template	T_TFBot_Heavy_McDonaldsEmployee
+				}
+				TFBot
+				{
+					Class	Demoman
+					Name	"Burger Launcher"
+					ClassIcon	mcdonalds_blue
+					Item	"Mann Co. Cap"
+					ItemAttributes
+					{
+						ItemName 	"Mann Co. Cap"
+						"set item tint RGB"	4863
+					}
+					ItemAttributes
+					{
+						ItemName	"TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model"	"models/player/gibs/gibs_burger.mdl"
+					}
+				}
+				TFBot
+				{
+					Class	Demoman
+					Name	"Burger Launcher"
+					ClassIcon	mcdonalds_blue
+					Item	"Mann Co. Cap"
+					ItemAttributes
+					{
+						ItemName 	"Mann Co. Cap"
+						"set item tint RGB"	4863
+					}
+					ItemAttributes
+					{
+						ItemName	"TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model"	"models/player/gibs/gibs_burger.mdl"
+					}
+				}
+				TFBot
+				{
+					Class	Demoman
+					Name	"Burger Launcher"
+					ClassIcon	mcdonalds_blue
+					Item	"Mann Co. Cap"
+					ItemAttributes
+					{
+						ItemName 	"Mann Co. Cap"
+						"set item tint RGB"	4863
+					}
+					ItemAttributes
+					{
+						ItemName	"TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model"	"models/player/gibs/gibs_burger.mdl"
+					}
+				}
+
+			}
+		}
+		WaveSpawn
+		{
+			Name	WHENTHEWAVEISFAKE
+			WaitForAllDead	WHENTHEWAVEISFAKE
+			TotalCount	12
+			MaxActive	5
+			SpawnCount	0
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	20
+			Where	spawnbot
+			Squad
+			{
+				TFBot
+				{
+					Template	T_TFBot_Giant_Spy_WHEN_YOU_GET_A_KILL_IN_ELECTICAL_AS_THE_IMPOSTER
+				}
+				TFBot
+				{
+					Class	Demoman
+					Name	"Burger Launcher"
+					ClassIcon	mcdonalds_blue
+					Item	"Mann Co. Cap"
+					ItemAttributes
+					{
+						ItemName 	"Mann Co. Cap"
+						"set item tint RGB"	4863
+					}
+					ItemAttributes
+					{
+						ItemName	"TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model"	"models/player/gibs/gibs_burger.mdl"
+					}
+				}
+				TFBot
+				{
+					Class	Demoman
+					Name	"Burger Launcher"
+					ClassIcon	mcdonalds_blue
+					Item	"Mann Co. Cap"
+					ItemAttributes
+					{
+						ItemName 	"Mann Co. Cap"
+						"set item tint RGB"	4863
+					}
+					ItemAttributes
+					{
+						ItemName	"TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model"	"models/player/gibs/gibs_burger.mdl"
+					}
+				}
+				TFBot
+				{
+					Class	Demoman
+					Name	"Burger Launcher"
+					ClassIcon	mcdonalds_blue
+					Item	"Mann Co. Cap"
+					ItemAttributes
+					{
+						ItemName 	"Mann Co. Cap"
+						"set item tint RGB"	4863
+					}
+					ItemAttributes
+					{
+						ItemName	"TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model"	"models/player/gibs/gibs_burger.mdl"
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	WHENTHEWAVEISFAKE
+			WaitForAllDead	WHENTHEWAVEISFAKE
+			TotalCount	5
+			MaxActive	5
+			SpawnCount	0
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	5
+			Where	spawnbot_red_vented
+			TFBot
+			{
+				Template	T_TFBot_Giant_Spy_Fast_Meme	
+			}
+		}
+		WaveSpawn
+		{
+			Name	WHENTHEWAVEISFAKE
+			WaitForAllDead	WHENTHEWAVEISFAKE
+			TotalCount	30
+			MaxActive	20
+			SpawnCount	0
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0.01
+			FirstSpawnWarningSound	"crin_ss_wave3_airpodshotty.mp3"
+			Where	spawnbot
+			Where	spawnbot_red_vented
+			Where	spawnbot_reprogrammed_1
+			RandomChoice
+			{
+				TFBot
+				{
+					Class	Pyro
+					WeaponRestrictions	SecondaryOnly
+					ClassIcon	airpodshotty
+					Name	"AIRPOD SHOTTY"
+					Item	"The Hazmat Headcase"
+				}
+				TFBot
+				{
+					Class	Pyro
+					WeaponRestrictions	SecondaryOnly
+					ClassIcon	airpodshotty
+					Name	"IMA CATCH A BODY"
+					Item	"The Hazmat Headcase"
+				}
+				TFBot
+				{
+					Class	Pyro
+					WeaponRestrictions	SecondaryOnly
+					ClassIcon	airpodshotty
+					Name	"YOU LOOKIN' REAL SUSSY"
+					Item	"The Hazmat Headcase"
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	WHENTHEWAVEISFAKE
+			WaitForAllDead	WHENTHEWAVEISFAKE
+			TotalCount	5
+			MaxActive	5
+			SpawnCount	0
+			Support	1
+			WaitBetweenSpawns	3
+			Where	spawnbot
+			RandomChoice
+			{
+				TFBot
+				{
+					Class	Pyro
+					WeaponRestrictions	SecondaryOnly
+					ClassIcon	airpodshotty
+					Name	"AIRPOD SHOTTY"
+					Item	"The Hazmat Headcase"
+				}
+				TFBot
+				{
+					Class	Pyro
+					WeaponRestrictions	SecondaryOnly
+					ClassIcon	airpodshotty
+					Name	"IMA CATCH A BODY"
+					Item	"The Hazmat Headcase"
+				}
+				TFBot
+				{
+					Class	Pyro
+					WeaponRestrictions	SecondaryOnly
+					ClassIcon	airpodshotty
+					Name	"YOU LOOKIN' REAL SUSSY"
+					Item	"The Hazmat Headcase"
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	WHENTHEWAVEISFAKE
+			WaitForAllDead	WHENTHEWAVEISFAKE
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	0
+			WaitBeforeStarting	10
+			FirstSpawnWarningSound	"crin_ss_wave3_amogus.mp3"
+			Where	spawnbot_red_vented
+			TFBot
+			{
+				Template	T_TFBot_Giant_Scout
+				Name	"Amogus"
+				WeaponRestrictions	MeleeOnly
+				Attributes	AlwaysCrit
+				Attributes	UseBossHealthBar
+				Health	6900
+				ClassIcon	amogus
+				Action	Mobber	[$SIGSEGV]
+				BodyPartScaleSpeed	100	[$SIGSEGV]
+				CharacterAttributes
+				{
+					"torso scale"	-1000
+				}
+			}
+		}
+	}
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput					
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		Explanation	[$SIGSEGV]
+		{
+			Line	"{950000}Wondering what the joke was? It's called 'fuck off with the Among Us jokes'."	
+		}
+		WaveSpawn
+		{
+			Name	wave3_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	10
+			Support	Limited
+			FirstSpawnWarningSound	"crin_ss_wave3_real_grubhub.mp3"
+		}
+		WaveSpawn
+		{
+			Name	wave3_thriller
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	13
+			Where	spawnbot_wave1_thejoke
+			TFBot
+			{
+				Class	Demoman
+				Name	"Grubhub Perks"
+				ClassIcon	grubhub_dad
+				Skill	Expert
+				Health	100000
+				WeaponRestrictions	PrimaryOnly
+				Attributes	MiniBoss
+				Item	"The Loose Cannon"
+				MaxVisionRange	690
+				DamageAppliesCond [$SIGSEGV] //Adds conditions to players on hit
+				{
+					Name	"TF_COND_HALLOWEEN_THRILLER"
+					Duration	30
+				}
+				ItemAttributes
+				{
+					ItemName	"The Loose Cannon"
+					"Blast radius increased"		691
+					"blast dmg to self increased"	690690691
+				}
+				CharacterAttributes
+				{
+					"move speed bonus"	0.001
+					"damage force reduction" 0.001
+					"airblast vulnerability multiplier" 0.001
+					"override footstep sound set" 4
+					"dmg taken increased"	0.01 
+					"dmg from melee increased"	100
+					"dmg from ranged reduced"	100
+					"boots falling stomp"	1
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave3_spies
+			TotalCurrency	100
+			TotalCount	6
+			MaxActive	6
+			SpawnCount	1
+			WaitForAllDead	wave3_thriller
+			WaitBetweenSpawns	0.01
+			Where	spawnbot_reprogrammed_1
+			Where	spawnbot_red_vented
+			TFBot
+			{
+				Class	Spy
+				Name	"Super Spy"
+				Skill	Expert
+				Health	1200
+				WeaponRestrictions	MeleeOnly
+				Attributes	MiniBoss
+				Action Mobber	[$SIGSEGV]
+				ItemAttributes
+				{
+					ItemName	"TF_WEAPON_KNIFE"
+					"fire rate bonus"	0.25
+					"melee range multiplier"	2
+					"damage bonus"	0.5
+				}
+				CharacterAttributes
+				{
+					"move speed bonus"    2
+					"damage force reduction"	0.5
+					"airblast vulnerability multiplier"	0.5
+					"override footstep sound set"	5
+					"cannot disguise"	1
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave3_mcdonalds
+			WaitForAllDead	wave3_spies
+			TotalCurrency	100
+			TotalCount	24
+			MaxActive	12
+			SpawnCount	4
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	5
+			Where	spawnbot
+			Squad
+			{
+				TFBot
+				{
+					Template	T_TFBot_Heavy_McDonaldsEmployee
+				}
+				TFBot
+				{
+					Class	Demoman
+					Name	"Burger Launcher"
+					ClassIcon	mcdonalds_blue
+					Item	"Mann Co. Cap"
+					ItemAttributes
+					{
+						ItemName 	"Mann Co. Cap"
+						"set item tint RGB"	4863
+					}
+					ItemAttributes
+					{
+						ItemName	"TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model"	"models/player/gibs/gibs_burger.mdl"
+					}
+				}
+				TFBot
+				{
+					Class	Demoman
+					Name	"Burger Launcher"
+					ClassIcon	mcdonalds_blue
+					Item	"Mann Co. Cap"
+					ItemAttributes
+					{
+						ItemName 	"Mann Co. Cap"
+						"set item tint RGB"	4863
+					}
+					ItemAttributes
+					{
+						ItemName	"TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model"	"models/player/gibs/gibs_burger.mdl"
+					}
+				}
+				TFBot
+				{
+					Class	Demoman
+					Name	"Burger Launcher"
+					ClassIcon	mcdonalds_blue
+					Item	"Mann Co. Cap"
+					ItemAttributes
+					{
+						ItemName 	"Mann Co. Cap"
+						"set item tint RGB"	4863
+					}
+					ItemAttributes
+					{
+						ItemName	"TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model"	"models/player/gibs/gibs_burger.mdl"
+					}
+				}
+			}
+		}
+
+		WaveSpawn
+		{
+			Name	wave3_sonic
+			WaitForAllDead	wave3_mcdonalds
+			TotalCurrency	200
+			TotalCount	2
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	15
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Giant_Soldier
+				Name	"Giant Sonic Employee"
+				Item	"The Bot Dogger"
+				ClassIcon	sonic_logo_blue
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave3_sonic
+			WaitForAllDead	wave3_mcdonalds
+			TotalCurrency	100
+			TotalCount	30
+			MaxActive	12
+			SpawnCount	1
+			WaitBeforeStarting	1
+			WaitBetweenSpawns	1
+			Where	spawnbot
+			Where	spawnbot_red_vented
+			Where	spawnbot_reprogrammed_1
+			TFBot
+			{
+				Class	Scout
+				Name	"Sonic the Scout"
+				ClassIcon	scout_bat
+				Attributes	AlwaysCrit
+				UseHumanModel	1	[$SIGSEGV]
+				WeaponRestrictions	MeleeOnly
+				Item	"The Wilson Weave"
+				ItemAttributes
+				{
+					ItemName	"The Wilson Weave"
+					"set item tint RGB"	4863
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave3_bk_kfc
+			WaitForAllDead	wave3_sonic
+			TotalCurrency	100
+			TotalCount	36
+			MaxActive	12
+			SpawnCount	12
+			WaitBeforeStarting	6.9
+			WaitBetweenSpawns	0.1
+			Where	spawnbot_left
+			Where	spawnbot_right
+			TFBot
+			{
+				Template	T_TFBot_Sniper
+				Action	Sniper
+				Name	"Burger King Sniper"
+				ClassIcon	burger_king
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave3_bk_kfc
+			WaitForAllDead	wave3_sonic
+			TotalCurrency	100
+			TotalCount	2
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	20
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Giant_Sniper_KFC
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave3_KROGER
+			WaitForAllDead	wave3_bk_kfc
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	5
+			Where	spawnbot
+			FirstSpawnWarningSound	"crin_ss_wave3_real_kroger.mp3"
+			TFBot
+			{
+				Template	T_TFBot_Giant_Heavyweapons
+				Item	"The Unshaved Bear"
+				Name	"Giant Kroger Heavy"
+				ClassIcon	kroger
+				Attributes	UseBossHealthBar
+				Attributes	AlwaysCrit
+				Health	6900
+				
+				CharacterAttributes
+				{
+					"move speed bonus"	0.05
+					"no_jump"	1
+				}
+			}
+		}
+	}
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput					
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		Explanation	[$SIGSEGV]
+		{
+			Line	"{green}Certain robots in this wave can drop {yellow}Australium Weapons{green} on death. Pick them up and you can use upgraded versions and even Giant weapons!"	
+		}
+		WaveSpawn
+		{
+			Name	wave4_intro
+			TotalCurrency	25
+			TotalCount	1
+			Where	spawnbot_left
+			TFBot	// guaranteed Cursed Australium on ALL giant spawns
+			{
+				Template	T_TFBot_Giant_Scout_FAN_MemeW4
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave4_intro
+			TotalCurrency	25
+			TotalCount	1
+			Where	spawnbot_right
+			TFBot
+			{
+				Template	T_TFBot_Giant_Scout_FAN_MemeW4
+			}
+		}
+
+		WaveSpawn
+		{
+			Name	wave4a
+			WaitForAllDead	wave4_intro
+			TotalCurrency	25
+			TotalCount	3
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	12
+			WaitBetweenSpawns	12
+			Where	spawnbot_right
+			TFBot
+			{
+				Template	T_TFBot_Giant_Demoknight_MemeW4
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave4a
+			WaitForAllDead	wave4_intro
+			TotalCurrency	25
+			TotalCount	10
+			MaxActive	4
+			SpawnCount	2
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	5
+			Where	spawnbot_left
+			Squad	// guaranteed Cursed Australium on certain small bot spawns (like this one!)
+			{
+				TFBot
+				{
+					Template	T_TFBot_Soldier_MemeW4
+				}
+				TFBot
+				{
+					Template	T_TFBot_Medic_Meme_W4
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave4a
+			WaitForAllDead	wave4_intro
+			TotalCurrency	100
+			TotalCount	27
+			MaxActive	9
+			SpawnCount	3
+			WaitBetweenSpawns	3
+			Where	spawnbot
+			RandomChoice	// base 1/7 Chance for Cursed Australium Bots (SMALL SIZE) to appear in this wave
+			{
+				TFBot
+				{
+					Class	Scout
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Scout
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Scout
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Scout
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Scout
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Scout
+					Skill	Easy
+				}
+				TFBot
+				{
+					Template	T_TFBot_Scout_Meme_W4
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave4b
+			WaitForAllDead	wave4a
+			TotalCurrency	100
+			TotalCount	2
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	20
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Giant_Soldier_BurstFire_MemeW4
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave4b
+			WaitForAllDead	wave4a
+			TotalCurrency	100
+			TotalCount	32
+			MaxActive	12
+			SpawnCount	4
+			WaitBetweenSpawns	4
+			Where	spawnbot
+			RandomChoice
+			{
+				TFBot
+				{
+					Class	Pyro
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Pyro
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Pyro
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Pyro
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Pyro
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Pyro
+					Skill	Easy
+				}
+				TFBot
+				{
+					Template	T_TFBot_PyroMemeW4
+				}
+
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave4c
+			WaitForAllDead	wave4b
+			TotalCurrency	100
+			TotalCount	5
+			SpawnCount	5
+			WaitBeforeStarting	20
+			Where	spawnbot_right
+			Squad	// guaranteed Cursed Australium on certain small bot spawns (like this one!)
+			{
+				TFBot
+				{
+					Template	T_TFBot_Giant_Heavy_MemeW4
+				}
+				TFBot
+				{
+					Template	T_TFBot_Medic_Meme_W4
+				}
+				TFBot
+				{
+					Template	T_TFBot_Medic_Meme_W4
+				}
+				TFBot
+				{
+					Template	T_TFBot_Medic_Meme_W4
+				}
+				TFBot
+				{
+					Template	T_TFBot_Medic_Meme_W4
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave4c
+			WaitForAllDead	wave4b
+			TotalCurrency	100
+			TotalCount	36
+			MaxActive	12
+			SpawnCount	2
+			WaitBeforeStarting	2
+			WaitBetweenSpawns	2
+			Where	spawnbot
+			RandomChoice
+			{
+				TFBot
+				{
+					Class	Demoman
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Demoman
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Demoman
+					Skill	Easy
+				}
+				TFBot
+				{
+					Class	Demoman
+					Skill	Normal
+				}
+				TFBot
+				{
+					Class	Demoman
+					Skill	Normal
+				}
+				TFBot
+				{
+					Class	Demoman
+					Skill	Normal
+				}
+				TFBot
+				{
+					Template	T_TFBot_Demoman_MemeW4
+				}
+
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave4boss
+			WaitForAllDead	wave4c
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	6.9
+			Where	spawnbot_right
+			TFBot
+			{
+				Template	T_TFBot_Wave4_GoldenPanBoss
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	faceit
+			}
+		}
+	}
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput					
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		Explanation	[$SIGSEGV]
+		{
+			Line	"{yellow}You probably thought you'd be able to easily abuse or exploit those dropped Australium weapons. {950000}Surprise."	
+			Line	"{ff0000}Upon wave start, reality will begin to fall apart..."
+		}
+		SpawnTemplate
+		{
+			Name	"dummythicc"	// HAHAHAHAHA IT'S LITERALLY JUST A GIANT HEAVY MODEL LAYING DOWN
+			Origin	"-3000.0 8000.0 8000.0"
+			Angles	"-90 90 0"
+			"scale"	"100"
+		}
+		SpawnTemplate	"Wave5_RealityBreakerEffect"
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			Support	Limited
+			FirstSpawnWarningSound	"crin_ss_wave5_cavenoise.mp3"
+			FirstSpawnMessage		"Sheldon Cooper has joined the game" [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	8
+			Support	Limited
+			FirstSpawnWarningSound	"crin_ss_wave5_intro.mp3"
+			FirstSpawnMessage		"Sheldon Cooper was automatically assigned to team ROBOTS" [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	Jerma_whentheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jErma_whentheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jeRma_whentheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerMa_whentheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jermA_whentheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_Whentheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_wHentheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whEntheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_wheNtheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whenTheimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentHeimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whenthEimposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheImposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheiMposterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimPosterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimpOsterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimpoSterissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimposTerissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimpostErissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimposteRissus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimposterIssus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimposteriSsus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimposterisSus
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimposterissUs
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave5_intro
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			WaitBeforeStarting	99999
+			Support	Limited
+			TFBot
+			{
+				ClassIcon	jerma_whentheimposterissuS
+			}
+		}
+
+
+
+
+		WaveSpawn
+		{
+			Name	wave6
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	25.5
+			Where	spawnbot_red_vented
+			Support	Limited
+			FirstSpawnWarningSound	"crin_ss_wave5_bgm_pure_hell.mp3"
+			TFBot
+			{
+				Name	"big fat meanie"	// test dummy
+				Class	Heavyweapons
+				Attributes	SuppressFire
+				Attributes	IgnoreFlag
+				BehaviorModifiers	Push
+				WeaponRestrictions	MeleeOnly
+				ClassIcon	jermA_whentheimposterissus
+				Health	99999
+				Scale	0.1
+				SpawnTemplate	"fogedit1"
+				SpawnTemplate	"fogedit2"
+				SpawnTemplate	"fogedit3"
+				SpawnTemplate	"dummythicc_dementia"
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave6_bazingaboxes1
+			TotalCurrency	100
+			TotalCount	2
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	25
+			WaitBetweenSpawns	25
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Giant_Pyro
+				ClassIcon	purehell
+				UseCustomModel	"models/props_urban/urban_crate_bazinga.mdl"	[$SIGSEGV]
+				Name	"OUR WHOLE UNIVERSE WAS IN A HOT DENSE STATE"
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave6_bazingaboxes1
+			TotalCurrency	100
+			TotalCount	24
+			MaxActive	12
+			SpawnCount	1
+			WaitBeforeStarting	25.5
+			WaitBetweenSpawns	0.1
+			Where	spawnbot_red_vented
+			Where	spawnbot_reprogrammed_1
+			TFBot
+			{
+				Class	Heavyweapons
+				ClassIcon	purehell
+				WeaponRestrictions	MeleeOnly
+				UseCustomModel	"models/props_urban/urban_crate_bazinga.mdl"	[$SIGSEGV]
+				Name	"WHEN NEARLY 14 BILLION YEARS AGO"
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave6_bazingaboxes2
+			WaitForAllDead	wave6_bazingaboxes1
+			TotalCurrency	100
+			TotalCount	3
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	12
+			WaitBetweenSpawns	20
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Giant_Soldier_Spammer
+				Name	"EXPANSION STARTED- WAIT"
+				ClassIcon	purehell
+				UseCustomModel	"models/props_urban/urban_crate_bazinga.mdl"	[$SIGSEGV]
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave6_bazingaboxes2
+			WaitForAllDead	wave6_bazingaboxes1
+			TotalCurrency	100
+			TotalCount	32
+			MaxActive	10
+			SpawnCount	2
+			WaitBetweenSpawns	2.5	
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Scout_Melee
+				Name	"NEANDERTHALS DEVELOPED TOOLS"
+				Attributes	AlwaysCrit
+				ClassIcon	purehell
+				UseCustomModel	"models/props_urban/urban_crate_bazinga.mdl"	[$SIGSEGV]
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave6_WEBUILTTHEPYRAMIDS
+			WaitForAllDead	wave6_bazingaboxes2
+			TotalCurrency	150
+			TotalCount	1
+			SpawnCount	1
+			WaitBeforeStarting	5
+			Tank
+			{
+				Model	"models/egypt/pyramid/pyramid_small.mdl"		[$SIGSEGV]
+				DisableSmokestack 	1	[$SIGSEGV]
+				DisableTracks 		1	[$SIGSEGV]
+				Health	10000
+				Name	"tonk"
+				Speed	80
+				StartingPathTrackNode	"tank_path_a_1"
+				OnBombDroppedOutput
+				{
+					Target	boss_deploy_relay
+					Action	Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave6_WEBUILTTHEPYRAMIDS
+			WaitForAllDead	wave6_bazingaboxes2
+			TotalCurrency	150
+			TotalCount	1
+			SpawnCount	1
+			WaitBeforeStarting	10
+			Tank
+			{
+				Model	"models/egypt/pyramid/pyramid.mdl"		[$SIGSEGV]
+				DisableSmokestack 	1	[$SIGSEGV]
+				DisableTracks 		1	[$SIGSEGV]
+				Health	10000
+				Name	"tonk"
+				Speed	80
+				StartingPathTrackNode	"tank_path_a_1"
+				OnBombDroppedOutput
+				{
+					Target	boss_deploy_relay
+					Action	Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave6_WEBUILTTHEPYRAMIDS
+			WaitForAllDead	wave6_bazingaboxes2
+			TotalCurrency	300
+			TotalCount	1
+			SpawnCount	1
+			WaitBeforeStarting	15
+			Tank
+			{
+				Model	"models/egypt/pyramid/pyramid_big.mdl"		[$SIGSEGV]
+				DisableSmokestack 	1	[$SIGSEGV]
+				DisableTracks 		1	[$SIGSEGV]
+				Health	10000
+				Name	"tonk"
+				Speed	80
+				StartingPathTrackNode	"tank_path_a_1"
+				OnBombDroppedOutput
+				{
+					Target	boss_deploy_relay
+					Action	Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave6_support
+			WaitForAllDead	wave6_bazingaboxes2
+			Support	1
+			TotalCount	8
+			MaxActive	8
+			SpawnCount	1
+			WaitBetweenSpawns	4
+			Where	spawnbot
+			TFBot
+			{
+				Class	Medic
+				Action	FetchFlag	[$SIGSEGV]
+				Name	"MATH SCIENCE HISTORY"
+				UseCustomModel	"models/kleiner.mdl"	[$SIGSEGV]
+				ClassIcon	purehell_support
+			}
+		}
+	}
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput					
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		Explanation	[$SIGSEGV]
+		{
+			Line	"{orange}Tip: Music plays in this wave. Use 'snd_restart' in console to stop it if it persists after the end of the mission."
+			Line	"{ff0000}A horrendous presence lurks among the fog..."
+			Line	"{950000}Also I swear to fucking god if you people spam this wave in the #memes channel on the Discord server again, I am going to get the Discord moderators to ban you."
+		}
+
+		// clean up the absolute fucking mess that W6 was
+		SpawnTemplate	"fog_cleanup1"
+		SpawnTemplate	"fog_cleanup2"
+		SpawnTemplate	"fog_cleanup3"
+		SpawnTemplate	"Oil"
+		WaveSpawn
+		{
+			Name	wave7_oilup
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	5
+			FirstSpawnWarningSound	"crin_ss_wave6_trollsong.mp3"
+			Tank
+            {
+                Health	15000
+				Speed	69
+                Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				Gravity	0
+				MaxTurnRate	25	[$SIGSEGV]
+                Name "tankboss"
+                StartingPathTrackNode "tank_path_coveryourselfinoil_1"
+				SpawnTemplate	"colortank"
+                OnKilledOutput
+                {
+                    Target boss_dead_relay
+                    Action Trigger
+                }
+
+                OnBombDroppedOutput
+                {
+                    Target boss_deploy_relay
+                    Action Trigger
+                }
+            }
+		}
+		WaveSpawn
+		{
+			Name	wave7_shake
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			Support	Limited
+			WaitForAllDead	wave7_oilup
+			WaitBeforeStarting	3
+			FirstSpawnWarningSound	"mvm/ambient_mp3/mvm_siren.mp3"
+			FirstSpawnOutput
+			{
+				Target	shake_effect_titan
+				Action	StartShake
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave7_flash
+			TotalCount	0
+			MaxActive	0
+			SpawnCount	0
+			Support	Limited
+			WaitForAllDead	wave7_oilup
+			WaitBeforeStarting	10
+			FirstSpawnOutput
+			{
+				Target	whiteout_trigger
+				Action	Fade
+			}
+		}
+		WaveSpawn
+		{
+			Name	FINAL_BOSS
+			WaitForAllDead	wave7_oilup
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	14
+			FirstSpawnWarningSound	"collective_consciousness.mp3"
+			Where	spawnbot_wave1_thejoke
+			TFBot
+			{
+				Template	The_Final_Boss
+				Attributes	AlwaysFireWeapon
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave7_fuckyouinparticular
+			WaitForAllDead	wave7_oilup
+			Support	1
+			TotalCount	3
+			MaxActive	3
+			SpawnCount	1
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	5
+			Where	spawnbot
+			TFBot
+			{
+				Class	Scout
+				ClassIcon	scout_pistol
+				Name	"when the expert skill is sus!"
+				WeaponRestrictions	SecondaryOnly
+				Skill	Expert	// HAHAHHAHAHAHAHAHAHA
+			}
+		}
+		WaveSpawn
+		{
+			Name	wave7_fuckyouinparticular
+			WaitForAllDead	wave7_oilup
+			Support	1
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	30
+			Where	spawnbot_red_vented
+			Where	spawnbot_reprogrammed_1
+			TFBot
+			{
+				Template	T_TFBot_Giant_Scout
+				Action	Mobber	// This is where the name comes from
+				ClassIcon	scout_pistol
+				Name	"fuck you in particular"
+				WeaponRestrictions	SecondaryOnly
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_splatoon/salmonid/mothership/mothership_metal"
+	"$bumpmap" "models/props_splatoon/salmonid/mothership/mothership_metal_normal3"
+
+	"$color2" "[0 0 0]"
+	"$additive" "1"
+
+	"$phong" "1"
+	"$phongexponenttexture" "models/props_splatoon/salmonid/mothership/mothership_metal_exponent"
+	"$phongboost" "10"	
+	"$phongfresnelranges"	"[.1 .5 1]"
+	"$phongtint" "[0 0 1]"	
+	"$halflambert" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0 0 1]"	
+	"$normalmapalphaenvmapmask" "1"
+
+}

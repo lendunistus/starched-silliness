@@ -1,0 +1,5435 @@
+#base robot_giant.pop
+#base robot_standard.pop
+#base robot_gatebot.pop
+
+//Metroll Malice
+
+//STOP POSTING ABOUT AMONG US! I'M TIRED OF SEEING IT! MY FRIENDS ON TIKTOK SEND ME MEMES, 
+//ON DISCORD IT'S FUCKING MEMES! I was in a server, right? and ALL OF THE CHANNELS were just among us stuff. 
+//I-I showed my champion underwear to my girlfriend and t-the logo I flipped it and I said "hey babe, when the 
+//underwear is sus HAHA DING DING DING DING DING DING DING DI DI DING" I fucking looked at a trashcan and said 
+//"THAT'S A BIT SUSSY" I looked at my penis I think of an astronauts helmet and I go "PENIS? MORE LIKE PENSUS" 
+//AAAAAAAAAAAAAAHGESFG
+
+//
+// Starting Currency: 690
+//
+// +----------+----------+----------+
+// | Wave     | Currency | A+       |
+// +----------+----------+----------+
+// | Wave 1   | 266      | 366      |
+// | Wave 2   | 810      | 910      |
+// | Wave 3   | 700      | 800      |
+// | Wave 4   | 800      | 900      |
+// | Wave 5   | 1020     | 1120     |
+// | Wave 6   | 800      | 900      |
+// | Wave 7   | 1000     | 1100     |
+// | Wave 8   | 1999     | 2099     |
+// | Wave 9   | 0        | 100      |
+// +----------+----------+----------+
+// | Total    | 7395     | 8295     |
+// +----------+----------+----------+
+//
+
+we_do_a_little_trolling [Pineapple]
+{
+	EntityTemplates
+	{
+		FakePortalBuild
+		{
+			Entity
+			{
+				"Origin"		"573 -3474 -50"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -3123 -341"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+
+		FakePortalBuild2
+		{
+			Entity
+			{
+				"Origin"		"573 -3474 25"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -3123 -251"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+
+		FakePortalBuild3
+		{
+			Entity
+			{
+				"Origin"		"573 -3474 90"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -3123 -171"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+
+		FakePortalBuild4
+		{
+			Entity
+			{
+				"Origin"		"515 -3474 125"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -3063 -121"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+
+		FakePortalBuild5
+		{
+			Entity
+			{
+				"Origin"		"460 -3474 125"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -3000 -121"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+		FakePortalBuild6
+		{
+			Entity
+			{
+				"Origin"		"400 -3474 -50"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -2930 -341"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+		FakePortalBuild7
+		{
+			Entity
+			{
+				"Origin"		"400 -3474 25"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -2930 -251"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+		FakePortalBuild8
+		{
+			Entity
+			{
+				"Origin"		"400 -3474 90"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -2930 -171"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+		FakePortal
+		{
+			Entity
+			{
+				"Origin"		"573 -3474 -50"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"573 -3474 25"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"573 -3474 90"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"515 -3474 125"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"460 -3474 125"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"400 -3474 -50"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"400 -3474 25"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"400 -3474 90"
+				"Angles"		"-15 90 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+		FakePortal2
+		{
+			Entity
+			{
+				"Origin"		"-1126 -3123 -341"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -3123 -251"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -3123 -171"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -3063 -121"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -3000 -121"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -2930 -341"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -2930 -251"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"		"-1126 -2930 -171"
+				"Angles"		"-15 0 -0"
+				"model"			"models/player/items/all_class/troll_head_scout.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+
+		CowProp //Cows
+		{
+			Entity
+			{
+				"Origin"	"2332 -1840 23"
+				"Angles"	"0 180 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"384 -375 550"
+				"Angles"	"0 -90 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"-1278 -143 -80"
+				"Angles"	"0 0 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"-1492 495 -80"
+				"Angles"	"0 0 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"-1727 644 193"
+				"Angles"	"20 0 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"-1517 -393 400"
+				"Angles"	"-120 0 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"260 448 821"
+				"Angles"	"30 -120 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"724 -1162 600"
+				"Angles"	"75 165 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"-417 -1822 800"
+				"Angles"	"12 79 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"-1078 -1231 730"
+				"Angles"	"90 6 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"636 -1840 748"
+				"Angles"	"0 -80 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"258 -1855 900"
+				"Angles"	"10 -90 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"658 -3337 570"
+				"Angles"	"29 90 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"347 -3386 900"
+				"Angles"	"31 70 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"1017 -2796 970"
+				"Angles"	"60 180 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"482 -2255 770"
+				"Angles"	"54 -137 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"-8545 -145 -289"
+				"Angles"	"0 0 0"
+				"model"			"models/props_2fort/cowtroll_reference.mdl"
+				"classname"	"prop_dynamic"
+                "modelscale"	"4.0"
+			}
+			Entity
+			{
+				"Origin"	"-7756 375 150"
+				"Angles"	"0 -130 0"
+				"model"			"models/props_2fort/cowtroll_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"-8950 -737 208"
+				"Angles"	"48 60 0"
+				"model"			"models/props_2fort/cowtroll_reference.mdl"
+				"classname"	"prop_dynamic"
+				"modelscale""4.0"
+			}
+			Entity
+			{
+				"Origin"	"-7327 -896 -112"
+				"Angles"	"0 139 0"
+				"model"			"models/props_2fort/cowtroll_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"25 1055 900"
+				"Angles"	"35 -95 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"-150 2700 -32"
+				"Angles"	"0 -90 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"415 2774 -95"
+				"Angles"	"0 -148 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"	"158 2874 -90"
+				"Angles"	"5 -60 0"
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"classname"	"prop_dynamic"
+			}
+			Entity
+			{
+				"Origin"		"-8788 68 -400"
+				"Angles"		"0 0 0"
+				"model"			"models/props_2fort/cowtroll_reference.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4.0"
+			}
+		}
+	}
+}
+
+big_big_chungus_big_chungus_big_chgunus
+{
+	StartingCurrency 	690
+	CanBotsAttackWhileInSpawnRoom yes
+	RespawnWaveTime 3
+	Advanced	1	
+	TextPrintTime 0
+	NoRomevisionCosmetics 1 [$SIGSEGV]
+
+	//Cows
+	PrecacheModel "models/props_2fort/cow001_reference.mdl"
+	PrecacheModel "models/props_2fort/cowtroll_reference.mdl"
+	PrecacheModel "models/props_2fort/cowgatebot_reference.mdl"
+
+	//Sentry SUSter
+	PrecacheModel "models/bots/demo/bot_sus_buster.mdl"
+
+	//Cosmetics
+	PrecacheModel "models/player/items/engineer/engineer_ttg_max.mdl"
+	PrecacheModel "models/player/items/all_class/troll_head_scout.mdl"
+
+	//Models and Props
+	PrecacheModel "models/items/currencypack_large.mdl"
+	PrecacheModel "models/player/trollface/trollface.mdl"
+	PrecacheModel "models/props_urban/urban_crate_troll.mdl"
+	PrecacheModel "models/bots/sniper/bot_sniper_troll.mdl"
+	PrecacheModel "models/trollface/trollface.mdl"
+	PrecacheModel "models/trollface/coolface4.mdl"
+	PrecacheModel "models/goofus/fortnite_card.mdl"
+
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_skybox" 
+        TeamNum 3                      
+        X   "-8231"                     
+        Y "-360"                     
+        Z  "-249"                      
+    }
+
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_dripboss" 
+        TeamNum 3                      
+        X   "-1516.52"                     
+        Y "-2897"                     
+        Z  "98"                      
+    }
+	
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_among_us" 
+        TeamNum 3                      
+        X   "1175.97"
+        Y " -1771.26"
+        Z  "46.35"
+    }
+
+	ExtraSpawnPoint [$SIGSEGV]
+	{
+		Name	"portal"
+		TeamNum	3
+		X		"483"
+		y		"-3458"
+		Z		"1"
+	}
+
+	ExtraSpawnPoint [$SIGSEGV]
+	{
+		Name	"portal2"
+		TeamNum	3
+		X		"-1120"
+		y		"-3031"
+		Z		"-286"
+	}
+
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name 		"spawnbot_red" 
+        TeamNum 	3 
+        X   		"476"
+        Y 			"2018" 
+        Z  			"-91"    
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name 		"spawnbot_popbob" 
+        TeamNum 	3
+        X   		"-1680.08"
+        Y 			"-68.09" 
+        Z  			"124.13"    
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name 		"spawnbot_dripboss_red" 
+        TeamNum 	3
+        X   		"-924.21"
+        Y 			"1451.17" 
+        Z  			"-25.66"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name 		"spawnbot_gatea" 
+        TeamNum 	3
+        X   		"1348.34"
+        Y 			"-2491.91" 
+        Z  			"-76.84"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+	{
+		Name		"trollspawn"
+		TeamNum		3
+		X			"-1068"
+		Y			"-2853"
+		Z			"-286"
+	}
+	
+	ExtraTankPath
+	{
+		Name "w7tank1"
+		Node "-1310.52 -2352.67 416.4"
+		Node "-1096 -2369.27 368.27"
+		Node "-1097.93 -3610.19 301.92"
+		Node "-142.64 -3584.63 31.95"
+		Node "436.41 -3446.26 35"
+		Node "541.29 -2441.78 59.79"
+		Node "950 -1210.88 72.48"
+		Node "952.18 -480.6 363.67"
+		Node "224.33 -470.16 321"
+		Node "219.86 -1163.53 312.67"
+		Node "-342.59 -1176.52 325.32"
+		Node "-358.88 4.25 -34.44"
+		Node "-29.36 7.78 -69.65"
+		Node "-33.28 1385.34 -81.35"
+  
+    }
+	
+	ExtraTankPath
+	{
+	    Name "aroundtheworld"
+		Node "-2417.93 -3063.51 84.73"
+Node "-1203 -2891 30.67"
+Node "-392.17 -2451 292"
+Node "-709.43 -2511 248"
+Node "-84.85 -2283.89 280.11"
+Node "595.80 -2218.67 192.89"
+Node "791 -2571 398.41"
+Node "531 -3018.72 938.2"
+Node "978.92 -2999 -110"
+Node "673 -2627 275"
+Node "774.92 -2309.5 30.53"
+Node "753.61 -1419.25 35.54"
+Node "634.4 -880.35 1191.35"
+Node "755.19 162.77 949"
+Node "-94.66 461.34 1046.93"
+Node "-638.04 -495.13 1046.93"
+Node "-662.46 -1248.53 606.29"
+Node "-118.26 966.32 1003.73"
+    }
+	
+	ExtraTankPath
+	{
+	    Name "w7tank2"
+		Node "-2949.63 -2475.96 282.27"
+		Node "-2512.46 -3078.06 37.49"
+		Node "-1209.89 -2862.59 25.60"
+		Node "-562.83 -2350 -85.75"
+		Node "-561.22 -2237.32 -100.68"
+    }
+
+	ExtraTankPath
+	{
+	    Name "w7tank3"
+		Node "-2949.63 -2475.96 282.27"
+		Node "-2512.46 -3078.06 37.49"
+		Node "-1209.89 -2862.59 25.60"
+		Node "-562.83 -2350 -85.75"
+		Node "-247.93 -3016.39 -161.28"
+		Node "23.83 -2802.87 -150.26"
+		Node "220.71 -2278.39 -148.39"
+		Node "750.43 -2366.96 -173.40"
+		Node "1020.70 -2950 -151.13"
+		Node "1537.83 -2975.48 -142"
+		Node "1538.6 -2210.22 28.83"
+		Node "1242.24 -1493.68 41.64"
+		Node "-787.86 -1560.22 61.57"
+		Node "-740.01 -936.67 55.23"
+		Node "-647.16 -818.73 30.83"
+		Node "-608.36 -106.25 -47.36"
+		Node "-566.4 878 -267.78"
+		Node "336.47 829.71 -260.1"
+	}
+    
+	ExtraTankPath
+	{
+	    Name "w7tank4"
+		Node "5.19 -2948.5 300.74"
+		Node "141.92 -1927.33 -50"
+	}
+    ExtraTankPath
+	{
+	    Name "w7tank5"
+		Node "953.84 -3257.94 660.99"
+		Node "467.39 -3263.34 668.31"
+		Node "631.36 -2405.44 81.3"
+		Node "661.81 -715.43 137.73"
+    }
+
+	ExtraTankPath
+	{
+		Name "trolltank"
+		Node "0 1025 -83"
+		Node "0 768 -83"
+		Node "0 128 -123"
+		Node "-64 0 -123"
+		Node "-192 -64 -123"
+		Node "-448 -64 -123"
+		Node "-576 -128 -123"
+		Node "-640 -320 -28"
+		Node "-640 -832 -28"
+		Node "-768 -960 -28"
+		Node "-896 -1088 -28"
+		Node "-896 -1536 -28"
+		Node "-832 -1664 -28"
+		Node "-640 -1728 -28"
+		Node "-384 -1760 -28"
+		Node "128 -1792 -28"
+		Node "512 -1664 -28"
+		Node "832 -1536 -28"
+		Node "1152 -1536 -28"
+		Node "1280 -1600 -28"
+		Node "1344 -1728 -28"
+		Node "1408 -1920 -28"
+		Node "1600 -2368 -28"
+		Node "1600 -2816 -156"
+		Node "1472 -2944 -156"
+		Node "1216 -2944 -156"
+		Node "1024 -2944 -156"
+		Node "896 -2752 -156"
+		Node "896 -2496 -156"
+		Node "832 -2368 -156"
+		Node "704 -2304 -156"
+		Node "192 -2304 -156"
+		Node "160 -2368 -156"
+		Node "64 -2688 -156"
+		Node "-64 -2816 -156"
+		Node "-256 -2816 -156"
+		Node "-384 -2688 -156"
+		Node "-384 -2496 -156"
+		Node "-576 -2368 -156"
+		Node "-960 -2688 -284"
+		Node "-1216 -2816 -284"
+	}
+
+	PointTemplates
+	{
+		Jarate
+		{
+			KeepAlive 1
+			tf_projectile_jar
+			{
+				"origin" "0 0 0"
+				"teamnum" "3" // 2 - Red team, 3 - Blu team
+			}
+		}
+		FortniteCard
+		{
+			prop_dynamic
+			{
+				"modelscale" "2"
+				"DisableBoneFollowers" "1"
+				"disableshadows" "1"
+				"model" "models/props_fortnitecard/fortnite_card.mdl"
+				"solid" "0"
+				"spawnflags" "0"
+				"StartDisabled" "0"	
+			}
+		}
+		WhiteoutEffect
+		{
+            NoFixup 1
+			env_fade
+			{
+				"duration"	"2"
+				"holdtime"	"3"
+				"rendercolor"	"255 255 255"
+                "targetname"	"whiteout_trigger"
+			}
+		}
+		ShakePortal
+        {
+            NoFixup 1
+            env_shake
+            {
+                "spawnflags" "1" 
+                "amplitude" "16"
+                "duration" "5.1"
+                "frequency" "200"
+                "radius" "10000"
+                "targetname" "shake_portal"
+            }
+        }
+		Props
+		{
+			prop_dynamic
+			{
+				"Origin"			"-322 2800 -97"
+				"Angles"			"0 -86 0"
+				"model" 			"models/props_urban/urban_crate_troll.mdl"
+			}
+			prop_dynamic
+			{
+				"Origin"			"-202 2654 -162"
+				"Angles"			"0 -32 0"
+				"model" 			"models/props_urban/urban_crate_troll.mdl"
+			}
+		}
+		Players
+		{
+			prop_dynamic
+			{
+				"Origin"			"-2760 38 -135"
+				"Angles"			"0 180 0"
+				"model"				"models/player/heavy.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"1.6"
+			}
+			prop_dynamic
+			{
+				"Origin"			"-2757 171 -145"
+				"Angles"			"0 180 0"
+				"model"				"models/player/medic.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"2"
+			}
+		}
+		Trolled
+		{
+			prop_dynamic //Gallon
+			{
+				"Origin"		"-177 2177 -100"
+				"Angles"		"0 90 5"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"0.3"
+			}
+			prop_dynamic //Plate Sign
+			{
+				"Origin"		"355 -2515 -207"
+				"Angles"		"0 90 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"0.5"
+			}
+			prop_dynamic //Warning Sign
+			{
+				"Origin"		"680 -560 -200"
+				"Angles"		"0 -90 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"0.9"
+			}
+			prop_dynamic //Building Skybox 2
+			{
+				"Origin"		"-8600 44 -363"
+				"Angles"		"0 -185 -15"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"3"
+			}
+			prop_dynamic //Building Skybox
+			{
+				"Origin"		"-8305 -450 -25"
+				"Angles"		"0 90 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+			}
+			prop_dynamic //Boardadvertise
+			{
+				"Origin"		"1280 -1031 440"
+				"Angles"		"0 -160 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"3.5"
+			}
+			prop_dynamic //Building Red
+			{
+				"Origin"		"-21 1050 150"
+				"Angles"		"0 -90 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"8"
+			}
+			prop_dynamic //Ship
+			{
+				"Origin"		"-9085 52 -278"
+				"Angles"		"4 -22 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				// "modelscale"	"8"
+			}
+			prop_dynamic //Board Building Red
+			{
+				"Origin"		"438 1210 880"
+				"Angles"		"0 -12 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"3.5"
+			}
+			prop_dynamic //Building B
+			{
+				"Origin"		"-1628 -1041 250"
+				"Angles"		"0 0 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"8"
+			}
+			prop_dynamic //MannKo (Troll)
+			{
+				"Origin"		"600 -2063 1680"
+				"Angles"		"0 92 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"5"
+			}
+			prop_dynamic //Garage
+			{
+				"Origin"		"-1068 -3267 -340"
+				"Angles"		"0 90 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"5"
+			}
+			prop_dynamic //Garage A
+			{
+				"Origin"		"2420 -1802 49"
+				"Angles"		"0 180 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"5"
+			}
+			prop_dynamic //redsomethingidk
+			{
+				"Origin"		"-320 -450 230"
+				"Angles"		"0 -180 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"2"
+			}
+			prop_dynamic //Building
+			{
+				"Origin"		"4282 -413 1100"
+				"Angles"		"0 -175 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"12"
+			}
+			prop_dynamic //Hill Skybox
+			{
+				"Origin"		"-8541 730 -310"
+				"Angles"		"10 -90 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"4"
+			}
+			prop_dynamic //Carrier Tank
+			{
+				"Origin"		"-2745 -3697 -130"
+				"Angles"		"0 40 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"20"
+			}
+			prop_dynamic //Grind
+			{
+				"Origin"		"605 -580 90"
+				"Angles"		"0 -90 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"8"
+			}
+			prop_dynamic //Wall
+			{
+				"Origin"		"1050 -2915 126"
+				"Angles"		"0 180 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"10"
+			}
+			prop_dynamic //Wall
+			{
+				"Origin"		"2592 18 583"
+				"Angles"		"0 -180 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"10"
+			}
+			prop_dynamic //Cloud
+			{
+				"Origin"		"-7535 619 315"
+				"Angles"		"0 -171 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"7"
+			}
+			prop_dynamic //Cloud2
+			{
+				"Origin"		"-9199 -789 300"
+				"Angles"		"0 45 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"12"
+			}
+			prop_dynamic //Trollstation
+			{
+				"Origin"		"-680 2348 -175"
+				"Angles"		"0 0 0"
+				"model"			"models/player/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"1.5"
+			}
+			prop_dynamic //Trollstation
+			{
+				"Origin"		"630 2172 -175"
+				"Angles"		"0 180 0"
+				"model"			"models/player/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"1.5"
+			}
+			prop_dynamic //Trolldoor
+			{
+				"Origin"		"475 2556 -175"
+				"Angles"		"0 180 0"
+				"model"			"models/player/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"1.5"
+			}
+			prop_dynamic //Trollchair
+			{
+				"Origin"		"339 2872 -135"
+				"Angles"		"-15 -45 0"
+				"model"			"models/trollface/trollface.mdl"
+				"classname"		"prop_dynamic"
+				"modelscale"	"0.8"
+			}
+			
+		}
+	}
+
+	SpawnTemplate "Trolled" [$SIGSEGV] 
+
+	SpawnTemplate "Props" [$SIGSEGV] 
+
+	SpawnTemplate "Players" [$SIGSEGV] 
+
+	SpawnTemplate
+	{
+		Name	"WhiteoutEffect"
+		Origin	"0 0 0"
+	}
+
+    SpawnTemplate
+	{
+		Name	"ShakePortal"
+		Origin	"0 0 0"
+	}
+
+    Templates
+	{
+		T_TFBot_Fortnite_SMG
+		{
+			Name				"fortnite smg"
+			Class				Sniper
+			WeaponRestrictions	SecondaryOnly
+			ClassIcon			fortnite_icon
+			Skill				Easy
+			Item				"Pyrovision Goggles"
+			Item				"Military Grade JACK Hat"
+			Item				"The Bruiser's Bandanna"
+			CharacterAttributes
+			{
+				"hand scale"	1.2
+			}
+			
+		}
+		T_TFBot_Fortnite_Assault
+		{
+			Name				"fortnite assault"
+			Class				Sniper
+			WeaponRestrictions	PrimaryOnly
+			ClassIcon			fortnite_icon
+			Skill				Normal
+			Item				"The Hitman's Heatmaker"
+			Item				"Pyrovision Goggles"
+			Item				"Military Grade JACK Hat"
+			Item				"The Bruiser's Bandanna"
+			ItemAttributes
+			{
+				ItemName			"The Hitman's Heatmaker"
+				"fire rate bonus"	0.1
+				"damage bonus"		0.1
+			}
+			CharacterAttributes
+			{
+				"hand scale"		1.2
+				
+			}
+
+		}
+		T_TFBot_Fortnite_Revolver
+		{
+			Name				"fortnite revolver"
+			Class				Spy
+			Action				FetchFlag
+			ClassIcon			fortnite_icon
+			Skill				Easy
+			Item				"tf_weapon_revolver"
+			Item				"Pyrovision Goggles"
+			Item				"Military Grade JACK Hat"
+			Item				"The Bruiser's Bandanna"
+			WeaponRestrictions	PrimaryOnly
+			CharacterAttributes
+			{
+				"hand scale"	1.2
+			}
+		}
+		T_TFBot_Fortnite_Pistol
+		{
+			Name				"lmao fortnite pistol"
+			Class				Scout
+			ClassIcon			fortnite_icon
+			Skill				Easy
+			WeaponRestrictions	SecondaryOnly
+			Item				"Pyrovision Goggles"
+			Item				"Military Grade JACK Hat"
+			Item				"The Bruiser's Bandanna"
+			ItemAttributes
+			{
+				ItemName			tf_weapon_pistol_scout
+				"damage bonus"		2
+				"fire rate penalty"	10
+			}
+			CharacterAttributes
+			{
+				"hand scale"	1.2
+			}
+		}
+		T_TFBot_Fortnite_Rocket_Launcher
+		{
+			Name				"fortnite rocketlauncher"
+			Class				Soldier
+			ClassIcon			fortnite_icon
+			Item				"Pyrovision Goggles"
+			Item				"Military Grade JACK Hat"
+			Item				"The Bruiser's Bandanna"
+			Skill				Normal
+			CharacterAttributes
+			{
+				"hand scale"	1.2
+			}
+		}
+
+		T_TFBot_Fortnite_Bow
+		{
+			Name				"fortnite bow-wow"
+			Class				Sniper
+			WeaponRestrictions	PrimaryOnly
+			ClassIcon			fortnite_icon
+			Skill				Easy
+			Action				 mobber
+			Item				"Pyrovision Goggles"
+			Item				"Military Grade JACK Hat"
+			Item				"The Bruiser's Bandanna"
+			Item				"The Huntsman"
+			CharacterAttributes
+			{
+				"hand scale"	1.2
+			}
+		}
+		T_TFBot_Fortnite_SMG_Giant
+		{
+			Name				"fortnite golden scar"
+			Class				Sniper
+			ClassIcon			fortnite_icon_giant
+			Skill				Easy
+			Attributes			MiniBoss
+			WeaponRestrictions	SecondaryOnly
+			Health				2500
+			Item				"Pyrovision Goggles"
+			Item				"Military Grade JACK Hat"
+			Item				"The Bruiser's Bandanna"
+			Action mobber
+			ItemAttributes
+			{
+				ItemName	tf_weapon_smg
+				"item style override"	1
+				"is australium item"	1
+			}
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier"	0.1
+				"move speed penalty"				0.5
+				"hand scale"						1.5
+				"airblast vertical pushback scale"	0.1
+			}
+		}
+		T_TFBot_Fortnite_VBucks
+		{
+			Name				"FREE V-BUCKS GENERATOR 2021"
+			Class				Scout
+			ClassIcon			fortnite_vbucks
+			UseCustomModel		"models/items/currencypack_large.mdl"
+			WeaponRestrictions	MeleeOnly
+			Scale				1.8
+			Skill Expert
+			Health 2500
+			ClassIcon fortnite_vbucks
+			Item "The Ullapool Caber"
+			Attributes MiniBoss
+			WeaponRestrictions MeleeOnly
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.5
+				"cannot be backstabbed" 1
+				"damage force reduction" 0.5
+				"move speed bonus" 2
+				"override footstep sound set" 7
+			}
+		}
+		T_TFBot_Fortnite_Card_Boss
+		{
+			Name				"ok 19 dollar fortnite card"
+			Class				Demoman
+			Skill				Expert
+			Health				25000
+			WeaponRestrictions	PrimaryOnly
+			ClassIcon			fortnitecard
+			Item				"TF_WEAPON_GRENADELAUNCHER"
+			Item				"Scout Beanie"
+			Attributes			UseBossHealthBar	
+			Attributes 			HoldFireUntilFullReload
+			Attributes			MiniBoss
+			UseHumanModel		1
+			DeathSound			"mm_nomorefortnite.mp3"
+			ShootTemplate  
+			{
+				Name   FortniteCard
+				AttachToProjectile 1
+			}
+			ItemColor [$SIGSEGV] //Set item color
+			{
+				ItemName "Scout Beanie"
+				Red 255
+				Green 0
+				Blue 0
+			}
+			ItemColor [$SIGSEGV] //Set item color
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				Red 0
+				Green 0
+				Blue 255
+			}
+			ItemAttributes
+			{
+				ItemName "Scout Beanie"
+				"set item tint RGB" 4732984
+			}
+			ItemAttributes
+			{
+				ItemName						"TF_WEAPON_GRENADELAUNCHER"
+				"custom projectile model"		"models/props_fortnitecard/fortnite_card.mdl"
+				"clip size penalty" 			2.0
+				"faster reload rate" 			0.4
+				"fire rate bonus" 				0.1
+				"Projectile speed increased" 	1.5
+				"damage bonus"					0.8
+				"dmg bonus vs buildings"		3
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"				0.5
+				"override footstep sound set" 	7
+				"voice pitch scale"				0
+				"airblast vertical vulnerability multiplier" 0.5
+				"airblast vulnerability multiplier" 0.4
+				"damage force reduction" 0.7
+				"override footstep sound set" 7
+				"rage giving scale" 0.5
+				"attach particle effect"	60
+			}
+			
+		}
+		T_TFBot_Troll_Sniper
+        {
+            Name            "cover yourself in jarate"
+            Class           Sniper
+			ClassIcon		troll
+            Skill           Expert
+            Item            "The Sydney Sleeper"
+            Attributes      AlwaysFireWeapon
+            UseCustomModel	models/bots/sniper/bot_sniper_troll.mdl
+            ShootTemplate [$SIGSEGV]  //Shoot defined point template. Template is spawned at bot position in looking direction, forward velocity being applied to spawned entities
+			{
+				Name Jarate
+				Speed 2000
+				Offset "0 0 0"
+				Angles "0 0 0"
+				OverrideShoot 1 
+				Spread 0.1
+				ItemName "The Sydney Sleeper" 
+			}
+            CharacterAttributes
+            {
+                "cannot pick up intelligence" 	1
+                "voice pitch scale"             0
+            }
+        }
+        T_TFBot_Troll
+        {
+            Name            "troll"
+            Class           Soldier
+            Skill           Expert
+			ClassIcon		troll
+            Item            "The Top Notch"
+            PainSound		"mm_hit.mp3"
+			DeathSound		"mm_oof.mp3"
+            UseHumanAnimations 	1 [$SIGSEGV]
+            ItemModel [$SIGSEGV]
+			{
+				ItemName "The Top Notch"
+				Model "models/player/items/all_class/troll_head_scout.mdl"
+                
+			}
+            Taunt [$SIGSEGV] 
+			{
+                Delay   0.1
+				Duration 5
+                Cooldown 10
+				Name "Taunt: Kazotsky Kick"
+			}
+            CharacterAttributes
+            {
+                "cannot pick up intelligence" 	1
+                "voice pitch scale"             0
+                "projectile lifetime"           0.1
+            }
+        }
+        T_TFBot_Troll_Melee
+        {
+            Name            "troll"
+            Class           Soldier
+            Skill           Expert
+			ClassIcon		troll
+            Item            "The Top Notch"
+            PainSound		"mm_hit.mp3"
+			DeathSound		"mm_oof.mp3"
+            Item            "The Escape Plan"
+            WeaponRestrictions  MeleeOnly
+            UseHumanAnimations 	1 [$SIGSEGV]
+            ItemModel [$SIGSEGV]
+			{
+				ItemName "The Top Notch"
+				Model "models/player/items/all_class/troll_head_scout.mdl"
+			}
+            Taunt [$SIGSEGV] 
+			{
+                Delay   0.1
+				Duration 5
+                Cooldown 10
+				Name "RPS Taunt"
+			}
+            CharacterAttributes
+            {
+                "cannot pick up intelligence" 	1
+                "voice pitch scale"             0
+
+            }
+        }
+		T_TFBot_Troll_Buster
+		{
+			Name "troll buster"
+			class Scout
+			Skill Expert
+			Health 2500
+			ClassIcon troll29
+			Item "The Ullapool Caber"
+			Attributes MiniBoss
+			WeaponRestrictions MeleeOnly
+			UseCustomModel	"models/trollface/coolface4.mdl"
+			Scale			1
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.5
+				"cannot be backstabbed" 1
+				"damage force reduction" 0.5
+				"move speed bonus" 2
+				"override footstep sound set" 7
+			}
+		}
+        T_TFBot_Trolldier
+        {
+            Name            "trolldier"
+            Class           Soldier
+            Skill           Expert
+			ClassIcon		troll
+            RocketJump 		1
+            Item            "The Top Notch"
+            Item            "The Market Gardener"
+            Item            "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+            PainSound		"mm_hit.mp3"
+			DeathSound		"mm_oof.mp3"
+            ItemModel [$SIGSEGV]
+			{
+				ItemName "The Top Notch"
+				Model "models/player/items/all_class/troll_head_scout.mdl"
+			}
+            UseMeleeThreatPrioritization 1
+            CharacterAttributes
+            {
+                "cannot pick up intelligence"   1
+                "increased jump height"         2
+                "projectile lifetime"           0.1
+            }
+        }
+        T_TFBot_Trolldier_Spammer_Faster
+        {
+            Name            "trolldier"
+            Class           Soldier
+            Skill           Expert
+			ClassIcon		troll
+            Health          3800
+            Attributes      AlwaysFireWeapon
+            Attributes      MiniBoss
+			WeaponRestrictions PrimaryOnly
+            Item            "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+            Item            "The Top Notch"
+            ItemModel [$SIGSEGV]
+			{
+				ItemName "The Top Notch"
+				Model "models/player/items/all_class/troll_head_scout.mdl"
+			}
+            DropWeapon      1
+            ItemAttributes
+			{
+				ItemName                        "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+				"faster reload rate"            -0.3
+				"fire rate bonus"               0.01
+                "is australium item"            1
+                "projectile lifetime"           0.1
+                "maxammo primary increased"     100
+                "damage bonus"                  0
+                "clip size bonus"               100
+                "item style override"           1
+				"is australium item"            1
+                "turn to gold"                  1
+			}
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.4
+				"damage force reduction"            0.4
+				"move speed bonus"                  0.5
+				"override footstep sound set"       3
+				"Projectile speed increased"        0.65
+                "projectile lifetime"               0.1
+                "damage bonus"                      1
+                "item style override"               1
+				"is australium item"                1
+                "turn to gold"                      1
+			}
+        }
+		T_TFBot_SusBuster
+		{
+			Name "sentry bSUSter"
+			class Spy
+			Skill Expert
+			Health 2500
+			ClassIcon sentry_bsuster
+			Item "The Ullapool Caber"
+			Attributes MiniBoss
+			WeaponRestrictions MeleeOnly
+			UseCustomModel	"models/bots/demo/bot_sus_buster.mdl"
+			Scale			1
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.5
+				"cannot be backstabbed" 1
+				"damage force reduction" 0.5
+				"move speed bonus" 2
+				"override footstep sound set" 7
+			}
+		}
+		T_TFBot_SusBuster_v2
+		{
+			Name "sentry bSUSter"
+			class Demoman
+			Skill Expert
+			Health 2500
+			ClassIcon sentry_bsuster
+			Item "The Ullapool Caber"
+			Attributes MiniBoss
+			WeaponRestrictions MeleeOnly
+			UseCustomModel	"models/bots/demo/bot_sus_buster.mdl"
+			Scale			1.7
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.5
+				"cannot be backstabbed" 1
+				"damage force reduction" 0.5
+				"move speed bonus" 2
+				"override footstep sound set" 7
+				"voice pitch scale"	0
+			}
+		}
+		T_TFBot_Amongus
+		{
+			Name "Amongus"
+			class Spy
+			Skill Expert
+			ClassIcon jermasus
+			WeaponRestrictions MeleeOnly
+			UseCustomModel	"models/bots/demo/bot_redsus_buster.mdl"
+			Scale			1.5
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.5
+				"cannot be backstabbed" 1
+				"damage force reduction" 0.5
+				"move speed bonus" 2
+				"override footstep sound set" 7
+				"voice pitch scale"	0
+			}
+		}
+		T_TFBot_Purpleguy
+		{
+			Name 		"Purple Guy"
+			Health		10000
+			class 		Spy
+			Skill 		Expert
+			ClassIcon 	jermasus
+			WeaponRestrictions MeleeOnly
+			UseCustomModel	"models/bots/demo/bot_purpleguy_buster.mdl"
+			Scale			1
+		}
+		T_TFBot_Cow_Milk
+		{
+			Name 				"cow milk"
+			Class 				Scout
+			Skill 				Hard
+			ClassIcon			cow
+			WeaponRestrictions 	SecondaryOnly
+			Attributes 			AlwaysFireWeapon
+			Item 				"Mad Milk"
+			UseCustomModel 		"models/props_2fort/cow001_reference.mdl"
+			ItemAttributes
+			{
+				ItemName "Mad Milk"
+				"effect bar recharge rate increased" -2
+			}
+			
+		}
+		T_TFBot_Giant_Cow_Rocket
+		{
+			Template 	T_TFBot_Giant_Soldier
+			Name		"oops, all cows!"
+			ClassIcon	cow_giant
+			UseCustomModel 			"models/props_2fort/cow001_reference.mdl"
+			RocketCustomModel 		"models/props_2fort/cow001_reference.mdl"
+			CharacterAttributes
+			{
+				"damage bonus"	0.5
+			}
+			CustomWeaponModel [$SIGSEGV]
+			{
+				Slot 						0
+				Model 						"models/props_2fort/cow001_reference.mdl"
+			}
+		}
+		T_TFBot_Cow_Gatebot
+		{ 
+			Name				"oops, all cows"
+			ClassIcon			cow
+			UseCustomModel 		"models/props_2fort/cowgatebot_reference.mdl"
+			RocketCustomModel 	"models/props_2fort/cow001_reference.mdl"
+			CustomWeaponModel 	[$SIGSEGV]
+			{
+				Slot 						0
+				Model 						"models/props_2fort/cow001_reference.mdl"
+			}
+			Class Soldier
+			EventChangeAttributes
+			{
+				Default
+				{
+					Skill Easy
+					Attributes IgnoreFlag
+					BehaviorModifiers Push
+					Tag bot_gatebot
+					Tag nav_prefer_gate1_flank
+					CharacterAttributes
+					{
+						"damage bonus"	0.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Skill Easy
+					ItemAttributes
+					{
+						ItemName "MvM GateBot Light Soldier"
+						"item style override" 1
+					}
+					CharacterAttributes
+					{
+						"damage bonus"	0.5
+					}
+				}
+			}
+		}
+		T_TFBot_Cow_Launcher
+		{
+			Name					"cow pusher"
+			Template 				T_TFGateBot_Giant_Soldier_RocketPush
+			ClassIcon				cow_giant 
+			"UseCustomModel" 		"models/props_2fort/cowgatebot_reference.mdl"
+			"RocketCustomModel" 	"models/props_2fort/cow001_reference.mdl"
+			CustomWeaponModel [$SIGSEGV]
+			{
+				Slot 						0
+				Model 						"models/props_2fort/cow001_reference.mdl"
+			}
+			CharacterAttributes
+			{
+				"damage bonus"	0.25
+			}
+		}
+		T_TFBot_Cow_Cowtapult
+		{
+			Name		"cowtapult"
+			Template	T_TFBot_Giant_Demoman
+			ClassIcon	cow_giant
+			"UseCustomModel" 	"models/props_2fort/cowtroll_reference.mdl"
+			Item	"TF_WEAPON_GRENADELAUNCHER"
+			ItemAttributes
+			{
+				ItemName	"TF_WEAPON_GRENADELAUNCHER"
+				"custom projectile model"	"models/props_2fort/cow001_reference.mdl"
+			}
+			CharacterAttributes
+			{
+				"damage bonus"	0.25
+			}
+		}
+		T_TFBot_Holycow
+		{
+			Class					Soldier
+			Skill					Easy
+			Name					"holy cow!"
+			ClassIcon				cow
+			"UseCustomModel" 		"models/props_2fort/cow001_reference.mdl"
+			"RocketCustomModel" 	"models/props_2fort/cow001_reference.mdl"
+			HomingRockets 	[$SIGSEGV]
+			{
+				IgnoreDisguisedSpies 	1
+				IgnoreStealthedSpies 	1
+				RocketSpeed 			0.5 
+				TurnPower 				90 
+				MaxAimError 			200
+			}
+			CustomWeaponModel [$SIGSEGV]
+			{
+				Slot 						0
+				Model 						"models/props_2fort/cow001_reference.mdl"	
+			}
+			CharacterAttributes
+			{
+				"damage bonus"	0.5
+			}
+		}
+		T_TFBot_Cow
+		{
+			Template			T_TFBot_Scout_Melee
+			Name				"cow"
+			ClassIcon			cow2
+			UseCustomModel 		"models/props_2fort/cow001_reference.mdl"
+		}
+		T_TFBot_Cow_Mad
+		{
+			Template	T_TFBot_Scout_Bonk
+			Name		"madcow"
+			Action		Mobber [$SIGSEGV]
+			ClassIcon	cow
+			CustomWeaponModel [$SIGSEGV]
+			{
+				Slot 						2
+				Model 						"models/props_2fort/cow001_reference.mdl"
+			}
+			UseCustomModel 					"models/props_2fort/cow001_reference.mdl"
+		}
+		T_TFBot_BigChungus
+		{
+			Name "big chungus"
+			Class Engineer
+			Skill Expert
+			Health 3000
+			ClassIcon bigchungus2
+			Item	"TTG Max Hat"
+			Item 	"The Level Three Chin"
+			Item	"The Egghead's Overalls"
+			Attributes MiniBoss
+			Attributes	AlwaysCrit
+			Attributes	AlwaysFireWeapon
+			Action		FetchFlag
+			WeaponRestrictions MeleeOnly
+			UseHumanModel		1
+			DamageAppliesCond [$SIGSEGV]
+            {
+				Index 84
+			  	Duration 4     
+            }
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0
+				"damage force reduction" 0
+				"move speed bonus" 0.75
+				"override footstep sound set" 7
+			}
+		}
+		T_TFBot_Smol_BigChungus
+		{
+			Name "chungus"
+			Class Engineer
+			Skill Expert
+			ClassIcon bigchungus
+			Item	"TTG Max Hat"
+			Item 	"The Level Three Chin"
+			Item	"The Egghead's Overalls"
+			Action		FetchFlag
+			WeaponRestrictions MeleeOnly
+			UseHumanModel		1
+		}
+		T_TFBot_BigChungus_Buster
+		{
+			Name			"big chungus buster"
+			class			Engineer
+			Skill			expert
+			Item			"TTG Max Hat"
+			Item 			"The Level Three Chin"
+			Item			"The Egghead's Overalls"
+			UseHumanModel	1
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.5
+				"cannot be backstabbed" 			1
+				"damage force reduction" 			0.5
+				"move speed bonus" 					2
+				"override footstep sound set" 		7
+				"voice pitch scale"					0
+				"gesture speed increase" 			1.5
+			}
+		}
+		T_TFBot_SuperBigChungus
+		{
+			Name	 	"super duper deluxe chungus"
+			Class 		Heavy
+			Skill 		Normal
+			Health 		20000
+			Item		"TTG Max Hat"
+			Item 		"The Level Three Chin"
+			Item		"The Egghead's Overalls"
+			ClassIcon 	superbigchungus
+			Attributes 	MiniBoss
+			Attributes	UseBossHealthBar
+			Attributes	AlwaysCrit
+			Attributes	AlwaysFireWeapon
+			WeaponRestrictions MeleeOnly
+			Taunt [$SIGSEGV]
+			{
+				Delay 20
+				Cooldown 6
+				Duration 5
+			}
+			Scale		1.8
+			UseHumanModel		1
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.3
+				"damage force reduction" 0.3
+				"move speed bonus" 0.5
+				"override footstep sound set" 7
+				"crit forces victim to laugh" 1
+				"damage bonus" 0
+				"gesture speed increase" 1.5
+			}
+		}
+	}
+	Mission //Wave 1
+	{
+		BeginAtWave 1
+		RunForThisManyWaves 1
+		Objective DestroySentries
+		Where spawnbot_among_us
+		CooldownTime 30
+		TFBot
+			{
+				Template T_TFBot_SusBuster
+			}
+	}
+
+	Mission //Wave 2 
+	{
+		BeginAtWave 2
+		RunForThisManyWaves 1
+		Objective DestroySentries
+		Where spawnbot_main0
+		Where spawnbot_main1
+		Where spawnbot_main2
+		CooldownTime 30
+		SuppressSentryBusterModel 1 [$SIGSEGV]
+		
+		TFBot
+		{
+			Template 			T_TFBot_SentryBuster
+			Tag 				bot_sentrybuster
+			ClassIcon			cow3
+			Name				"steak buster"
+			DeathSound			"mm_moo.mp3"
+			UseCustomModel 		"models/props_2fort/cow001_reference.mdl"
+		}
+	}
+
+	Mission //Wave 3 - 5
+	{
+		BeginAtWave 3
+		RunForThisManyWaves 1
+		Objective DestroySentries
+		Where spawnbot_among_us
+		CooldownTime 30
+		SuppressSentryBusterModel 1 [$SIGSEGV]
+		RandomChoice
+		{
+			TFBot
+			{
+				Template T_TFBot_SusBuster
+			}
+			TFBot
+			{
+				Template T_TFBot_SusBuster_v2
+			}
+		}
+	}
+
+	Mission //Wave 3 - 5
+	{
+		BeginAtWave 4
+		RunForThisManyWaves 1
+		Objective DestroySentries
+		Where spawnbot_upper0
+		CooldownTime 30
+		RandomChoice
+		{
+			TFBot
+			{
+				Template T_TFBot_BigChungus_Buster
+			}
+		}
+	}
+
+	Mission //Wave 6
+	{
+		BeginAtWave 6
+		RunForThisManyWaves 1
+		Objective DestroySentries
+		Where portal
+		Where portal2
+		CooldownTime 30
+		SuppressSentryBusterModel 1 [$SIGSEGV]
+		TFBot
+		{
+			Template	T_TFBot_Troll_Buster
+		}
+	}
+	
+	Mission //Wave 7
+	{
+		BeginAtWave 7
+		RunForThisManyWaves 1
+		Objective DestroySentries
+		Where	spawnbot_among_us
+		CooldownTime 30
+		SuppressSentryBusterModel 1 [$SIGSEGV]
+		RandomChoice
+		{
+			TFBot
+			{
+				Template T_TFBot_SusBuster
+			}
+			TFBot
+			{
+				Template T_TFBot_SusBuster_v2
+			}
+		}
+	}
+
+	Mission //Wave 8
+	{
+		BeginAtWave 8
+		RunForThisManyWaves 1
+		Objective DestroySentries
+		Where spawnbot_main0
+		Where spawnbot_main1
+		Where spawnbot_main2
+		CooldownTime 30
+		SuppressSentryBusterModel 1 [$SIGSEGV]
+		TFBot
+		{
+			Template T_TFBot_Fortnite_VBucks
+		}
+	}
+
+	Mission //Wave 9
+	{
+		BeginAtWave 9
+		RunForThisManyWaves 1
+		Objective DestroySentries
+		Where spawnbot_among_us
+		CooldownTime 30
+		SuppressSentryBusterModel 1 [$SIGSEGV]
+		RandomChoice
+		{
+			TFBot
+			{
+				Template 	T_TFBot_SusBuster
+			}
+			TFBot
+			{
+				Template 	T_TFBot_SusBuster_v2
+			}
+
+		}
+	}
+
+
+	Mission // For Wave 2
+	{
+		Where spawnbot_upper0
+		Where spawnbot_main1
+		Where spawnbot_main2
+		Objective Sniper
+		BeginAtWave 2
+		RunForThisManyWaves 1
+		DesiredCount 1
+		InitialCooldown 35
+		CooldownTime 35
+	
+		TFBot
+		{ 	
+			Template 			T_TFBot_Sniper_Sydney_Sleeper
+			Name				"cow piss"
+			ClassIcon			cow2
+			UseCustomModel		"models/props_2fort/cowgatebot_reference.mdl"
+			
+		}
+	}
+	
+	// fortniteburger
+
+		Wave
+		{
+			WaitWhenDone 60
+			Checkpoint Yes
+			StartWaveOutput
+			{
+				Target wave_start_relay
+				Action Trigger
+			}
+			InitWaveOutput
+			{
+				Target holograms_3way_relay
+				Action Trigger
+			}
+			WaveSpawn
+			{
+				TotalCurrency 35
+				name 11
+				Where spawnbot_main0
+				Where spawnbot_main1
+				Where spawnbot_main2
+				TotalCount 35
+				MaxActive 20
+				SpawnCount 1
+				WaitBetweenSpawns 1
+				RandomChoice
+				{
+					TFBot
+					{
+						Class Heavyweapons
+						Classicon pyro_troll
+						name "punch"
+						WeaponRestrictions MeleeOnly
+					}
+					TFBot
+					{
+						Class Heavyweapons
+						Classicon pyro_troll
+						name "punch"
+						WeaponRestrictions MeleeOnly
+					}
+					TFBot
+					{
+						Class Heavyweapons
+						Classicon pyro_troll
+						name "punch"
+						WeaponRestrictions MeleeOnly
+					}
+					TFBot
+					{
+						Class Heavyweapons
+						Classicon pyro_troll
+						Taunt [$SIGSEGV] //Taunt periodically
+						{
+							Delay 4
+							Cooldown 10
+							Repeats 0 //troll
+							IfSeeTarget 1
+						}
+						CharacterAttributes
+						{
+							"gesture speed increase" 2
+						}
+						name "lol"
+						WeaponRestrictions MeleeOnly
+					}
+					TFBot
+					{
+						Class Heavyweapons
+						Classicon pyro_troll
+						name "car"
+						DamageAppliesCond [$SIGSEGV]
+						{
+							Name TF_COND_HALLOWEEN_KART // <-- required: condition name/index
+							Duration 8         // <-- optional: limited duration
+						}
+						WeaponRestrictions MeleeOnly
+					}
+				}
+			}
+			WaveSpawn 
+			{
+				TotalCurrency 31
+				Where spawnbot_main0
+				TotalCount 31
+				MaxActive 20
+				SpawnCount 1
+				WaitBetweenSpawns 0
+				WaitBeforeStarting 0
+				WaitForAllDead 11
+				RandomChoice
+				{
+					TFBot
+					{
+							Name	"broken soldier"
+							Class	Soldier
+							Classicon pyro_troll
+							Skill	Easy
+							Attributes	AlwaysFireWeapon
+							ItemAttributes
+							{
+								ItemName	"the liberty launcher"
+								"stun enemies wielding same weapon"	1
+								"Blast radius increased"	1.15
+								"damage bonus" 0.31
+							}
+							CharacterAttributes
+							{
+								"head scale"	0
+								"voice pitch scale"	0.5
+								"faster reload rate" 4
+							}
+							Item	"the liberty launcher"
+					}
+					TFBot
+					{
+							Name	"broken soldier"
+							Class	Soldier
+							Skill	hard
+							Classicon pyro_troll
+							Attributes	AlwaysFireWeapon
+							ItemAttributes
+							{
+								ItemName	"the liberty launcher"
+								"stun enemies wielding same weapon"	1
+								"damage bonus" 0.31
+							}
+							CharacterAttributes
+							{
+								"hand scale"	0.5
+								"faster reload rate" 1.5
+								"voice pitch scale"	1.5
+							}
+							Item	"the liberty launcher"
+					}
+					TFBot
+					{
+							Name	"broken soldier"
+							Class	Soldier
+							Skill	expert
+							Classicon pyro_troll
+							Attributes	AlwaysFireWeapon
+							ItemAttributes
+							{
+								ItemName	"the liberty launcher"
+								"damage bonus" 0.31
+								"stun enemies wielding same weapon"	1
+							}
+							CharacterAttributes
+							{
+								"torso scale"	0
+								"move speed bonus" 0.9
+							}
+							Item	"the liberty launcher"
+					}
+				}
+			}
+		WaveSpawn 
+		{
+			TotalCurrency 150
+			WaitForAllDead 11
+			name XD
+			Where spawnbot_upper0
+			Where spawnbot_main1
+			Where spawnbot_main2
+			TotalCount 2
+			MaxActive 2
+			SpawnCount 1
+			WaitBetweenSpawns 20
+			TFBot
+				{
+					Name	"mini gun heavy"
+					Skill	Hard
+					Template	T_TFBot_Giant_Heavyweapons
+					ItemAttributes
+					{
+						ItemName	tf_weapon_minigun
+						"damage bonus"	0.1
+						"fire rate bonus"	0.5
+					}
+					CharacterAttributes
+					{
+						"hand scale"	0.2
+						"dmg taken increased"	1.1
+					}
+				}
+		}
+		WaveSpawn 
+		{
+			TotalCurrency 50
+			WaitForAllSpawned XD
+			Where spawnbot_main0
+			Where spawnbot_main1
+			Where spawnbot_main2
+			TotalCount 1
+			MaxActive 2
+			SpawnCount 1
+			WaitBetweenSpawns 20
+			TFBot
+			{
+				Name	"hello guys im not late right"
+				Skill	expert
+				Classicon pyro_troll_giant
+				class scout
+				Attributes AlwaysFireWeapon
+				CharacterAttributes
+				{
+					"move speed bonus" 0.2
+					"faster reload rate" 0.1
+				}
+			}
+		}
+	}
+	Wave
+	{
+		WaitWhenDone 60
+		Checkpoint Yes
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		InitWaveOutput
+		{
+			Target holograms_3way_relay
+			Action Trigger
+		}
+		// DoneOutput
+		// {
+		// 	Target sourcemod_plugin
+		// 	Action "PrintMessage(The Overseer has joined the game, 5)::PrintMessage(The Overseer joined team SPECTATOR, 12)"
+		// }
+		DoneOutput
+		{
+			Target sourcemod_plugin
+			Action "DestroyEntityTemplate(CowProp)::PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  gangsta!,10)::PrintMessage(The Overseer left the game (Disconnect by user.),12)"
+		}
+		WaveSpawn // Dummy
+		{
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 0
+			FirstSpawnWarningSound "mm_farm.mp3"
+		}
+		WaveSpawn // Dummy
+		{
+			Name	"cows"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 10
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "EntityInput(wave_start_relay, Trigger)::DeployEntityTemplate(CowProp)"
+			}
+		}
+		WaveSpawn
+		{
+			Name 	"cows1"
+			WaitForAllSpawned	"cows"
+			Where 	spawnbot_main0
+			Where	spawnbot_main1
+	 		Where 	spawnbot_main2
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 0
+			TotalCurrency 125
+
+			TFBot
+			{
+				Template	T_TFBot_Giant_Cow_Rocket
+			}
+		}
+		WaveSpawn
+		{
+			Name 	"cows1"
+			WaitForAllSpawned	"cows"
+			Where 	spawnbot_upper0
+			Where	spawnbot_main0
+			Where	spawnbot_main1
+	 		Where 	spawnbot_main2
+			TotalCount 20
+			MaxActive 10
+			SpawnCount 2
+			WaitBeforeStarting 10
+			WaitBetweenSpawns 3
+		
+			TotalCurrency 125
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_Cow_Milk
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+				TFBot
+				{
+					Template	T_TFBot_Cow_Milk
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+				TFBot
+				{
+					Template	T_TFBot_Cow_Milk
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+				TFBot
+				{
+					Template	T_TFBot_Cow_Milk
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+				TFBot
+				{
+					Template	T_TFBot_Cow_Milk
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name 	"cows2"
+			WaitForAllDead	"cows1"
+			Where 	spawnbot_upper0
+			Where	spawnbot_main1
+	 		Where 	spawnbot_main2
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 15
+			WaitBetweenSpawns 0
+			TotalCurrency 125
+			TFBot
+			{
+				Template	T_TFBot_Cow_Launcher
+				CharacterAttributes
+				{
+					"voice pitch scale"	0
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name 	"cows2"
+			WaitForAllDead	"cows1"
+			Where 	spawnbot_main0
+			Where	spawnbot_main1
+	 		Where 	spawnbot_main2
+			TotalCount 20
+			MaxActive 10
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 10
+			TotalCurrency 125
+			TFBot
+			{
+				Template	T_TFBot_Cow_Gatebot
+				CharacterAttributes
+				{
+					"voice pitch scale"	0
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name 	"cows3"
+			WaitForAllDead	"cows2"
+			Where	spawnbot_upper0
+			Where	spawnbot_main1
+	 		Where 	spawnbot_main2
+			TotalCount 3
+			MaxActive 2
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 20
+			TotalCurrency 200
+			TFBot
+			{
+				Template	T_TFBot_Cow_Cowtapult
+				CharacterAttributes
+				{
+					"voice pitch scale"	0
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name 	"cows3"
+			WaitForAllDead	"cows2"
+			Where	spawnbot_upper0
+			Where 	spawnbot_main0
+			Where	spawnbot_main1
+	 		Where 	spawnbot_main2
+			 
+			TotalCount 29
+			MaxActive 8
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 1.5
+		
+			TotalCurrency 110
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_Cow_Mad
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+				TFBot
+				{
+					Template	T_TFBot_Cow_Mad
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+				TFBot
+				{
+					Template	T_TFBot_Cow_Mad
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+				TFBot
+				{
+					Template	T_TFBot_Cow_Mad
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+				TFBot
+				{
+					Template	T_TFBot_Cow_Mad
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+				TFBot
+				{
+					Template	T_TFBot_Holycow
+					CharacterAttributes
+					{
+						"voice pitch scale"	0
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllSpawned	"cows"
+			Where		spawnbot_main0
+			Where		spawnbot_main1
+			Where		spawnbot_main2
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 0
+			Support		1
+			TotalCurrency 0
+			TFBot
+			{
+				Template	T_TFBot_Cow
+				CharacterAttributes
+				{
+					"voice pitch scale"	0
+				}
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			WaitForAllSpawned	"cows2"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 12
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(The Overseer has joined the game, 5)::PrintMessage(The Overseer joined team SPECTATOR, 12)"
+			}
+		}
+	}
+
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		InitWaveOutput
+		{
+			Target holograms_3way_relay
+			Action Trigger
+		}
+		WaveSpawn
+		{
+			Name	gangsta
+			TotalCurrency	300
+			TotalCount	60
+			MaxActive	22
+			SpawnCount	2
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	1
+			Where	spawnbot_main0
+			FirstSpawnWarningSound    "mm_gangsta.mp3"
+			RandomChoice
+			{
+				TFBot
+				{
+					Health	125
+					Name	"gangsta!!!!!!!"
+					Class	Scout
+					Skill	Easy
+					Classicon gangsta
+					ItemAttributes
+					{
+						ItemName	"scout beanie"
+						"attach particle effect"	60
+					}
+					Item	"scout beanie"
+				}
+				TFBot
+				{
+					Health	200
+					Name	"gangsta!!!!!!!!"
+					Classicon gangsta
+					Class	Soldier
+					Skill	Normal
+					WeaponRestrictions	SecondaryOnly
+					ItemAttributes
+					{
+						ItemName	"killer exclusive"
+						"attach particle effect"	60
+					}
+					Item	"killer exclusive"
+				}
+				TFBot
+				{
+					Health	175
+					Classicon gangsta
+					Name	"Swag 8)))))"
+					Class	Demoman
+					Skill	Expert
+					Item	"towering pillar of summer shades"
+				}
+				TFBot
+				{
+					Classicon gangsta
+					Health	300
+					Name	"epic gangsta!!"
+					Class	HeavyWeapons
+					Skill	Easy
+					Item	"tomislav"
+					Item	"capone's capper"
+				}
+				TFBot
+				{
+					Classicon gangsta
+					Health	125
+					Name	"im the g that little homies wanna be"
+					Class	Sniper
+					Skill	Hard
+					Attributes	"AlwaysFireWeapon"
+					Item	"the hitman's heatmaker"
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	boss1
+			TotalCurrency	0
+			TotalCount	4
+			MaxActive	2
+			SpawnCount	1
+			Support Limited
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	10
+			Where	spawnbot_gatea
+			TFbot
+			{
+				Template T_TFBot_Giant_Heavyweapons
+				Name "the police"
+				CharacterAttributes
+					{
+						"heal on hit for rapidfire"	15
+					}
+					Item	"copper's hard top"
+				AddCond 
+				{
+					Name "TF_COND_REPROGRAMMED" 
+					Delay 0.1
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name	boss
+			WaitForAllSpawned	gangsta
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	5
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	10
+			Where	spawnbot_main0	
+			Squad
+			{
+				TFBot
+				{
+					Template	T_TFBot_Giant_Heavyweapons
+					Classicon gangstA
+					ItemAttributes
+					{
+						ItemName	tomislav
+						"damage bonus"	1.2
+						"item style override"	1
+						"is australium item"	1
+					}
+					ItemAttributes
+					{
+						ItemName	"capone's capper"
+						"attach particle effect"	60
+					}
+					Item	"tomislav"
+					Item	"capone's capper"
+				}
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	boss
+			TotalCurrency	300
+			TotalCount	1
+			MaxActive	5
+			SpawnCount	1
+			WaitBeforeStarting	5
+			Where	spawnbot_dripboss
+			FirstSpawnWarningSound    "mm_drip.mp3"
+			TFBot
+			{
+				ClassIcon	heavy_drip
+				Health	10000
+				Name	"Captain Drip"
+				Scale	1.8
+				Class	Heavyweapons
+				Skill	Hard
+				WeaponRestrictions	MeleeOnly
+				Attributes	"UseBossHealthBar"
+				Attributes AlwaysFireWeapon
+				Attributes AlwaysCrit
+				Attributes miniboss
+				ItemAttributes
+				{
+					ItemName	"fists of steel"
+					"melee range multiplier"	69
+					"fire rate penalty"	2.5
+					"damage bonus" 7.9
+					"ragdolls plasma effect"	1
+				}
+				CharacterAttributes
+				{
+					"damage force reduction"	0.1
+					"airblast vulnerability multiplier"	0.1
+					"move speed bonus"	0.5
+				}
+				Item	"fists of steel"
+				Item	"war head"
+				Item	"dead of night"
+			}
+		}
+	}
+
+	//Big Chungus $701
+	//01 big chungus boss [Heavy with Minigun]
+	//50 redditor [Heavy Punch]
+	//04 big chungus [Heavy Boss]
+	//Support:
+	//01 chungus buster
+	//01 boxtroll
+
+	Wave
+	{
+		WaitWhenDone	65
+		Checkpoint	Yes
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		InitWaveOutput
+		{
+			Target holograms_3way_relay
+			Action Trigger
+		}
+		WaveSpawn // Dummy
+		{
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 0
+			FirstSpawnWarningSound "mm_bigchungus.mp3"
+		}
+		
+		WaveSpawn
+		{
+			Name 	4A
+			Where 	spawnbot_main0
+			Where	spawnbot_upper0
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			TotalCount 10
+			MaxActive 10
+			SpawnCount 10
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 1		
+			TotalCurrency 200
+			TFBot
+			{ 
+				Template 	T_TFBot_Smol_BigChungus
+				Attributes	AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus"	0.1
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name 	4B1
+			WaitForAllDead	4A
+			Where 	spawnbot_main0
+			Where	spawnbot_upper0
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			TotalCount 28
+			MaxActive 9
+			SpawnCount 3
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5	
+			TotalCurrency 200
+			TFBot
+			{ 
+				Template 	T_TFBot_Smol_BigChungus
+				Attributes	AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus"	0.1
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name 	4B
+			WaitForAllSpawned	4B1
+			Where 	spawnbot_main0
+			Where	spawnbot_upper0
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			TotalCount 12
+			MaxActive 12
+			SpawnCount 12
+			WaitBeforeStarting 8
+			WaitBetweenSpawns 0
+			TotalCurrency 200
+			TFBot
+			{ 
+				Template 	T_TFBot_Smol_BigChungus
+				Attributes	AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus"	0.1
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name 	4B
+			WaitForAllSpawned	4A
+			Where 	spawnbot_main0
+			Where	spawnbot_upper0
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			TotalCount 4
+			MaxActive 2
+			SpawnCount 1
+			WaitBeforeStarting 10
+			WaitBetweenSpawns 25
+			TotalCurrency 200
+			TFBot
+			{ 
+				Template 	T_TFBot_BigChungus
+				CharacterAttributes
+				{
+					"damage bonus"	0.1
+				}
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 7
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 7.2
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 7.4
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 7.6
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 7.8
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 8
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 8
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 8
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 8
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 8
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 8.2
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 8.4
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus has joined the game)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn // Dummy
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 25
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintMessage(chungus joined team ROBOTS)"
+			}
+		}
+		WaveSpawn
+		{
+			Name 	4C
+			WaitForAllDead	4B
+			Where 	spawnbot_main0
+			Where	spawnbot_upper0
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 5
+			WaitBetweenSpawns 0
+			TotalCurrency 0
+			FirstSpawnWarningSound	"mm_bigchungus_meme.mp3"
+			Squad
+			{
+				TFBot
+				{ 
+					Template 	T_TFBot_SuperBigChungus
+					Action		FetchFlag
+				}
+				TFBot
+                {
+                    Name "chungus"
+                    Class Engineer
+                    ClassIcon sentry_buster
+                    Health 10000
+                    Skill Expert
+                    Action SuicideBomber     
+                    Attributes SuppressFire
+                    Item "The Ullapool Caber"
+                    UseHumanModel 1  
+					Item		"TTG Max Hat"
+					Item 		"The Level Three Chin"
+					Item		"The Egghead's Overalls"
+					Addcond
+					{
+						Index 51
+						Duration 100
+					}
+                    CharacterAttributes
+                    {
+                        "move speed bonus" 3
+                        "dmg taken increased" 0
+                        "damage force reduction" 0
+                        "airblast vulnerability multiplier" 0
+                        "rage giving scale" 0
+						"cannot pick up intelligence" 1	
+                    }
+                }
+				TFBot
+                {
+                    Name "chungus"
+                    Class Engineer
+                    ClassIcon sentry_buster
+                    Health 10000
+                    Skill Expert
+                    Action SuicideBomber     
+                    Attributes SuppressFire
+                    Item "The Ullapool Caber"
+                    UseHumanModel 1
+					Item		"TTG Max Hat"
+					Item 		"The Level Three Chin"
+					Item		"The Egghead's Overalls"
+					Addcond
+					{
+						Index 51
+						Duration 100
+					}
+                   	CharacterAttributes
+                    {
+                        "move speed bonus" 3
+                        "dmg taken increased" 0
+                        "damage force reduction" 0
+                        "airblast vulnerability multiplier" 0
+                        "rage giving scale" 0
+						"cannot pick up intelligence" 1	
+                    }
+                }
+			}
+		}
+		WaveSpawn
+		{
+			Name 	4S
+			WaitForAllDead	4B
+			Where 	spawnbot_main0
+			Where	spawnbot_upper0
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			TotalCount 12
+			MaxActive 12
+			SpawnCount 12
+			WaitBeforeStarting 25
+			WaitBetweenSpawns 0	
+			TotalCurrency 0
+			RandomChoice
+			{
+				Squad
+				{
+					TFBot
+					{
+						Name "chungus"
+						Class Engineer
+						Health 10000
+						Skill Expert
+						Action SuicideBomber     
+						Attributes SuppressFire
+						Item "The Ullapool Caber"
+						UseHumanModel 1  
+						Item		"TTG Max Hat"
+						Item 		"The Level Three Chin"
+						Item		"The Egghead's Overalls"
+						Addcond
+						{
+							Index 51
+							Duration 100
+						}
+						CharacterAttributes
+						{
+							"move speed bonus" 3
+							"dmg taken increased" 0.1
+							"damage force reduction" 69
+							"airblast vulnerability multiplier" 69
+							"rage giving scale" 69
+						}
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name 	4S
+			WaitForAllDead	4A
+			Where 	spawnbot_main0
+			Where	spawnbot_upper0
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5	
+			TotalCurrency 0
+			Support			1
+			TFBot
+			{ 
+				Template 	T_TFBot_Smol_BigChungus
+				Name		"chungus"
+				Attributes	AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus"	0.1
+				}
+			}
+		}
+	}
+
+	Wave 
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		InitWaveOutput
+		{
+			Target holograms_3way_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target sourcemod_plugin
+			Action "FakeWaveHudValues(420,0)::PrintMessage(troll joined the game, 5.0)::PrintMessage(troll joined team SPECTATOR, 12.0)::PrintMessage([AD] https://australium.pineapple.tf/ for free australium, 30.0)"
+		}
+		WaveSpawn
+		{
+			Where 	spawnbot_gatea
+			TotalCount 2
+			MaxActive 2
+			Support 1
+			SpawnCount 1
+			WaitBeforeStarting 5
+			WaitBetweenSpawns 20
+			TotalCurrency 0
+			TFBot
+			{
+			Template T_TFbot_Giant_soldier_extended_buff_banner
+			name "hello fellas"
+			Action Mobber
+			CharacterAttributes
+			{
+			"faster reload rate" 0.1
+			}
+			AddCond //Adds conditions to bots
+				{
+					Name "TF_COND_REPROGRAMMED" // Condition to apply. List of available conditions https://wiki.teamfortress.com/wiki/Cheats#addcond
+					//Index 43 //Condition index can be used instead
+					Delay 0.1 // Delay before the condition activates (Default: 0)
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Where 	spawnbot_main0
+			TotalCount 60
+			name fortnite
+			MaxActive 20
+			SpawnCount 2
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 1
+			TotalCurrency 600
+			FirstSpawnWarningSound    "mm_engi.mp3"
+			RandomChoice
+			{
+					TFBot
+					{
+						Action FetchFlag
+						Class	Engineer
+						Name "robot engineer gaming"
+						Skill	Expert
+						Item	"the rescue ranger"
+					}
+					TFBot
+					{
+						Action FetchFlag
+						Class	Engineer
+						Name "robot engineer gaming"
+						Skill	Expert
+						Item	"the widowmaker"
+					}
+					TFBot
+					{
+						Action FetchFlag
+						Name "robot engineer gaming"
+						Class	Engineer
+						Skill	Expert
+						Item	"the pomson 6000"
+					}
+					TFBot
+					{
+						Action FetchFlag
+						Class	Engineer
+						Name "robot engineer gaming"
+						Skill	Expert
+						Item	"the rescue ranger"
+					}
+					TFBot
+					{
+						Action FetchFlag
+						Class	Engineer
+						Skill	Expert
+						Name "robot engineer gaming"
+						Item	"the widowmaker"
+					}
+					TFBot
+					{
+						Action FetchFlag
+						Name "robot engineer gaming"
+						Class	Engineer
+						Skill	Expert
+						Item	"the pomson 6000"
+					}
+					TFBot
+					{
+						Action FetchFlag
+						Class	Engineer
+						Name "short circuit gaming"
+						Item	"the short circuit"
+						Skill	Expert
+						FireWeapon [$SIGSEGV]  //Periodically fires weapon
+                {
+                    Delay 0 //Time before the first fire input starts (Default: 10)
+                    Cooldown 3 //Time between each fire input (Default: 10)
+                    Repeats 0 //How many times should bot use the fire input in total (Default: 0 - Infinite)
+					IfSeeTarget 0 //When set to 1, this task activates only when the bot can see the target player (Default 0 - Always activate)
+					Type "Secondary" // Type of fire input, Possible values:
+
+				}
+						WeaponRestrictions SecondaryOnly
+					}
+			}
+		}
+		WaveSpawn
+		{
+			Where 	spawnbot_main0
+			TotalCount 1
+			WaitForAllDead fortnite
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 3
+			WaitBetweenSpawns 1
+			TotalCurrency 420
+			FirstSpawnWarningSound    "mm_around.mp3"
+			DoneWarningSound "mm_troll.mp3"
+			Tank
+			{
+				Name tankboss
+				StartingPathTrackNode "aroundtheworld_1"
+				Health 35000
+				MaxTurnRate 420
+				Speed 95
+				Gravity 0
+				Skin 0
+			}
+		}
+	}
+
+	Wave
+	{
+		WaitWhenDone	65
+		Checkpoint	Yes
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		InitWaveOutput
+		{
+			Target holograms_3way_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target sourcemod_plugin
+			Action "FakeWaveHudValues()"
+		}
+		PlayerAttributes
+		{
+			Scout
+			{
+				"torso scale"				0.5
+			}
+			Soldier
+			{
+				"torso scale"				0.5
+			}
+			Pyro
+			{
+				"torso scale"				0.5
+			}
+			Demoman
+			{
+				"torso scale"				0.5
+			}
+			Heavyweapons
+			{
+				"torso scale"				0.5
+			}
+			Engineer
+			{
+				"torso scale"				0.5
+				"gesture speed increase" 	2
+			}
+			Medic
+			{
+				"torso scale"				0.5
+			}
+			Sniper
+			{
+				"torso scale"				0.5
+			}
+			Spy
+			{
+				"torso scale"				0.5
+			}
+		}
+        WaveSpawn
+		{
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 7
+			FirstSpawnWarningSound "mm_one_trolled_angel.mp3"
+		}
+        //Print Hint Text
+        WaveSpawn
+		{
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 30
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHintText(Wanna be a robot? Type '!joinblu',0)::PrintHintText(Wanna be a robot? Type '!joinblu',60)::PrintHintText(Wanna be a robot? Type '!joinblu',120)"
+			}
+		}
+		WaveSpawn
+		{
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 3
+			FirstSpawnMessage "{CDCDCD}troll :  {FBECCB}we do a little trolling"
+		}
+		WaveSpawn
+		{
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 7
+			FirstSpawnMessage "{CDCDCD}troll :  {FBECCB}!joinblu troll"
+		}
+		WaveSpawn
+		{
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 7
+			FirstSpawnMessage "troll joined team ROBOTS"
+		}
+		WaveSpawn
+		{
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 16
+			FirstSpawnMessage "{9ACDFF}troll :  {FBECCB}Behold! My FINAL FORM!"
+		}
+		WaveSpawn
+		{
+			Name "troll"
+			Where spawnbot_main0
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 16
+			WaitBetweenSpawns 0
+			Support	Limited
+            FirstSpawnWarningSound	"mm_troll2.mp3"
+			TotalCurrency 800
+			TFBot
+			{ 
+				Name				"troll"
+				Class				Heavy
+				ClassIcon			troll
+				Skill				Expert
+				Health				99999
+				WeaponRestrictions	MeleeOnly
+				Attributes 			UseBossHealthBar
+				UseCustomModel 		"models/trollface/coolface4.mdl"
+				DeathSound			"mm_ded.mp3"
+				Scale				1.25
+				CharacterAttributes
+				{
+					"voice pitch scale"				0
+					"dmg from melee increased"		33333
+					"dmg from ranged reduced"		0
+					"cannot pick up intelligence" 	1
+				}
+			}
+		}
+
+        WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 6
+			FirstSpawnMessage "{9ACDFF}troll :  {FBECCB}No, This isn't over!"
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 10
+			FirstSpawnMessage "{9ACDFF}troll :  {FBECCB}Time to do a large amount of trolling!"
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 13
+			FirstSpawnWarningSound "mm_block.mp3"
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "DeployEntityTemplate(FakePortalBuild)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 13.5
+			FirstSpawnWarningSound "mm_block.mp3"
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "DeployEntityTemplate(FakePortalBuild2)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 14
+			FirstSpawnWarningSound "mm_block.mp3"
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "DeployEntityTemplate(FakePortalBuild3)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 14.5
+			FirstSpawnWarningSound "mm_block.mp3"
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "DeployEntityTemplate(FakePortalBuild4)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 15
+			FirstSpawnWarningSound "mm_block.mp3"
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "DeployEntityTemplate(FakePortalBuild5)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 15.5
+			FirstSpawnWarningSound "mm_block.mp3"
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "DeployEntityTemplate(FakePortalBuild6)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 16
+			FirstSpawnWarningSound "mm_block.mp3"
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "DeployEntityTemplate(FakePortalBuild7)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 16.5
+			FirstSpawnWarningSound "mm_block.mp3"
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "DeployEntityTemplate(FakePortalBuild8)"
+			}
+		}
+		WaveSpawn
+        {
+            WaitForAllDead "troll"
+            WaitBeforeStarting 17
+            FirstSpawnWarningSound "ambient/thunder4.wav"
+            FirstSpawnOutput
+            {
+                Target shake_portal
+                Action StartShake
+            }
+        }
+		WaveSpawn
+        {
+            WaitForAllDead "troll"
+            WaitBeforeStarting 17
+            FirstSpawnWarningSound "ambient/thunder4.wav"
+            FirstSpawnOutput
+			{
+				Target	whiteout_trigger
+				Action	Fade
+			}
+        }
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 22
+			FirstSpawnWarningSound "mm_stal_new.mp3"
+			FirstSpawnMessage "{fd0000}it's time!"
+		}
+
+        WaveSpawn
+		{
+			WaitForAllDead "troll"
+			Where	portal
+            Where   portal2
+			TotalCount 60
+			MaxActive 12
+			SpawnCount 3
+			WaitBeforeStarting 25
+			WaitBetweenSpawns 3
+			Support	Limited
+			TotalCurrency 0
+			RandomChoice
+			{
+				TFBot
+				{ 
+					Template	T_TFBot_Trolldier
+					ClassIcon		troll
+				}
+				TFBot
+				{ 
+					Template	T_TFBot_Troll_Melee
+					ClassIcon		troll
+				}
+				TFBot
+				{ 
+					Template	T_TFBot_Troll_Melee
+					ClassIcon		troll
+				}
+				TFBot
+				{ 
+					Template	T_TFBot_Troll_Sniper
+					Attributes	AlwaysFireWeapon
+					ClassIcon		troll
+				}
+				TFBot
+				{ 
+					Template	T_TFBot_Troll
+					ClassIcon		troll
+				}
+			}
+		}
+
+        WaveSpawn
+		{
+			WaitForAllDead 		"troll"
+			Where 				portal2
+			TotalCount 			4
+			MaxActive 			2
+			SpawnCount 			1
+			WaitBeforeStarting 	45
+			WaitBetweenSpawns 	20
+			Support				Limited
+			TotalCurrency 		0
+			
+			TFBot
+			{ 
+				Template		T_TFBot_Trolldier_Spammer_Faster
+				ClassIcon		troll
+				PainSound		"mm_hit.mp3"
+				DeathSound		"mm_oof.mp3"
+			}
+		}
+
+        
+        WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 113
+			WaitBetweenSpawns 0
+			TotalCurrency 0
+			Support		Limited
+			Tank
+			{
+				Name "tankboss"
+				DisableSmokestack 1
+				ClassIcon	troll
+				StartingPathTrackNode "trolltank_1"
+				Health 696969
+				Speed 300
+				MaxTurnRate 9999999
+				IsMiniBoss 0 [$SIGSEGV]
+				Model [$SIGSEGV] //Set custom model on tank. Will spit harmless errors on client console if the model does not have enough sequences
+				{
+					Default "models/trollface/coolface8.mdl"
+                    LeftTrack "models/trollface/coolface8.mdl"
+                    RightTrack "models/trollface/coolface8.mdl"
+                    Bomb "models/trollface/coolface8.mdl"
+				}
+                OnBombDroppedOutput
+                {
+                    Target	sourcemod_plugin
+                    Action "EntityInput(tankboss, kill)::DestroyAllEntityTemplates()::PrintMessage(Trolled, 5.0)"
+                }
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 100
+			FirstSpawnMessage "{fd0000}It's time for phase 2"
+		}
+		WaveSpawn
+		{
+			WaitForAllDead	"troll"
+			TotalCount 0
+			SpawnCount 0
+			WaitBeforeStarting 105
+			FirstSpawnWarningSound "mm_tankappear.mp3"
+		}
+		// WaveSpawn
+		// {
+		// 	WaitForAllDead	"troll"
+		// 	TotalCount 0
+		// 	SpawnCount 0
+		// 	WaitBeforeStarting 113
+		// 	FirstSpawnMessage "{fd0000}"
+		// }
+		WaveSpawn
+		{
+			Name Wave10
+			WaitForAllDead Wave11
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll2
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll3
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll4
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll5
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll6
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll7
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll8
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll9
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll10
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll11
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll12
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll13
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll14
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll15
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll16
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll17
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll18
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll19
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll20
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll21
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll22
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll23
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll24
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll25
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll26
+			}
+		}
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll27
+			}
+		}	
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll28
+			}
+		}			
+		WaveSpawn
+		{
+			Name Wave11
+			WaitForAllDead Wave10
+			TotalCount 9999
+			WaitBeforeStarting 99999
+			SpawnCount 1
+			Where spawnbot
+			TFBot
+			{
+				ClassIcon	troll29
+			}
+		}	
+	}
+
+	Wave 
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		InitWaveOutput
+		{
+			Target holograms_3way_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target sourcemod_plugin
+			Action "FakeWaveHudValues()::PrintMessage([AD] https://australium.pineapple.tf/ for free australium, 30.0)"
+		}
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 1
+			Name w7
+			SpawnCount 1
+			where spawnbot_gatea
+			WaitBeforeStarting 1
+			WaitBetweenSpawns 0
+			TotalCurrency 0
+			TFBot
+			{
+					Name "Vehicular Mannslaughter"
+					Health	10000
+					Scale	1.75
+					Class	Demoman
+					classicon tank
+					Skill	Expert
+					Attributes	"UseBossHealthBar"
+					WeaponRestrictions MeleeOnly
+					"UseCustomModel" "models/bots/boss_bot/boss_tank.mdl"
+					Attributes Miniboss
+					FireWeapon [$SIGSEGV] //Periodically fires weapon
+                {
+                    Delay 1 //Time before the first fire input starts (Default: 10)
+                    Cooldown 4 //Time between each fire input (Default: 10)
+                    Repeats 0 //How many times should bot use the fire input in total (Default: 0 - Infinite)
+                    Duration 0.6 //How long should the button be pressed (Default: 0.1)
+					Type "Secondary" 
+				}
+					ItemAttributes
+					{
+						ItemName	"the crossing guard"
+						"Attack not cancel charge"	1
+						"damage bonus"	1.5
+						"dmg bonus vs buildings"	7.9
+					}
+					CharacterAttributes
+					{
+						"charge impact damage increased"	69
+						"charge recharge rate increased" 69
+						"airblast vertical pushback scale"	0.1
+						"airblast vulnerability multiplier"	0.1
+						"damage force reduction"	0.1
+						"move speed bonus"	0.5
+					}
+					Item	"the splendid screen"
+					Item	"the crossing guard"
+			}
+		}
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitForAllDead w7
+			WaitBetweenSpawns 0
+			TotalCurrency 0
+			Tank
+			{
+				Name "tankboss"
+				StartingPathTrackNode "w7tank1_1"
+				Health 5000
+				MaxTurnRate 420
+				Speed 69
+				Scale 0.2
+				Skin 0
+		
+				OnBombDroppedOutput //LOSE
+				{
+					Target boss_deploy_relay
+					Action trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 5
+			WaitForAllDead w7
+			WaitBetweenSpawns 5
+			TotalCurrency 0
+			Tank
+			{
+				Name "tankboss"
+				StartingPathTrackNode "w7tank2_1"
+				Health 5000
+				Speed 69
+				Scale 1
+				MaxTurnRate 420
+				Skin 0
+		
+				OnBombDroppedOutput //LOSE
+				{
+					Target boss_deploy_relay
+					Action trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 10
+			WaitForAllDead w7
+			WaitBetweenSpawns 10
+			TotalCurrency 0
+			Tank
+			{
+				Name "tankboss"
+				StartingPathTrackNode "w7tank3_1"
+				Health 5000
+				Speed 69
+				Scale 0.8
+				Skin 0
+				MaxTurnRate 420
+		
+				OnBombDroppedOutput //LOSE
+				{
+					Target boss_deploy_relay
+					Action trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 15
+			WaitForAllDead w7
+			WaitBetweenSpawns 0
+			TotalCurrency 0
+			Tank
+			{
+				Name "tankboss"
+				StartingPathTrackNode "w7tank4_1"
+				Health 5000
+				Speed 69
+				Scale 0.8
+				MaxTurnRate 420
+				Skin 0
+		
+				OnBombDroppedOutput //LOSE
+				{
+					Target boss_deploy_relay
+					Action trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 15
+			WaitForAllDead w7
+			WaitBetweenSpawns 0
+			TotalCurrency 1000
+			Tank
+			{
+				Name "tankboss"
+				StartingPathTrackNode "w7tank5_1"
+				Health 5000
+				Speed 69
+				Scale 1
+				MaxTurnRate 420
+				Skin 0
+		
+				OnBombDroppedOutput //LOSE
+				{
+					Target boss_deploy_relay
+					Action trigger
+				}
+			}
+		}
+	}
+
+
+	Wave //Addcash $700
+	{
+		WaitWhenDone	65
+		Checkpoint	Yes
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		InitWaveOutput
+		{
+			Target holograms_3way_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target sourcemod_plugin
+			Action "FakeWaveHudValues(420,69)::PrintMessage([AD] https://australium.pineapple.tf/ for free australium, 30.0)"
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	1.7
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(We got a, 0.2, 0.5, 1, 128, 255, 128)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	2.6
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(number one victory royale, 0.4, 0.5, 1, 100, 232, 200)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	4.1
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Yeah, 0.2, 0.8, 1, 120, 200, 200)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	4.5
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Fortnite, 0.4, 0.2, 1, 120, 200, 200)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	5
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(we 'bout to get down, 0.4, 0.4, 2, 120, 120, 250)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	6.5
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(ten kills on the board now, 0.1, 0.8, 2, 255, 100, 244)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	8.2
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Just wiped out Tomato Town, 0.4, 0.3, 2, 255, 120, 224)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting  11
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(My friend just got downed, 0.4, 0.7, 2, 225, 112, 203)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	12.3
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(I revived him, 0.3, 0.2, 2, 123, 123, 0)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	13
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(now we're heading south-bound, 0.2, 0.4, 1, 123, 125, 233)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	14.4
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Now we're in the Pleasant Park streets, 0.6, 0.7, 2, 0, 255, 203)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	16.2
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Look at the map, 0.4, 0.5, 2, 111, 111, 255)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	17
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(go to the marked sheet, 0.4, 0.6, 1, 255, 255, 203)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	18.3
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Take me to your Xbox, 0.8, 0.3, 1, 255, 255, 203)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	19.8
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(to play, 0.7, 0.4, 1, 255, 255, 203)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	20.1
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Fortnite, 0.8, 0.5, 0.8, 255, 255, 203)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	20.8
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(T o d a y, 0.1, 0.1, 1, 246, 255, 0)"
+			}
+		}
+		//You can take me to moist mire
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	22.3
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(You can take me to moist mire, 0.1, 0.1, 2, 45, 201, 252)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	24.2
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(but not loot lake, 0.7, 0.3, 2, 16, 113, 145)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	25.9
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(I would really love to, 0.2, 0.3, 2, 164, 115, 199)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	28.4
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(chug with you, 0.5, 0.4, 2, 246, 255, 0)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	30.5
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(We can be, 0.4, 0.5, 2, 217, 37, 130)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	31.3
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(pro, 0.5, 0.3, 2, 235, 201, 178)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	31.6
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(fortnite, 0.5, 0.7, 2, 252, 234, 129)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	32.6
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(g a m e r s, 0.4, 0.5, 2, 255, 255, 255)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	34.8
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(He said, 0.2, 0.5, 2, 89, 207, 101)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	36.1
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Hey Broski, 0.3, 0.5, 2, 186, 2, 237)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	37.4
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(You got some heals and a shield pot, 0.4, 0.7, 2, 200, 178, 207)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	39.4
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(I need healing, 0.3, 0.2, 2, 152, 252, 30)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	40.6
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(and, 0.4, 0.2, 2, 30, 208, 252)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	40.9
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(I am only at one HP, 0.5, 0.5, 2, 220, 238, 242)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	43.7
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Hey dude sorry, 0.5, 0.6, 2, 82, 199, 62)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	45.4
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(I found nothing on the safari, 0.6, 0.7, 2, 255, 255, 255)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	47.6
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(I checked the upstairs, 0.3, 0.7, 2, 196, 8, 124)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	48.8
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(of that house but not the underneath yet, 0.4, 0.6, 2, 181, 255, 234)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	52
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(There’s a chest that’s just down there, 0.2, 0.2, 2, 255, 255, 255)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	54.6
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(The storm is coming fast, 0.7, 0.4, 2, 106, 34, 230)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	56.3
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(and you need heals to prepare, 0.4, 0.5, 2, 255, 255, 255)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	58.7
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(I’ve got V-Bucks, 0.1, 0.1, 2, 255, 153, 0)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	59.7
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(that I’ll spend, 0.2, 0.2, 2, 64, 64, 255)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	60.9
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(More than, 0.3, 0.3, 2, 255, 255, 255)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	61.6
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(you can contend, 0.4, 0.4, 2, 219, 218, 171)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	63
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(I'm a cool, 0.8, 0.8, 2, 205, 53, 232)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	63.9
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(Pro, 0.3, 0.9, 2, 255, 255, 255)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	64.1
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(F o r t n i t e, 0.4, 0.5, 2, 205, 53, 232)"
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite1"
+			WaitBeforeStarting 	64.7
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			FirstSpawnOutput
+			{
+				Target sourcemod_plugin
+				Action "PrintHudText(g a m e r, 0.7, 0.5, 2, 234, 255, 0)"
+			}
+		}
+		WaveSpawn
+		{
+			Name				"fortnite1"
+			Where 				spawnbot_main0
+			TotalCount 			1
+			MaxActive 			1
+			SpawnCount 			1
+			WaitBeforeStarting 	0
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			Support				Limited
+			RandomChoice
+			{
+				Squad
+				{
+					TFBot
+					{ 
+						Template		T_TFBot_Fortnite_Assault
+						Name			"3) Who is Tindall Berry?"
+						Attributes		AlwaysFireWeapon
+						Attributes		MiniBoss
+						ClassIcon		fortnite_icon_2
+						AlwaysGlow		1
+						CharacterAttributes
+						{
+							"cannot pick up intelligence" 	1
+							
+						}
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name				"fortnite2"
+			WaitForAllDead		"fortnite1"
+			Where 				spawnbot_main0
+			Where				spawnbot_upper0
+			TotalCount 			7
+			MaxActive 			7
+			SpawnCount 			1
+			WaitBeforeStarting 	0
+			WaitBetweenSpawns 	2
+			TotalCurrency 		0
+			FirstSpawnWarningSound	"mm_fortnite.mp3"
+			TFBot
+			{ 
+				Template		T_TFBot_Fortnite_Assault
+				Attributes		AlwaysFireWeapon
+			}
+		}
+		WaveSpawn
+		{
+			Name				"fortnite2"
+			WaitForAllDead		"fortnite1"
+			Where 				spawnbot_main0
+			Where				spawnbot_upper0
+			TotalCount 			16
+			MaxActive 			8
+			SpawnCount 			4
+			WaitBeforeStarting 	5
+			WaitBetweenSpawns 	4
+			TotalCurrency 		0
+			TFBot
+			{ 
+				Template		T_TFBot_Fortnite_SMG
+			}
+		}
+		WaveSpawn
+		{
+			Name				"fortnite3"
+			WaitForAllSpawned	"fortnite2"
+			Where 				spawnbot_main0
+			TotalCount 			24
+			MaxActive 			8
+			SpawnCount 			2
+			WaitBeforeStarting 	3
+			WaitBetweenSpawns 	0
+			TotalCurrency 		0
+			TFBot
+			{ 
+				Template		T_TFBot_Fortnite_Bow
+			}
+		}
+		WaveSpawn
+		{
+			Name				"fortnite3"
+			WaitForAllSpawned	"fortnite2"
+			Where				spawnbot_upper0
+			TotalCount 			10
+			MaxActive 			6
+			SpawnCount 			1
+			WaitBeforeStarting 	1
+			WaitBetweenSpawns 	1
+			TotalCurrency 		0
+			TFBot
+			{ 
+				Template		T_TFBot_Fortnite_Revolver
+				Attributes		AlwaysFireWeapon
+			}
+		}
+		WaveSpawn
+		{
+			Name				"fortnite3"
+			WaitForAllSpawned	"fortnite2"
+			Where				spawnbot_upper0
+			Where				spawnbot_main0
+			TotalCount 			12
+			MaxActive 			4
+			SpawnCount 			2
+			WaitBeforeStarting 	15
+			WaitBetweenSpawns 	4
+			TotalCurrency 		0
+			RandomChoice
+			{
+				TFBot
+				{ 
+					Template		T_TFBot_Fortnite_Pistol
+				}
+				TFBot
+				{
+					Template		T_TFBot_Fortnite_Rocket_Launcher
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name				"fortnite3"
+			WaitForAllDead		"fortnite1"
+			Where				spawnbot_upper0
+			TotalCount 			4
+			MaxActive 			2
+			SpawnCount 			1
+			WaitBeforeStarting 	5
+			WaitBetweenSpawns 	20
+			TotalCurrency 		0
+			TFBot
+			{ 
+				Template		T_TFBot_Fortnite_SMG_Giant
+			}
+		}
+		WaveSpawn
+		{
+			Name				"fortnite4"
+			WaitForAllDead		"fortnite3"
+			Where 				spawnbot_main0
+			TotalCount 			1
+			MaxActive 			1
+			SpawnCount 			1
+			WaitBeforeStarting 	1
+			WaitBetweenSpawns 	10
+			TotalCurrency 		1999
+			TFBot
+			{ 
+				Template		T_TFBot_Fortnite_Card_Boss
+			}
+		}
+		WaveSpawn
+		{
+			Name				"fortnite4"
+			WaitForAllDead		"fortnite3"
+			Support				1
+			Where 				spawnbot_upper0
+			TotalCount 			1
+			MaxActive 			1
+			SpawnCount 			1
+			WaitBeforeStarting 	5
+			WaitBetweenSpawns 	5
+			TotalCurrency 		0
+			TFBot
+			{ 
+				Template		T_TFBot_Fortnite_Pistol
+				ClassIcon		fortnite_icon_2
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead		"fortnite3"
+			TotalCount 			0
+			MaxActive 			0
+			SpawnCount 			0
+			WaitBeforeStarting 	0
+			FirstSpawnWarningSound	"mm_fortnite_card.mp3"
+		}
+    }
+
+	Wave 
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		InitWaveOutput
+		{
+			Target holograms_3way_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target sourcemod_plugin
+			Action "FakeWaveHudValues()::PrintMessage([AD] https://australium.pineapple.tf/ for free australium, 15.0)"
+		}
+		Explanation [$SIGSEGV]
+		{
+			Line "{blue}impending doom approaches....."
+			Line "{red}however, captain drip will help you."
+		}
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 4
+			WaitBetweenSpawns 3
+			WaitBeforeStarting 4
+			TotalCurrency 0
+			where spawnbot_dripboss_red
+			Support		1
+			FirstSpawnWarningSound    "mm_fishing.mp3"
+			TFBot
+			{
+				ClassIcon	heavy_drip
+				Health	900
+				Name	"Mini Drip"
+				Scale	1.5
+				Class	Heavyweapons
+				Skill	Hard
+				Action mobber
+				WeaponRestrictions	MeleeOnly
+				Attributes AlwaysCrit
+				AddCond //Adds conditions to bots
+				{
+					Name "TF_COND_REPROGRAMMED"
+					Delay 0.1
+				}
+				ItemAttributes
+				{
+					ItemName	"fists of steel"
+					"fire rate penalty"	0.75
+					"heal on kill" 2500
+					"ragdolls plasma effect"	1
+				}
+				CharacterAttributes
+				{
+					"damage force reduction"	0.1
+					"airblast vulnerability multiplier"	0.1
+				}
+				Item	"fists of steel"
+				Item	"war head"
+				Item	"dead of night"
+			}
+		}
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 1
+			WaitBetweenSpawns 2
+			WaitBeforeStarting 15
+			TotalCurrency 0
+			where spawnbot_dripboss_red
+			Support		limited
+			TFBot
+			{
+				ClassIcon	heavy_drip
+				Health	60000
+				Name	"Captain Drip"
+				Scale	1.8
+				Class	Heavyweapons
+				Skill	Hard
+				Action mobber
+				WeaponRestrictions	MeleeOnly
+				Attributes	"UseBossHealthBar"
+				Attributes AlwaysFireWeapon
+				Attributes AlwaysCrit
+				Attributes miniboss
+				AddCond
+				{
+					Name "TF_COND_REPROGRAMMED"
+					Delay 0.1
+				}
+				ItemAttributes
+				{
+					ItemName	"fists of steel"
+					"melee range multiplier"	4
+					"fire rate penalty"	0.75
+					"damage bonus" 5
+					"heal on kill" 5000
+					"ragdolls plasma effect"	1
+				}
+				CharacterAttributes
+				{
+					"damage force reduction"	0.1
+					"airblast vulnerability multiplier"	0.1
+					"move speed bonus"	0.5
+				}
+				Item	"fists of steel"
+				Item	"war head"
+				Item	"dead of night"
+			}
+		}
+	
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 15
+			WaitBetweenSpawns 2
+			TotalCurrency 0
+			Support		1
+			Where spawnbot_main0
+			FirstSpawnWarningSound    "mm_thunder.mp3"
+			RandomChoice
+			{
+				TFBot
+				{ 
+					Template T_TFBot_Giant_Demoman
+				}
+				TFBot
+				{ 
+					Template T_TFBot_Giant_Heavyweapons
+				}
+				TFBot
+				{ 
+					Template T_TFBot_Giant_Soldier
+				}
+				TFBot
+				{ 
+					class heavyweapons
+				}
+				TFBot
+				{ 
+					class scout
+				}
+				TFBot
+				{ 
+					class heavyweapons
+				}
+				TFBot
+				{ 
+					class pyro
+				}
+				TFBot
+				{ 
+					class scout
+				}
+				TFBot
+				{ 
+					class heavyweapons
+				}
+				TFBot
+				{ 
+					class soldier
+				}
+				TFBot
+				{ 
+					class pyro
+				}
+				TFBot
+				{ 
+					class scout
+				}
+				TFBot
+				{ 
+					class pyro
+				}
+				TFBot
+				{ 
+					class scout
+				}
+				TFBot
+				{ 
+					class pyro
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCount 1
+			MaxActive 1
+			WaitBetweenSpawns 2
+			WaitBeforeStarting 26
+			TotalCurrency 0
+			Where spawnbot_popbob
+			DoneWarningSound "mm_ending.mp3"
+			TFBot
+			{
+				Classicon popbob
+				Health	100000
+				Name	popbob
+				Scale	7
+				Class	Soldier
+				Skill	expert
+				Action mobber
+				Attributes UseBossHealthBar
+				Attributes miniboss
+				Attributes AlwaysCrit
+				Attributes AlwaysFireWeapon
+				UseCustomModel	"models/bots/sniper/bot_sniper_troll.mdl"
+				ItemAttributes
+				{
+					ItemName	tf_weapon_rocketlauncher
+					"clip size bonus"	3
+					"projectile spread angle penalty"	5
+					"bleeding duration"	1
+					"Set DamageType Ignite"	1
+					"faster reload rate"	0.2
+				}
+				HomingRockets [$SIGSEGV]
+				{
+					IgnoreDisguisedSpies 1
+						IgnoreStealthedSpies 1
+						RocketSpeed 0.8 // Multiplier of rocket speed. 1 for default speed
+						TurnPower 90 
+						MaxAimError 120
+				}
+				CustomWeaponModel //Sets custom weapon model
+				{
+					Slot 1
+					Model "models/props_urban/urban_crate_troll.mdl"
+				}
+				CustomWeaponModel //Sets custom weapon model
+				{
+					Slot 0
+					Model "models/props_urban/urban_crate_troll.mdl"
+				}
+				ItemAttributes
+				{
+					ItemName	"the righteous bison"
+					"faster reload rate"	0.1
+					"is_passive_weapon" 1
+					"fire rate bonus"	0.1
+				}
+				RocketCustomModel 		"models/player/items/all_class/troll_head_scout.mdl"
+				CharacterAttributes
+				{
+					"damage force reduction"	0.1
+					"cancel falling damage" 1
+					"damage bonus"	2
+					"airblast vulnerability multiplier"	0.1
+					"airblast vertical vulnerability multiplier"	0.1
+				}
+				Item	"the righteous bison"
+			}
+		}
+	}
+}
+

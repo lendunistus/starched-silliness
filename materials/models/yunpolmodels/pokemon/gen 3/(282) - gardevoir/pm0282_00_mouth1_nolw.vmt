@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/yunpolmodels/pokemon/gen 3/(282) - Gardevoir/pm0282_00_Mouth1"
+ 	"$bumpmap" "models\yunpolmodels\pokemon\phong"
+	"$halflambert"	"1"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "0"
+	"$phongfresnelranges" "[.3 1 8]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "8"
+	"$rimlightboost" "0"
+
+	"$ambientocclusion" "1"
+}

@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/props_fortnitecard/fn_card_front"
+	$bumpmap "models/flat_normal"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "2"
+	$phongfresnelranges "[0.2 0.5 1]"
+}

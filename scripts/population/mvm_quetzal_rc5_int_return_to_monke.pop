@@ -1,0 +1,5161 @@
+// Return to Monke by Tindall Berry
+// Quetzal Intermediate / April Fools 3 Trash
+
+#base robot_giant.pop
+#base robot_standard.pop
+
+Humour_Express [Pineapple]
+{
+	EventHooks
+	{
+		Hook
+		{
+			Event	"wave_init"
+			Execute	"DeployEntityTemplate(GasCanCult)"
+		}
+		Hook
+		{
+			Event	"wave_init"
+			Execute	"DeployEntityTemplate(BovineBrothers)"
+		}
+		Hook
+		{
+			Event	"wave_init"
+			Execute	"DeployEntityTemplate(RaveLightsController)"
+		}
+		Hook
+		{
+			Event	"wave_init"
+			Execute	"DeployEntityTemplate(RaveLights_NE)::DeployEntityTemplate(RaveLights_SE)::DeployEntityTemplate(RaveLights_N)::DeployEntityTemplate(RaveLights_S)::DeployEntityTemplate(RaveLights_NW)::DeployEntityTemplate(RaveLights_SW)"
+		}
+	}
+	EntityTemplates
+	{
+		GasCanCult
+		{
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-960 672 -128"
+				"model"		"models/weapons/c_models/c_gascan/c_gascan.mdl"
+				"angles"	"60 0 0"
+				"DisableBoneFollowers"	"1"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-1020 672 -144"	// S of can
+				"model"		"models/player/pyro.mdl"
+				"angles"	"0 0 0"
+				"DisableBoneFollowers"	"1"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-1000 712 -144"	// SW of can
+				"model"		"models/player/pyro.mdl"
+				"angles"	"0 -45 0"
+				"DisableBoneFollowers"	"1"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-960 732 -144"	// W of can
+				"model"		"models/player/pyro.mdl"
+				"angles"	"0 -90 0"
+				"DisableBoneFollowers"	"1"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-920 712 -144"	// NW of can
+				"model"		"models/player/pyro.mdl"
+				"angles"	"0 -135 0"
+				"DisableBoneFollowers"	"1"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-900 672 -144"	// N of can
+				"model"		"models/player/pyro.mdl"
+				"angles"	"0 180 0"
+				"DisableBoneFollowers"	"1"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-920 632 -144"	// NE of can
+				"model"		"models/player/pyro.mdl"
+				"angles"	"0 135 0"
+				"DisableBoneFollowers"	"1"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-960 612 -144"	// E of can
+				"model"		"models/player/pyro.mdl"
+				"angles"	"0 90 0"
+				"DisableBoneFollowers"	"1"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-1000 632 -144"	// SE of can
+				"model"		"models/player/pyro.mdl"
+				"angles"	"0 45 0"
+				"DisableBoneFollowers"	"1"
+			}
+		}
+		BovineBrothers
+		{
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"2020 3244 -224"	// back right of spawn
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"angles"	"0 180 0"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-1100 2940 544"	// stone tower behind hatch
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"angles"	"0 -30 0"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"816 168 -288"	// blocked off hallway near crocodile pit
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"angles"	"0 165 0"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-1240 -1414 32"	// out of bounds altar room
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"angles"	"0 75 0"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"1000 -2738 -384"	// front upgrade station
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"angles"	"0 90 0"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"-1152 -2648 192"	// stone tower left of front
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"angles"	"0 15 0"
+			}
+			Entity
+			{
+				"classname"	"prop_dynamic"
+				"origin"	"1294 -5296 192"	// on a rock in main robot spawn
+				"model"		"models/props_2fort/cow001_reference.mdl"
+				"angles"	"0 120 0"
+			}
+		}
+		RaveLightsController
+		{
+			Entity
+			{
+				"classname"		"logic_relay"
+				"targetname"	"relay_rave"
+				"origin"		"0 0 0"
+
+				"OnTrigger"	"ravelight1,LightOn,,0,-1"
+				"OnTrigger"	"ravelight1,LightOff,,0.2,-1"
+				"OnTrigger"	"ravelight2,LightOn,,0.2,-1"
+				"OnTrigger"	"ravelight2,LightOff,,0.4,-1"
+				"OnTrigger"	"ravelight3,LightOn,,0.4,-1"
+				"OnTrigger"	"ravelight3,LightOff,,0.6,-1"
+				"OnTrigger"	"relay_rave2,Trigger,,0.6,-1"
+			}
+			Entity
+			{
+				"classname"		"logic_relay"
+				"targetname"	"relay_rave2"
+				"origin"		"0 0 32"
+
+				"OnTrigger"	"ravelight1,LightOn,,0,-1"
+				"OnTrigger"	"ravelight1,LightOff,,0.2,-1"
+				"OnTrigger"	"ravelight2,LightOn,,0.2,-1"
+				"OnTrigger"	"ravelight2,LightOff,,0.4,-1"
+				"OnTrigger"	"ravelight3,LightOn,,0.4,-1"
+				"OnTrigger"	"ravelight3,LightOff,,0.6,-1"
+				"OnTrigger"	"relay_rave,Trigger,,0.6,-1"
+			}
+		}
+		RaveLights_NE
+		{
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight1"
+				"origin"			"-4972 746 12"
+				"StartDisabled"		"1"
+				"angles"			"-120 -135 0"	// NW
+				"rendercolor"		"255 255 0"		// yellow
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight2"
+				"origin"			"-4972 746 12"
+				"StartDisabled"		"1"
+				"angles"			"-90 -135 0"	// up
+				"rendercolor"		"255 0 255"		// magenta
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight3"
+				"origin"			"-4972 746 12"
+				"StartDisabled"		"1"
+				"angles"			"-60 -135 0"	// SE
+				"rendercolor"		"0 255 255"		// cyan
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+		}
+		RaveLights_SE
+		{
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight1"
+				"origin"			"-5244 752 12"
+				"StartDisabled"		"1"
+				"angles"			"-120 -45 0"	// SW
+				"rendercolor"		"0 255 255"		// cyan
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight2"
+				"origin"			"-5244 752 12"
+				"StartDisabled"		"1"
+				"angles"			"-90 -45 0"		// up
+				"rendercolor"		"255 255 0"		// yellow
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight3"
+				"origin"			"-5244 752 12"
+				"StartDisabled"		"1"
+				"angles"			"-60 -45 0"		// NE
+				"rendercolor"		"255 0 255"		// magenta
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+		}
+		RaveLights_N
+		{
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight1"
+				"origin"			"-4860 970 24"
+				"StartDisabled"		"1"
+				"angles"			"-120 -90 0"	// W
+				"rendercolor"		"255 0 255"		// magenta
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight2"
+				"origin"			"-4860 970 24"
+				"StartDisabled"		"1"
+				"angles"			"-90 -90 0"		// up
+				"rendercolor"		"255 255 0"		// yellow
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight3"
+				"origin"			"-4860 970 24"
+				"StartDisabled"		"1"
+				"angles"			"-60 -90 0"		// E
+				"rendercolor"		"0 255 255"		// cyan
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+		}
+		RaveLights_S
+		{
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight1"
+				"origin"			"-5368 1000 48"
+				"StartDisabled"		"1"
+				"angles"			"-120 90 0"		// E
+				"rendercolor"		"255 255 0"		// yellow
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight2"
+				"origin"			"-5368 1000 48"
+				"StartDisabled"		"1"
+				"angles"			"-90 90 0"		// up
+				"rendercolor"		"0 255 255"		// cyan
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight3"
+				"origin"			"-5368 1000 48"
+				"StartDisabled"		"1"
+				"angles"			"-60 90 0"		// W
+				"rendercolor"		"255 0 255"		// magenta
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+		}
+		RaveLights_NW
+		{
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight1"
+				"origin"			"-5000 1200 18"
+				"StartDisabled"		"1"
+				"angles"			"-120 135 0"	// NE
+				"rendercolor"		"0 255 255"	// cyan
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight2"
+				"origin"			"-5000 1200 18"
+				"StartDisabled"		"1"
+				"angles"			"-90 135 0"	// up
+				"rendercolor"		"255 0 255"	// magenta
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight3"
+				"origin"			"-5000 1200 18"
+				"StartDisabled"		"1"
+				"angles"			"-60 135 0"	// SW
+				"rendercolor"		"255 255 0"	// yellow
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+		}
+		RaveLights_SW
+		{
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight1"
+				"origin"			"-5288 1370 106"
+				"StartDisabled"		"1"
+				"angles"			"-120 45 0"	// SE
+				"rendercolor"		"255 0 255"	// magenta
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight2"
+				"origin"			"-5288 1370 106"
+				"StartDisabled"		"1"
+				"angles"			"-90 45 0"	// up
+				"rendercolor"		"0 255 255"	// cyan
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+			Entity
+			{
+				"classname"			"point_spotlight"
+				"targetname"		"ravelight3"
+				"origin"			"-5288 1370 106"
+				"StartDisabled"		"1"
+				"angles"			"-60 45 0"	// NW
+				"rendercolor"		"255 255 0"	// yellow
+				"spotlight_width"	"48"
+				"spotlight_length"	"64"
+			}
+		}
+	}
+}
+
+population
+{
+	StartingCurrency	700
+	RespawnWaveTime	2
+	CanBotsAttackWhileInSpawnRoom	no
+	FixedRespawnWaveTime	Yes
+	SentryBusterFriendlyFire	0 [$SIGSEGV]
+	BotPushaway	0 [$SIGSEGV]
+	PrecacheModel "models/pyroland/kitteh.mdl" [$SIGSEGV]
+	PrecacheModel "models/items/medkit_small_bday.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/demo/bot_purpleguy_buster.mdl" [$SIGSEGV]
+	CustomUpgradesFile	"mvm_upgrades_tindall_v2.txt" [$SIGSEGV]
+	// Upgrade changes:
+	// Melee resistance added: 10% bonus, 250 cost, 4 points
+	// Health regen cost 200 -> 100
+	// Metal regen cost 200 -> 100
+	// Mark for death cost 500 -> 350
+	// Rocket specialist bonus 1 -> 2, cost 300 -> 500, points 4 -> 1
+	// Banner buff duration bonus 25% -> 50%, cost 250 -> 150, points 2 -> 3
+	// Afterburn duration disabled
+	// Thermal thruster stun on land cost 300 -> 500
+	// Thermal thruster air launch cost 400 -> 200
+	// Explode on ignite cost 400 -> 5000
+	// Demoman damage bonus cost 500 -> 400
+	// Shield knockback resistance bonus 30% -> 33%
+	// Destroy projectiles bonus 1 -> 2, cost 400 -> 600
+	// Heavy firing speed bonus 10% -> 15%, cost 350 -> 450, points 4 -> 3
+	// Disposable mini sentry cost 500 -> 300, points 1 -> 3
+	// Sentry firing speed bonus 10% -> 15%, cost 350 -> 400, points 3 -> 1
+	// Two way teleporter cost 250 -> 150
+	// Mad milk syringes cost 200 -> 300
+	// Projectile shield cost 300 -> 450
+	// Explosive headshot cost 350 -> 500, points 3 -> 1
+	// Sapper power bonus 1 -> 3, cost 350 -> 500
+	// Ubercharge canteen cost 75 -> 150
+	// Crit boost canteen cost 100 -> 200
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name	"spawnbot_fuckdamn"	// *should* be in a little alcove near the middle of the map
+        TeamNum	3
+        X	"-608"
+        Y	"-1696"
+        Z	"-368"
+    }
+	Templates
+	{
+		T_TFBot_W1Meme_Heavy_Punchy
+		{
+			Class Heavyweapons
+			Name "Punchy Heavy"
+			ClassIcon heavy_fists_nys
+			Skill Hard
+			Health 300
+			WeaponRestrictions MeleeOnly
+			Item "Upgradeable TF_WEAPON_FISTS"
+			Item "The Tsarboosh"
+		}
+		T_TFBot_W1Meme_Demoman_Charger
+		{
+			Class Demoman
+			Name "Charger"
+			ClassIcon demo_targe_nys
+			Skill Hard
+			Health 200
+			WeaponRestrictions PrimaryOnly
+			Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+			Item "The Chargin' Targe"
+			Item "Backbreaker's Guards"
+			Item "The Hurt Locher"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+				"damage penalty"			0
+				"fire rate penalty"			999
+				"override projectile type"	15	// fires nothing
+			}
+			ItemAttributes
+			{
+				ItemName "The Chargin' Targe"
+				"Attack not cancel charge"			1
+				"charge impact damage increased"	2
+				"charge recharge rate increased"	3
+			}
+		}
+		T_TFBot_W1Meme_Pyro_Gas
+		{
+			Class Pyro
+			Name "Gas Passer Pyro"
+			ClassIcon pyro_gaspasser_tind
+			Skill Easy
+			Health 350
+			Scale 1.2
+			WeaponRestrictions SecondaryOnly
+			MaxVisionRange 1200
+			Attributes SpawnWithFullCharge
+			Item "The Gas Passer"
+			Item "The Back Scratcher"
+			Item "The Crispy Golden Locks"
+			Item "The Scorched Skirt"
+			ItemAttributes
+			{
+				ItemName "The Gas Passer"
+				"item_meter_charge_rate"	8		// recharge time
+				"explode_on_ignite"			1		// haha yes
+				"dmg penalty vs players"	0.1		// nerf eoi damage to 35
+			}
+			CharacterAttributes
+			{
+				"health regen"	1
+				"torso scale"	1.5	// pyro got that vb longneck
+			}
+		}
+		T_TFBot_W1Meme_Soldier_Giant_Shovel
+		{
+			Class Soldier
+			Name "Comically Large Shovel"
+			ClassIcon soldier_shovel
+			Skill Expert
+			Health 8000
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			Item "Upgradeable TF_WEAPON_SHOVEL"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_SHOVEL"
+				"damage bonus"				1.5
+				"heal on hit for rapidfire"	250
+				"fire rate penalty"			1.6
+			}
+			CharacterAttributes
+			{
+				"hand scale"						2.5
+				"move speed bonus"					0.5
+				"damage force reduction"			0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"		3
+			}
+		}
+		T_TFBot_W1Meme_Scout_Melee
+		{
+			Class Scout
+			Name "BJONK"
+			ClassIcon scout_bat_nys
+			Skill Hard
+			Health 125
+			WeaponRestrictions MeleeOnly
+			Item "Upgradeable TF_WEAPON_BAT"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_BAT"
+				"slow enemy on hit major"	3
+				"fire rate penalty"			1.6
+			}
+		}
+		T_TFBot_W1Meme_Sniper_Smoker
+		{
+			Class Sniper
+			Name "Smoker"
+			ClassIcon sniper
+			Skill Expert
+			Health 350
+			Scale 1.35
+			MaxVisionRange 1200
+			Item "Upgradeable TF_WEAPON_SNIPERRIFLE"
+			Item "Upgradeable TF_WEAPON_CLUB"
+			Item "The Birdman of Australiacatraz"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_SNIPERRIFLE"
+				"damage causes airblast"		1
+				"damage penalty"				0.02
+				"faster reload rate"			0.05
+				"sniper fires tracer"			1
+				"apply look velocity on damage"	-1000	// pull amount
+			}
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_CLUB"
+				"damage penalty"				0.5
+				"fire rate bonus"				0.6
+				"apply look velocity on damage"	-300	// pull amount
+			}
+			CharacterAttributes
+			{
+				"health regen"	1
+			}
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+		}
+		T_TFBot_W1Meme_Sniper_Boomer
+		{
+			Class Sniper
+			Name "Number One"
+			ClassIcon sniper_jarate
+			Skill Expert
+			Health 150
+			Scale 1.2
+			WeaponRestrictions SecondaryOnly
+			MaxVisionRange 800
+			Item "Jarate"
+			Item "The Egghead's Overalls"
+			Item "The Lonesome Loafers"
+			ItemAttributes
+			{
+				ItemName "Jarate"
+				"applies snare effect"					0.25	// 25% slow effect
+				"effect bar recharge rate increased"	0.01
+			}
+			CharacterAttributes
+			{
+				"health regen"					1
+				"bombinomicon effect on death"	1
+			}
+			Action Mobber [$SIGSEGV]
+		}
+		T_TFBot_W1Meme_Clem
+		{
+			Class Sniper
+			Name "Clem"
+			ClassIcon red2_lite
+			Skill Expert
+			Health 1600
+			WeaponRestrictions SecondaryOnly
+			MaxVisionRange 1500
+			Item "Upgradeable TF_WEAPON_SMG"	// just pretend he's holding two guns
+			Item "Mad Mask"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_SMG"
+				"clip size bonus"		4.8		// 120 rounds
+				"fire rate bonus"		0.5		// 1200 RPM
+				"faster reload rate"	2.75	// 3 seconds reload
+				"weapon spread bonus"	1.75	// very inaccurate
+				"damage penalty"		0.25	// 2 damage
+			}
+			CharacterAttributes
+			{
+				"dmg from ranged reduced"	0.25
+				"dmg from melee increased"	0.25
+			}
+			Action Mobber [$SIGSEGV]
+			AddCond [$SIGSEGV]
+			{
+				Index		43	// reprogrammed
+				Delay		0.01
+			}
+		}
+		T_TFBot_W2Meme_Sniper_Thief
+		{
+			Class Sniper
+			Name "Thief"
+			ClassIcon cc_thief
+			Skill Normal
+			Health 150
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 1200
+			Item "The Huntsman"
+			Item "The Toowoomba Tunic"
+			Item "The Cold Killer"
+			ItemAttributes
+			{
+				ItemName "The Huntsman"
+				"damage penalty"			0.5	// 50-85 damage
+				"faster reload rate"		0.5
+			}
+			ItemAttributes
+			{
+				ItemName "The Cold Killer"
+				"set item tint rgb"	6901050	// radigan conagher brown
+			}
+			UseHumanModel 1 [$SIGSEGV]
+		}
+		T_TFBot_W2Meme_Sniper_Iceskimo
+		{
+			Class Sniper
+			Name "Iceskimo"
+			ClassIcon cc_iceskimo
+			Skill Normal
+			Health 150
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 1200
+			Item "The Huntsman"
+			Item "Down Tundra Coat"
+			Item "The Cold Killer"
+			ItemAttributes
+			{
+				ItemName "The Huntsman"
+				"damage penalty"			0.1	// 50-57 damage
+				"slow enemy on hit major"	3
+			}
+			ItemAttributes
+			{
+				ItemName "The Cold Killer"
+				"set item tint rgb"	2452877	// value of teamwork blue
+			}
+			UseHumanModel 1 [$SIGSEGV]
+		}
+		T_TFBot_W2Meme_Heavy_Barbarian
+		{
+			Class Heavyweapons
+			Name "Barbarian"
+			ClassIcon cc_barbarian
+			Skill Hard
+			Health 200
+			WeaponRestrictions MeleeOnly
+			Item "Upgradeable TF_WEAPON_FISTS"
+			Item "Nasty Norsemann"
+			ItemAttributes
+			{
+				ItemName "Nasty Norsemann"
+				"set item tint rgb"	6901050	// radigan conagher brown
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1.2
+			}
+			UseHumanModel 1 [$SIGSEGV]
+		}
+		T_TFBot_W2Meme_Soldier_StoveFace
+		{
+			Class Soldier
+			Name "Stove Face"
+			ClassIcon cc_stove_face
+			Skill Hard
+			Health 300
+			WeaponRestrictions MeleeOnly
+			Item "The Half-Zatoichi"
+			Item "The Dark Age Defender"
+			Item "Brass Bucket"
+			ItemAttributes
+			{
+				ItemName "Brass Bucket"
+				"set item tint rgb"	8289918	// aged moustache grey
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.95
+			}
+			UseHumanModel 1 [$SIGSEGV]
+		}
+		T_TFBot_W2Meme_Demoman_Brute_Beefy
+		{
+			Class Demoman
+			Name "Beefy Brute"
+			ClassIcon cc_brute
+			Skill Expert
+			Health 800
+			Scale 1.5
+			WeaponRestrictions MeleeOnly
+			Item "The Half-Zatoichi"
+			Item "The Dark Helm"
+			Item "The Dark Age Defender"
+			Item "The Gaelic Garb"
+			ItemAttributes
+			{
+				ItemName "The Half-Zatoichi"
+				"damage bonus"	1.5
+			}
+			ItemAttributes
+			{
+				ItemName "The Gaelic Garb"
+				"set item tint rgb"	4345659	// zepheniah's greed
+			}
+			CharacterAttributes
+			{
+				"health regen"		1
+				"move speed bonus"	0.85
+			}
+			UseHumanModel 1 [$SIGSEGV]
+		}
+		T_TFBot_W2Meme_Pyro_Chief_Orange
+		{
+			Class Pyro
+			Name "Orange Princess"
+			ClassIcon cc_orange_princess
+			Skill Expert
+			Health 15000
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			Item "pyroland_flamethrower_balloonicorn"
+			Item "Festive Flare Gun"
+			Item "Nose Candy"
+			Item "Flavorful Baggies"
+			ItemAttributes
+			{
+				ItemName "pyroland_flamethrower_balloonicorn"
+				"damage bonus"					1.2
+				"airblast disabled"				1
+				"set_item_texture_wear"			0
+			}
+			ItemAttributes
+			{
+				ItemName "Festive Flare Gun"
+				"is_passive_weapon"				1
+				"override projectile type"		3	// fires grenades
+				"damage causes airblast"		1
+				"apply z velocity on damage"	450	// push up amount
+				"custom projectile model"		"models/items/medkit_small_bday.mdl"
+				"damage penalty"				0.1
+				"Blast radius increased"		2
+				"fire rate penalty"				2.5
+				"fuse bonus"					2.5
+			}
+			ItemAttributes
+			{
+				ItemName "Flavorful Baggies"
+				"set item tint rgb"	13595446	// mann co orange
+			}
+			CharacterAttributes
+			{
+				"rage giving scale"								0.2
+				"move speed bonus"								0.35
+				"damage force reduction"						0.5
+				"airblast vulnerability multiplier"				0.5
+				"override footstep sound set"					6
+				"airblast vertical vulnerability multiplier"	0.1
+			}
+			UseHumanModel 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+		}
+		T_TFBot_W2Meme_Demoman_Jester
+		{
+			Class Demoman
+			Name "Jester"
+			ClassIcon demo_jester_nys
+			Skill Normal
+			Health 175
+			WeaponRestrictions PrimaryOnly
+			Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+			Item "Pestering Jester"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+				"fire rate bonus" 			0.75
+				"faster reload rate"		-0.8
+				"damage penalty"			0.35
+				"custom projectile model"	"models/pyroland/kitteh.mdl"
+			}
+		}
+		T_TFBot_W2Meme_Spy_Clown
+		{
+			Class Spy
+			Name "Clown"
+			ClassIcon spy
+			Skill Expert
+			Health 125
+			Item "Upgradeable TF_WEAPON_REVOLVER"
+			Item "Upgradeable TF_WEAPON_KNIFE"
+			Item "Bozo's Bouffant"
+			Item "The Marxman"
+			Item "Bozo's Brogues"
+			CharacterAttributes
+			{
+				"cannot pick up intelligence"	1
+			}
+			UseHumanModel 1 [$SIGSEGV]
+		}
+		T_TFBot_W2Meme_King
+		{
+			Class Demoman
+			Name "The King"
+			ClassIcon cc_king
+			Skill Expert
+			Health 8000
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Item "The Eyelander"
+			Item "The All-Father"
+			Item "The King of Scotland Cape"
+			Item "Class Crown"
+			ItemAttributes
+			{
+				ItemName "The Eyelander"
+				"critboost on kill"		5
+				"turn to gold"			1
+				"item style override"	1
+				"is australium item"	1
+			}
+			ItemAttributes
+			{
+				ItemName "Class Crown"
+				"set item tint rgb"	8208497	// deep commitment to purple
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"						0.5
+				"damage force reduction"				0.5
+				"airblast vulnerability multiplier" 	0.5
+				"override footstep sound set"			4
+				"cannot be backstabbed"					1
+				"dmg from ranged reduced"				0.25
+				"dmg from melee increased"				0.25
+			}
+			Action Mobber [$SIGSEGV]
+			UseHumanModel 1 [$SIGSEGV]
+			AddCond [$SIGSEGV]
+			{
+				Index		43	// reprogrammed
+				Delay		0.01
+			}
+		}
+		T_TFBot_W3Meme_Sniper_Aimbot1
+		{
+			Class Sniper
+			Name "CAN YOU QUACK"
+			ClassIcon sniper
+			Skill Expert
+			Health 1000
+			Scale 1
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 5000
+			Attributes MiniBoss
+			Attributes AlwaysCrit
+			Attributes AlwaysFireWeapon
+			Item "Upgradeable TF_WEAPON_SNIPERRIFLE"
+			Item "The Cozy Camper"
+			Item "The Skull Island Topper"
+			Item "Autogrant Pyrovision Goggles"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_SNIPERRIFLE"
+				"damage bonus"					2
+				"dmg pierces resists absorbs"	1
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"				0.5
+				"health regen"					50
+				"dmg from ranged reduced"		0.01
+				"dmg from melee increased"		0.01
+				"cannot pick up intelligence"	1
+			}
+			Action Mobber [$SIGSEGV]
+			UseHumanModel 1 [$SIGSEGV]
+		}
+		T_TFBot_W3Meme_Sniper_Aimbot2
+		{
+			Class Sniper
+			Name "MYGOT"
+			ClassIcon sniper
+			Skill Expert
+			Health 1000
+			Scale 1
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 5000
+			Attributes MiniBoss
+			Attributes AlwaysCrit
+			Attributes AlwaysFireWeapon
+			Item "Upgradeable TF_WEAPON_SNIPERRIFLE"
+			Item "Ghastly Gibus 2011"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_SNIPERRIFLE"
+				"damage bonus"					2
+				"dmg pierces resists absorbs"	1
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"				0.5
+				"health regen"					50
+				"dmg from ranged reduced"		0.01
+				"dmg from melee increased"		0.01
+				"cannot pick up intelligence"	1
+			}
+			Action Mobber [$SIGSEGV]
+			UseHumanModel 1 [$SIGSEGV]
+		}
+		// T_TFBot_W3Meme_Pyro_Giant_Glitch
+		// {
+			// Class Pyro
+			// Name "Scorch"
+			// ClassIcon glitch_pyro_giant
+			// Skill Expert
+			// Health 3300
+			// WeaponRestrictions PrimaryOnly
+			// Attributes MiniBoss
+			// Item "Upgradeable TF_WEAPON_FLAMETHROWER"
+			// Item "Pyro Helm"
+			// ItemAttributes
+			// {
+				// ItemName "Upgradeable TF_WEAPON_FLAMETHROWER"
+				// "damage penalty"			0.75
+				// "airblast pushback scale"	1.5
+				// "mult airblast refire time"	0.01
+			// }
+			// CharacterAttributes
+			// {
+				// "move speed bonus"					0.5
+				// "damage force reduction"			0.5
+				// "airblast vulnerability multiplier"	0.5
+				// "override footstep sound set"		6
+			// }
+			// UseMeleeThreatPrioritization 1 [$SIGSEGV]
+		// }
+		T_TFBot_W3Meme_Pyro_Giant_Glitch
+		{
+			Class Pyro
+			Name "Scorch"
+			ClassIcon glitch_pyro_giant
+			Health 3300
+			Attributes MiniBoss
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		0
+				Cooldown	10
+				Name		"Attr1"
+			}
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		5
+				Cooldown	10
+				Name		"Attr2"
+			}
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			EventChangeAttributes
+			{
+				Attr1
+				{
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Item "Upgradeable TF_WEAPON_FLAMETHROWER"
+					Item "Pyro Helm"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_FLAMETHROWER"
+						"damage penalty"			0.75
+						"airblast pushback scale"	1.5
+						"mult airblast refire time"	0.01
+					}
+					CharacterAttributes
+					{
+						"head scale"						1.5
+						"torso scale"						0.5
+						"move speed bonus"					0.5
+						"damage force reduction"			0.5
+						"airblast vulnerability multiplier"	0.5
+						"override footstep sound set"		6
+					}
+				}
+				Attr2
+				{
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Item "The Dragon's Fury"
+					Item "Pyromancer's Mask"
+					ItemAttributes
+					{
+						ItemName "The Dragon's Fury"
+						"damage bonus"		1.2
+						"airblast disabled"	1
+					}
+					CharacterAttributes
+					{
+						"hand scale"						1.5
+						"move speed bonus"					0.5
+						"damage force reduction"			0.5
+						"airblast vulnerability multiplier"	0.5
+						"override footstep sound set"		6
+					}
+				}
+			}
+		}
+		// T_TFBot_W3Meme_Medic_Glitch
+		// {
+			// Class Medic
+			// Name "Smol Medic"
+			// ClassIcon glitch_medic
+			// Skill Hard
+			// Health 80
+			// Scale 0.35
+			// Attributes SpawnWithFullCharge
+			// Item "Upgradeable TF_WEAPON_SYRINGEGUN_MEDIC"
+			// Item "Upgradeable TF_WEAPON_MEDIGUN"
+			// Item "Das Naggenvatcher"
+			// ItemAttributes
+			// {
+				// ItemName "Upgradeable TF_WEAPON_MEDIGUN"
+				// "ubercharge rate bonus"	5
+				// "uber duration bonus"	-5
+				// "heal rate bonus"		0.01
+			// }
+		// }
+		T_TFBot_W3Meme_Medic_Glitch
+		{
+			Class Medic
+			Name "Smol Medic"
+			ClassIcon glitch_medic
+			Health 80
+			Scale 0.35
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		0
+				Cooldown	10
+				Name		"Attr1"
+			}
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		5
+				Cooldown	10
+				Name		"Attr2"
+			}
+			EventChangeAttributes
+			{
+				Attr1
+				{
+					Skill Hard
+					Attributes SpawnWithFullCharge
+					Item "Upgradeable TF_WEAPON_SYRINGEGUN_MEDIC"
+					Item "Upgradeable TF_WEAPON_MEDIGUN"
+					Item "Das Naggenvatcher"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_MEDIGUN"
+						"ubercharge rate bonus"	5
+						"uber duration bonus"	-5
+						"heal rate bonus"		0.01
+					}
+					CharacterAttributes
+					{
+						"torso scale"	1.5
+						"hand scale"	0.5
+					}
+				}
+				Attr1
+				{
+					Skill Hard
+					Attributes SpawnWithFullCharge
+					Item "Upgradeable TF_WEAPON_SYRINGEGUN_MEDIC"
+					Item "The Kritzkrieg"
+					Item "The Weather Master"
+					ItemAttributes
+					{
+						ItemName "The Kritzkrieg"
+						"ubercharge rate bonus"	100
+						"uber duration bonus"	200
+						"heal rate bonus"		0.01
+					}
+					CharacterAttributes
+					{
+						"head scale"						1.5
+						"bot medic uber health threshold"	500
+					}
+				}
+			}
+		}
+		// T_TFBot_W3Meme_Engineer_Glitch
+		// {
+			// Class Engineer
+			// Name "Mildly Overweight Scout"
+			// ClassIcon glitch_engineer
+			// Skill Hard
+			// Health 125
+			// WeaponRestrictions PrimaryOnly
+			// MaxVisionRange 1500
+			// Item "The Widowmaker"
+			// Item "The Well-Rounded Rifleman"
+			// Item "The Breakneck Baggies"
+			// UseHumanModel 1 [$SIGSEGV]
+			// Action FetchFlag [$SIGSEGV]
+		// }
+		T_TFBot_W3Meme_Engineer_Glitch
+		{
+			Class Engineer
+			Name "Mildly Overweight Scout"
+			ClassIcon glitch_engineer
+			Health 150
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		0
+				Cooldown	10
+				Name		"Attr1"
+			}
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		5
+				Cooldown	10
+				Name		"Attr2"
+			}
+			UseHumanModel 1 [$SIGSEGV]
+			Action FetchFlag [$SIGSEGV]
+			EventChangeAttributes
+			{
+				Attr1
+				{
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Item "The Widowmaker"
+					Item "The Well-Rounded Rifleman"
+					Item "The Breakneck Baggies"
+					CharacterAttributes
+					{
+						"head scale"	1.5
+					}
+				}
+				Attr2
+				{
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Item "The Frontier Justice"
+					Item "The Hat With No Name"
+					Item "The Texas Half-Pants"
+					ItemAttributes
+					{
+						ItemName "The Frontier Justice"
+						"faster reload rate"	-0.8
+						"weapon spread bonus"	0.65
+						"fire rate penalty"		1.5
+					}
+					CharacterAttributes
+					{
+						"torso scale"	0.5
+						"hand scale"	1.5
+					}
+				}
+			}
+		}
+		// T_TFBot_W3Meme_Scout_Glitch
+		// {
+			// Class Scout
+			// Name "Ankle Biter"
+			// ClassIcon glitch_scout
+			// Skill Hard
+			// Health 100
+			// Scale 0.65
+			// WeaponRestrictions MeleeOnly
+			// Item "Upgradeable TF_WEAPON_BAT"
+			// ItemAttributes
+			// {
+				// ItemName "Upgradeable TF_WEAPON_BAT"
+				// "damage penalty"				0.1
+				// "damage causes airblast"		1
+				// "apply z velocity on damage"	-1000	// push down amount
+			// }
+		// }
+		T_TFBot_W3Meme_Scout_Glitch
+		{
+			Class Scout
+			Name "Ankle Biter"
+			ClassIcon glitch_scout
+			Health 100
+			Scale 0.65
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		0
+				Cooldown	10
+				Name		"Attr1"
+			}
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		5
+				Cooldown	10
+				Name		"Attr2"
+			}
+			EventChangeAttributes
+			{
+				Attr1
+				{
+					Skill Hard
+					WeaponRestrictions MeleeOnly
+					Item "Upgradeable TF_WEAPON_BAT"
+					Item "Bonk Leadwear"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_BAT"
+						"damage penalty"				0.1
+						"damage causes airblast"		1
+						"apply z velocity on damage"	-1000	// push down amount
+					}
+					CharacterAttributes
+					{
+						"torso scale"	1.5
+					}
+				}
+				Attr2
+				{
+					Skill Hard
+					WeaponRestrictions MeleeOnly
+					Item "The Sandman"
+					Item "Batter's Helmet"
+					ItemAttributes
+					{
+						ItemName "The Sandman"
+						"effect bar recharge rate increased"	0.35
+						"dmg penalty vs players"				0.1
+						"damage causes airblast"				1
+						"apply z velocity on damage"			-1000	// push down amount
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.5
+						"hand scale"	1.5
+					}
+				}
+			}
+		}
+		// T_TFBot_W3Meme_Soldier_Glitch
+		// {
+			// Class Soldier
+			// Name "Crunch Soldier"
+			// ClassIcon glitch_soldier
+			// Skill Hard
+			// Health 200
+			// WeaponRestrictions PrimaryOnly
+			// Attributes HoldFireUntilFullReload
+			// Item "The Liberty Launcher"
+			// Item "Lord Cockswain's Pith Helmet"
+			// ItemAttributes
+			// {
+				// ItemName "The Liberty Launcher"
+				// "damage causes airblast"			1
+				// "apply z velocity on damage"		-1000	// push down amount
+				// "damage penalty"					0.1
+				// "fire rate bonus"					0.01
+				// "blast radius decreased"			0.8
+				// "projectile spread angle penalty"	2
+			// }
+		// }
+		T_TFBot_W3Meme_Soldier_Glitch
+		{
+			Class Soldier
+			Name "Crunch Soldier"
+			ClassIcon glitch_soldier
+			Health 200
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		0
+				Cooldown	10
+				Name		"Attr1"
+			}
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		5
+				Cooldown	10
+				Name		"Attr2"
+			}
+			EventChangeAttributes
+			{
+				Attr1
+				{
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Attributes HoldFireUntilFullReload
+					Item "The Liberty Launcher"
+					Item "Lord Cockswain's Pith Helmet"
+					ItemAttributes
+					{
+						ItemName "The Liberty Launcher"
+						"damage causes airblast"			1
+						"apply z velocity on damage"		-1000	// push down amount
+						"damage penalty"					0.1
+						"fire rate bonus"					0.01
+						"blast radius decreased"			0.8
+						"projectile spread angle penalty"	2
+					}
+					CharacterAttributes
+					{
+						"torso scale"	1.5
+						"hand scale"	0.5
+					}
+				}
+				Attr2
+				{
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+					Item "The Doe-Boy"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+						"damage causes airblast"		1
+						"apply z velocity on damage"	-1000	// push down amount
+						"damage penalty"				0.1
+						"faster reload rate"			-0.8
+						"fire rate bonus"				0.5
+						"Projectile speed decreased"	0.65
+					}
+					CharacterAttributes
+					{
+						"head scale"	1.5
+					}
+				}
+			}
+		}
+		T_TFBot_W3Meme_Sniper_Long
+		{
+			Class Sniper
+			Name "L.A.R. Guy"	// L.A.R.: Long Ass Rifle
+			ClassIcon sniper
+			Skill Hard
+			Health 125
+			MaxVisionRange 2500
+			Item "Upgradeable TF_WEAPON_SNIPERRIFLE"
+			Item "Upgradeable TF_WEAPON_CLUB"
+			CharacterAttributes
+			{
+				"hand scale"	1.5
+			}
+		}
+		T_TFBot_W3Meme_Jerry
+		{
+			Class Sniper
+			Name "jerry"
+			ClassIcon jerry
+			Skill Expert
+			Health 5000
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 5000
+			Attributes AlwaysCrit
+			Attributes AlwaysFireWeapon
+			Item "Upgradeable TF_WEAPON_SNIPERRIFLE"
+			Item "Particulate Protector"
+			Item "The Snow Scoper"
+			Item "The Chill Chullo"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_SNIPERRIFLE"
+				"damage bonus"					10
+				"dmg pierces resists absorbs"	1
+				"item style override"			1
+				"is australium item"			1
+			}
+			ItemAttributes
+			{
+				ItemName "The Chill Chullo"
+				"set item tint rgb"	2960676	// after eight
+			}
+			//ItemAttributes
+			//{
+				//ItemName "Particulate Protector"
+				//"set item tint rgb"	12073019	// team spirit red
+			//}
+			//ItemAttributes
+			//{
+				//ItemName "The Snow Scoper"
+				//"set item tint rgb"	1315860	// distinctive lack of hue
+			//}
+			CharacterAttributes
+			{
+				"health regen"				500
+				"dmg from ranged reduced"	0.01
+				"dmg from melee increased"	0.01
+				"cancel falling damage"		1
+			}
+			Action Mobber [$SIGSEGV]
+			UseHumanModel 1 [$SIGSEGV]
+			AddCond [$SIGSEGV]
+			{
+				Index		43	// reprogrammed
+				Delay		0.01
+			}
+		}
+		T_TFBot_W4Meme_Demoman_Cannon
+		{
+			Class Demoman
+			Name "Cannon Demoman"
+			ClassIcon demo_loosecannon
+			Skill Hard
+			Health 175
+			WeaponRestrictions PrimaryOnly
+			Item "The Loose Cannon"
+			Item "The Buccaneer's Bicorne"
+			ItemAttributes
+			{
+				ItemName "The Loose Cannon"
+				"grenade launcher mortar mode"	0	// doesn't hold m1 and kill itself
+				"damage causes airblast"		1
+				"fire rate penalty" 			1.5
+				"faster reload rate"			-0.8
+				"projectile speed increased"	1.5
+			}
+		}
+		T_TFBot_W4Meme_Pyro_AirBlast
+		{
+			Class Pyro
+			Name "Airblast Pyro"
+			ClassIcon pyro_reflect_daan
+			Skill Hard
+			Health 175
+			WeaponRestrictions PrimaryOnly
+			Item "Upgradeable TF_WEAPON_FLAMETHROWER"
+			Item "Pyro Helm"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_FLAMETHROWER"
+				"mult airblast refire time"	0.01
+				"damage penalty"			0.5
+			}
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+		}
+		T_TFBot_W4Meme_Heavy_Deflector_Push
+		{
+			Class Heavyweapons
+			Name "Push Deflector Heavy"
+			ClassIcon heavy_deflector_push
+			Skill Hard
+			Health 300
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 600
+			Item "Deflector"
+			Item "Polar Bear"
+			ItemAttributes
+			{
+				ItemName "Deflector"
+				"damage penalty"				0.5
+				"attack projectiles"			1
+				"apply look velocity on damage"	75	// push back amount
+				"apply z velocity on damage"	150	// push up amount
+			}
+		}
+		T_TFBot_W4Meme_Scout_FaN
+		{
+			Class Scout
+			Name "Force-a-Nature Scout"
+			ClassIcon scout_fan
+			Skill Normal
+			Health 125
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 1200
+			Item "The Force-a-Nature"
+			Item "The Fed-Fightin' Fedora"
+			ItemAttributes
+			{
+				ItemName "The Force-a-Nature"
+				"damage penalty"	0.8
+			}
+		}
+		T_TFBot_W4Meme_Soldier_Giant_Blast
+		{
+			Class Soldier
+			Name "Giant Blast Soldier"
+			ClassIcon soldier_libertylauncher_giant
+			Skill Expert
+			Health 4000
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			Item "The Liberty Launcher"
+			Item "Lord Cockswain's Pith Helmet"
+			ItemAttributes
+			{
+				ItemName "The Liberty Launcher"
+				"damage causes airblast"			1
+				//"damage penalty"					1
+				"fire rate bonus"					0.2
+				"clip size upgrade atomic"			5
+				"faster reload rate"				0.5
+				"projectile spread angle penalty"	3
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					0.5
+				"damage force reduction"			0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"		3
+			}
+		}
+		// T_TFBot_W4Meme_SkeletronPrime_Head
+		// {
+			// Class HeavyWeapons
+			// Name "Skeletron Prime"
+			// ClassIcon skeletron_prime
+			// Skill Expert
+			// Health 28000
+			// WeaponRestrictions MeleeOnly
+			// Attributes MiniBoss
+			// Attributes UseBossHealthBar
+			// Item "Upgradeable TF_WEAPON_FISTS"
+			// Item "The Dead Head"
+			// ItemAttributes
+			// {
+				// ItemName "Upgradeable TF_WEAPON_FISTS"
+				// "damage bonus"	1.5
+			// }
+			// CharacterAttributes
+			// {
+				// "move speed bonus"					0.5
+				// "damage force reduction"			0.3
+				// "airblast vulnerability multiplier"	0.3
+				// "override footstep sound set"		2
+				// "head scale"						8
+				// "torso scale"						0.25
+			// }
+		// }
+		T_TFBot_W4Meme_SkeletronPrime_Head
+		{
+			Class HeavyWeapons
+			Name "Skeletron Prime"
+			ClassIcon skeletron_prime
+			Health 28000
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		0
+				Cooldown	20
+				Name		"Attr1"
+			}
+			ChangeAttributes [$SIGSEGV]
+			{
+				Delay		12
+				Cooldown	20
+				Name		"Attr2"
+			}
+			EventChangeAttributes
+			{
+				Attr1
+				{
+					Skill Expert
+					WeaponRestrictions MeleeOnly
+					Item "Upgradeable TF_WEAPON_FISTS"
+					Item "Deadbeats"
+					Item "The Dead Head"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_FISTS"
+						"damage bonus"	1.5
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"					0.5
+						"damage force reduction"			0.3
+						"airblast vulnerability multiplier"	0.3
+						"override footstep sound set"		2
+						"head scale"						8
+						"torso scale"						0.25
+					}
+				}
+				Attr2
+				{
+					Skill Expert
+					WeaponRestrictions MeleeOnly
+					Item "Upgradeable TF_WEAPON_FISTS"
+					Item "Festive Fascinator"
+					Item "The Dead Head"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_FISTS"
+						"fire rate bonus"	0.5
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"					0.8
+						"damage force reduction"			0.3
+						"airblast vulnerability multiplier"	0.3
+						"override footstep sound set"		2
+						"head scale"						8
+						"torso scale"						0.25
+						"dmg from ranged reduced"			0.65
+						"dmg from melee increased"			0.65
+					}
+				}
+			}
+		}
+		T_TFBot_W4Meme_SkeletronPrime_Saw
+		{
+			Class Scout
+			Name "Prime Saw"
+			ClassIcon skeletron_prime_part
+			Skill Expert
+			Health 9000
+			Scale 1.5
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Item "Upgradeable TF_WEAPON_BAT"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_BAT"
+				"damage bonus"	1.5
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"			0.6
+				"airblast vulnerability multiplier"	0.6
+				"override footstep sound set"		5
+				"hand scale"						5
+				"torso scale"						0.25
+			}
+		}
+		T_TFBot_W4Meme_SkeletronPrime_Vice
+		{
+			Class Demoman
+			Name "Prime Vice"
+			ClassIcon skeletron_prime_part
+			Skill Expert
+			Health 9000
+			Scale 1.5
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Item "The Chargin' Targe"
+			Item "The Eyelander"
+			ItemAttributes
+			{
+				ItemName "The Chargin' Targe"
+				"Attack not cancel charge"	1
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					0.5
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		4
+				"hand scale"						5
+				"torso scale"						0.25
+			}
+		}
+		T_TFBot_W4Meme_SkeletronPrime_Laser
+		{
+			Class Soldier
+			Name "Prime Laser"
+			ClassIcon skeletron_prime_part
+			Skill Expert
+			Health 6000
+			Scale 1.5
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Item "The Cow Mangler 5000"
+			ItemAttributes
+			{
+				ItemName "The Cow Mangler 5000"
+				"set item tint rgb"					12073019	// team spirit red
+				"override projectile type"			13		// bison/pomson projectile
+				"energy weapon penetration"			1		// specify bison projectile
+				"projectile penetration"			1
+				"damage bonus"						2.5
+				"faster reload rate"				-0.8
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					0.5
+				"damage force reduction"			0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"		3
+				"hand scale"						5
+				"torso scale"						0.25
+			}
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+		}
+		T_TFBot_W4Meme_SkeletronPrime_Cannon
+		{
+			Class Demoman
+			Name "Prime Cannon"
+			ClassIcon skeletron_prime_part
+			Skill Expert
+			Health 6000
+			Scale 1.5
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Item "The Loose Cannon"
+			Item "The Buccaneer's Bicorne"
+			ItemAttributes
+			{
+				ItemName	"The Loose Cannon"
+				"grenade launcher mortar mode"		0	// doesn't hold m1 and kill itself
+				"damage bonus"						2
+				"faster reload rate"				-0.8
+				"Blast radius increased"			1.2
+				"fire rate penalty"					2
+				"projectile spread angle penalty"	3
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					0.5
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		4
+				"hand scale"						5
+				"torso scale"						0.25
+			}
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+		}
+		T_TFBot_W4Meme_Soldier_BalloonSlime
+		{
+			Class Soldier
+			Name "Balloon Slime"
+			ClassIcon balloon_slime
+			Skill Hard
+			Health 200
+			WeaponRestrictions MeleeOnly
+			Attributes Parachute
+			Attributes AutoJump
+				AutoJumpMin 2
+				AutoJumpMax 10
+			Item "The B.A.S.E. Jumper"
+			Item "Upgradeable TF_WEAPON_SHOVEL"
+			Item "Soldier Drill Hat"
+			ItemAttributes
+			{
+				ItemName "Soldier Drill Hat"
+				"set item tint rgb"	2452877	// value of teamwork blue
+			}
+			CharacterAttributes
+			{
+				"head scale"						4
+				"cancel falling damage"				1
+				"increased jump height"				4
+			}
+		}
+		T_TFBot_W4Meme_GlupShitto
+		{
+			Class Scout
+			Name "Glup Shitto"
+			ClassIcon red2_lite
+			Skill Expert
+			Health 69420	// there it is, your funny meme number
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Attributes AlwaysCrit
+			Item "Batsaber"
+			Item "Fuel Injector"
+			Item "The Terrier Trousers"
+			Item "The Bacteria Blocker"
+			ItemAttributes
+			{
+				ItemName "Batsaber"
+				"damage bonus"		2
+				"fire rate penalty"	1.6
+			}
+			ItemAttributes
+			{
+				ItemName "The Bacteria Blocker"
+				"set item tint rgb"	4345659	// zepheniah's greed
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"			0.6
+				"airblast vulnerability multiplier"	0.6
+				"override footstep sound set"		5
+				"health regen"						500
+				"dmg from ranged reduced"			0.01
+				"dmg from melee increased"			0.01
+			}
+			Action Mobber [$SIGSEGV]
+			UseHumanModel 1 [$SIGSEGV]
+			AddCond [$SIGSEGV]
+			{
+				Index		43	// reprogrammed
+				Delay		0.01
+			}
+		}
+		T_TFBot_W4Meme_Engineer_AngryDandelion
+		{
+			Class Engineer
+			Name "Angry Dandelion"
+			ClassIcon angry_dandelion
+			Skill Expert
+			Health 250
+			Item "Upgradeable TF_WEAPON_WRENCH"
+			Item "Jungle Wreath"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_WRENCH"
+				"damage bonus"	21
+			}
+			CharacterAttributes
+			{
+				"health regen"					1
+				"cannot pick up intelligence"	1
+				"head scale"					3
+				"torso scale"					0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Blue
+		{
+			Class Scout
+			Name "Blue Bloon"
+			ClassIcon bloon_blue
+			Skill Easy
+			Health 100
+			Scale 1.05
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_BAT"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_BAT"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	2452877	// value of teamwork blue
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.7
+				"head scale"		4
+				"torso scale"		0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Green
+		{
+			Class Scout
+			Name "Green Bloon"
+			ClassIcon bloon_green
+			Skill Easy
+			Health 150
+			Scale 1.1
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_BAT"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_BAT"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	7511618	// indubitably green
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.8
+				"head scale"		4
+				"torso scale"		0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Yellow
+		{
+			Class Scout
+			Name "Yellow Bloon"
+			ClassIcon bloon_yellow
+			Skill Easy
+			Health 200
+			Scale 1.15
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_BAT"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_BAT"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	15185211	// australium gold
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.9
+				"head scale"		4
+				"torso scale"		0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Pink
+		{
+			Class Scout
+			Name "Pink Bloon"
+			ClassIcon bloon_pink
+			Skill Easy
+			Health 250
+			Scale 1.2
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_BAT"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_BAT"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"		16738740	// pink as hell
+			}
+			CharacterAttributes
+			{
+				"head scale"	4
+				"torso scale"	0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_White
+		{
+			Class Sniper
+			Name "White Bloon"
+			ClassIcon bloon_white
+			Skill Easy
+			Health 300
+			Scale 0.8
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_CLUB"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_CLUB"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	15132390	// extraordinary abundance of tinge
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"			1.1
+				"head scale"				4
+				"dmg from melee increased"	0
+				"torso scale"				0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Black
+		{
+			Class Demoman
+			Name "Black Bloon"
+			ClassIcon bloon_black
+			Skill Easy
+			Health 300
+			Scale 0.8
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_BOTTLE"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_BOTTLE"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	1315860	// distinctive lack of hue
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"				1.15
+				"head scale"					4
+				"dmg taken from blast reduced"	0
+				"torso scale"					0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Purple
+		{
+			Class Pyro
+			Name "Purple Bloon"
+			ClassIcon bloon_purple
+			Skill Easy
+			Health 300
+			Scale 1.2
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_FIREAXE"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_FIREAXE"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	8208497	// deep commitment to purple
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"				1.2
+				"head scale"					4
+				"dmg taken from fire reduced"	0
+				"torso scale"					0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Lead
+		{
+			Class Soldier
+			Name "Lead Bloon"
+			ClassIcon bloon_lead
+			Skill Easy
+			Health 350
+			Scale 1.15
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_SHOVEL"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_SHOVEL"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	8289918	// aged moustache grey
+			}
+			CharacterAttributes
+			{
+				"head scale"						4
+				"dmg taken from bullets reduced"	0
+				"torso scale"						0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Ceramic
+		{
+			Class Heavyweapons
+			Name "Ceramic Bloon"
+			ClassIcon bloon_ceramic
+			Skill Easy
+			Health 900
+			Scale 1.2
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_FISTS"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_FISTS"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	6901050	// radigan conagher brown
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1.5
+				"head scale"		4
+				"torso scale"		0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Red
+		{
+			Class Scout
+			Name "Red Bloon"
+			ClassIcon bloon_red
+			Skill Easy
+			Health 50
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_BAT"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_BAT"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	12073019	// team spirit red
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.6
+				"head scale"		4
+				"torso scale"		0.25
+			}
+		}
+		T_TFBot_W5Meme_Bloon_Blue_Camo
+		{
+			Class Spy
+			Name "Camo Blue Bloon"
+			ClassIcon bloon_blue_support
+			Skill Easy
+			Health 100
+			Scale 1.05
+			WeaponRestrictions MeleeOnly
+			Attributes IgnoreEnemies
+			Item "Upgradeable TF_WEAPON_KNIFE"
+			Item "The Cockfighter"
+			//Item "The Boo Balloon"	// this would have been perfect if the fucking thing scaled
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_KNIFE"
+				"damage penalty"	0.01
+				"fire rate penalty"	100
+			}
+			ItemAttributes
+			{
+				ItemName "The Cockfighter"
+				"set item tint rgb"	2452877	// value of teamwork blue
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.9
+				"head scale"		4
+				"torso scale"		0.25
+			}
+			AddCond [$SIGSEGV]
+			{
+				Index		66	// invis spell
+				Delay		0.01
+			}
+		}
+		T_TFBot_W5Meme_Abibe
+		{
+			Class Soldier
+			Name "Abibe the Ape"
+			ClassIcon red2_lite
+			Skill Expert
+			Health 4000
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes AlwaysCrit
+			Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+			Item "Yeti_Head"
+			Item "Yeti_Legs"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+				"damage bonus"				5
+				"faster reload rate"		-0.8
+				"blast radius increased"	1.75
+				"use large smoke explosion"	1
+				"fire rate penalty"			10
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					0.5
+				"damage force reduction"			0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"		3
+				"health regen"						500
+				"dmg from ranged reduced"			0.01
+				"dmg from melee increased"			0.01
+			}
+			Action Mobber [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			AddCond [$SIGSEGV]
+			{
+				Index		43	// reprogrammed
+				Delay		0.01
+			}
+		}
+		T_TFBot_W5Meme_Floppa
+		{
+			Class Heavyweapons
+			Name "Big Floppa"
+			ClassIcon red2_lite
+			Skill Expert
+			Health 5000
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 1500
+			Attributes MiniBoss
+			Item "Upgradeable TF_WEAPON_MINIGUN"
+			Item "The Beastly Bonnet"
+			CharacterAttributes
+			{
+				"move speed bonus"					0.5
+				"damage force reduction"			0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"		2
+				"health regen"						500
+				"dmg from ranged reduced"			0.01
+				"dmg from melee increased"			0.01
+			}
+			Action Mobber [$SIGSEGV]
+			AddCond [$SIGSEGV]
+			{
+				Index		43	// reprogrammed
+				Delay		0.01
+			}
+		}
+		T_TFBot_W5Meme_Pungo
+		{
+			Class HeavyWeapons
+			Name "Pungo the Primate"
+			ClassIcon red2_lite
+			Skill Expert
+			Health 5000
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Attributes AlwaysCrit
+			Item "Upgradeable TF_WEAPON_FISTS"
+			Item "Yeti_Head"
+			Item "Yeti_Legs"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_FISTS"
+				"damage bonus"		1.1
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					0.65
+				"damage force reduction"			0.3
+				"airblast vulnerability multiplier"	0.3
+				"override footstep sound set"		2
+				"health regen"						500
+				"dmg from ranged reduced"			0.01
+				"dmg from melee increased"			0.01
+			}
+			Action Mobber [$SIGSEGV]
+			AddCond [$SIGSEGV]
+			{
+				Index		43	// reprogrammed
+				Delay		0.01
+			}
+		}
+		T_TFBot_W5Meme_Condor
+		{
+			Class Spy
+			Name "Comedy Condor"
+			ClassIcon red2_lite
+			Skill Expert
+			Health 1600
+			Attributes MiniBoss
+			Attributes AlwaysCrit
+			Item "The Enforcer"
+			Item "Upgradeable TF_WEAPON_KNIFE"
+			Item "Avian Amante"
+			ItemAttributes
+			{
+				ItemName "The Enforcer"
+				"faster reload rate"	-0.8
+			}
+			ItemAttributes
+			{
+				ItemName "Avian Amante"
+				"set item tint rgb"	15132390	// extraordinary abundance of tinge
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					0.5
+				"damage force reduction"			0.6
+				"airblast vulnerability multiplier"	0.6
+				"override footstep sound set" 		5
+				"cannot disguise"					1
+				"health regen"						500
+				"dmg from ranged reduced"			0.01
+				"dmg from melee increased"			0.01
+			}
+			Action Mobber [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			AddCond [$SIGSEGV]
+			{
+				Index		43	// reprogrammed
+				Delay		0.01
+			}
+		}
+		T_TFBot_W6Meme_Demoman_Knight_Samurai_Funny
+		{
+			Class Demoman
+			Name "Laughter Lancer"
+			ClassIcon demoknight_samurai
+			Skill Expert
+			Health 600
+			Scale 1.5
+			WeaponRestrictions MeleeOnly
+			Attributes AlwaysCrit
+			Attributes AirChargeOnly
+			Attributes AutoJump
+				AutoJumpMin 5
+				AutoJumpMax 10
+			Item "The Splendid Screen"
+			Item "The Half-Zatoichi"
+			Item "Demo Kabuto"
+			ItemAttributes
+			{
+				ItemName "The Splendid Screen"
+				"Attack not cancel charge"			1
+				"charge time increased"				2
+				"charge recharge rate increased"	10
+				"charge impact damage increased"	0.01
+			}
+			ItemAttributes
+			{
+				ItemName "The Half-Zatoichi"
+				"crit forces victim to laugh"	1
+				"crit does no damage"			1
+			}
+			CharacterAttributes
+			{
+				"health regen"				1
+				"increased jump height"		2
+				"bot custom jump particle"	1
+			}
+		}
+		T_TFBot_W6Meme_Scout_Giant_FaN
+		{
+			Class Scout
+			Name "Force-a-Nature Super Scout"
+			ClassIcon scout_fan_giant
+			Skill Expert
+			Health 1600
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 1200
+			Attributes MiniBoss
+			Item "The Force-a-Nature"
+			Item "The Fed-Fightin' Fedora"
+			Item "Blizzard Britches"
+			ItemAttributes
+			{
+				ItemName "The Force-a-Nature"
+				"scattergun knockback mult" 1.2
+				"bullets per shot bonus"	1.5
+				"damage penalty"			1
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"			0.6
+				"airblast vulnerability multiplier"	0.6
+				"override footstep sound set"		5
+			}
+		}
+		T_TFBot_W6Meme_Demoman_Bomber
+		{
+			Class Demoman
+			Name "Bomber Demoman"
+			ClassIcon demo_clusterbomb
+			Skill Hard
+			Health 200
+			WeaponRestrictions PrimaryOnly
+			Attributes HoldFireUntilFullReload
+			Item "The Iron Bomber"
+			Item "Conjurer's Cowl"
+			Item "EOTL_Demopants"
+			ItemAttributes
+			{
+				ItemName "The Iron Bomber"
+				"fire rate bonus"					0.01
+				"damage penalty"					0.5
+				"projectile spread angle penalty"	3
+			}
+		}
+		T_TFBot_W6Meme_Pyro_Fury
+		{
+			Class Pyro
+			Name "Dragon's Fury Pyro"
+			ClassIcon pyro_dragon_fury_swordstone
+			Skill Hard
+			Health 175
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 600
+			Item "The Dragon's Fury"
+			Item "Pyromancer's Mask"
+			Item "The Breakneck Baggies"
+			ItemAttributes
+			{
+				ItemName "The Dragon's Fury"
+				"airblast disabled"	1
+			}
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+		}
+		T_TFBot_W6Meme_Heavy_Giant_Deflector
+		{
+			Class Heavyweapons
+			Name "Giant Deflector Heavy"
+			ClassIcon heavy_deflector
+			Skill Expert
+			Health 5000
+			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 1200
+			Attributes MiniBoss
+			Item "Deflector"
+			Item "The U-Clank-A"
+			Item "Batter's Bracers"
+			Item "The Mann Of The House"
+			ItemAttributes
+			{
+				ItemName "Deflector"
+				"damage bonus"			1.2
+				"attack projectiles"	2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					0.5
+				"damage force reduction"			0.4
+				"airblast vulnerability multiplier"	0.4
+				"override footstep sound set"		2
+			}
+		}
+		T_TFBot_W6Meme_Soldier_Conch
+		{
+			Class Soldier
+			Name "Conch Soldier"
+			ClassIcon soldier_conch
+			Skill Normal
+			Health 200
+			Attributes HoldFireUntilFullReload
+			Attributes SpawnWithFullCharge
+			Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+			Item "The Concheror"
+			Item "Furious Fukaamigasa"
+			Item "The Man in Slacks"
+			ItemAttributes
+			{
+				ItemName "The Concheror"
+				"increase buff duration"	420
+				"deploy time decreased"		0.67
+			}
+		}
+		T_TFBot_W6Meme_Soldier_Chief_Blast
+		{
+			Class Soldier
+			Name "Chief Blast Soldier"
+			ClassIcon soldier_libertylauncher_giant
+			Skill Expert
+			Health 58000
+			Scale 1.8
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			Attributes UseBossHealthBar
+			Item "The Liberty Launcher"
+			Item "The Man in Slacks"
+			ItemAttributes
+			{
+				ItemName "The Liberty Launcher"
+				"damage causes airblast"			1
+				"damage penalty"					1
+				"fire rate bonus"					0.2
+				"clip size upgrade atomic"			11
+				"faster reload rate"				0.25
+				"projectile spread angle penalty"	135
+				"blast dmg to self increased"		999999
+			}
+			CharacterAttributes
+			{
+				"dmg taken increased"							2.9	// EHP of 20K if he doesn't self destruct
+				"rage giving scale"								0.2
+				"move speed bonus"								0.5
+				"damage force reduction"						0.2
+				"airblast vulnerability multiplier" 			0.2
+				"airblast vertical vulnerability multiplier"	0.1
+				"override footstep sound set"					3
+			}
+		}
+		T_TFBot_W6Meme_Sniper_Razorback
+		{
+			Class Sniper
+			Name "Razorback Sniper"
+			ClassIcon sniper
+			Skill Expert
+			Health 150
+			MaxVisionRange 3000
+			Item "Upgradeable TF_WEAPON_SNIPERRIFLE"
+			Item "The Razorback"
+			Item "Upgradeable TF_WEAPON_CLUB"
+			Item "The Swagman's Swatter"
+			Item "The Triggerman's Tacticals"
+			ItemAttributes
+			{
+				ItemName "The Razorback"
+				"mult_item_meter_charge_rate"	0.15
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.85
+			}
+		}
+		T_TFBot_W6Meme_Engineer_Teleport
+		{
+			Class Engineer
+			Name "Engineer"
+			ClassIcon engineer
+			Skill Expert
+			Health 600
+			Attributes TeleportToHint
+			Item "Upgradeable TF_WEAPON_WRENCH"
+			Item "The Texas Half-Pants"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_WRENCH"
+				"damage bonus"	21
+			}
+			CharacterAttributes
+			{
+				"health regen"					1
+				"cannot pick up intelligence"	1
+			}
+		}
+		T_TFBot_W6Meme_Legs
+		{
+			Class Scout
+			Name "Legs"
+			ClassIcon legs
+			Skill Expert
+			Health 3000
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Item "Upgradeable TF_WEAPON_BAT"
+			Item "EOTL_Demopants"
+			ItemAttributes
+			{
+				ItemName "Upgradeable TF_WEAPON_BAT"
+				"fire rate bonus"	0.5
+			}
+			CharacterAttributes
+			{
+				"torso scale"						-5
+				"damage force reduction"			0.6
+				"airblast vulnerability multiplier"	0.6
+				"override footstep sound set"		5
+				"health regen"						500
+				"dmg from ranged reduced"			0.01
+				"dmg from melee increased"			0.01
+			}
+			Action Mobber [$SIGSEGV]
+			AddCond [$SIGSEGV]
+			{
+				Index		43	// reprogrammed
+				Delay		0.01
+			}
+		}
+		T_TFBot_Meme_Scout_Giant_Sandman
+		{
+			Class Scout
+			Name "Major League Scout"
+			ClassIcon scout_stun_giant
+			Skill Expert
+			Health 65
+			WeaponRestrictions MeleeOnly
+			MaxVisionRange 1500
+			Attributes MiniBoss
+			Item "The Sandman"
+			Item "Batter's Helmet"
+			Item "MNC Mascot Outfit"
+			ItemAttributes
+			{
+				ItemName "The Sandman"
+				"effect bar recharge rate increased"	0.1
+			}
+			CharacterAttributes
+			{
+				"damage force reduction"				0.6
+				"airblast vulnerability multiplier"		0.6
+				"override footstep sound set"			5
+			}
+		}
+		T_TFBot_Meme_Scout_Timer
+		{
+			Class Scout
+			Name "Clock is ticking..."
+			ClassIcon scout
+			Skill Easy
+			Health 1
+			Scale 0.01
+			Attributes IgnoreEnemies
+			CharacterAttributes
+			{
+				"health regen"	-1
+			}
+		}
+		T_TFBot_Meme_SentryBuster
+		{
+			Class Demoman
+			Name "Sentry Buster"
+			ClassIcon sentry_buster
+			Skill Expert
+			Health 2500
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes IgnoreEnemies
+			Attributes DisableDodge
+			Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+			CharacterAttributes
+			{
+				"move speed bonus"					1.85
+				"head scale"						3.2
+				"torso scale"						0
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		7
+				"cannot be backstabbed"				1
+			}
+		}
+		T_TFBot_Meme_SentryBuster_Conch
+		{
+			Class Soldier
+			Name "Magic Conch Buster"	// The Magic Conch said run at a sentry and explode
+			ClassIcon sentry_buster
+			Skill Expert
+			Health 2500
+			WeaponRestrictions SecondaryOnly
+			Attributes MiniBoss
+			Attributes DisableDodge
+			Attributes SpawnWithFullCharge
+			Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+			Item "The Concheror"
+			Item "Furious Fukaamigasa"
+			CharacterAttributes
+			{
+				"increase buff duration"			420	// xd
+				"deploy time increased"				0.5
+				"move speed bonus"					1.85
+				"head scale"						3.2
+				"torso scale"						0
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		7
+				"cannot be backstabbed"				1
+			}
+		}
+		T_TFBot_Meme_SentryBuster_Bomber
+		{
+			Class Demoman
+			Name "Sentry Bomber"
+			ClassIcon sentry_buster
+			Skill Expert
+			Health 2500
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes DisableDodge
+			Attributes AlwaysFireWeapon
+			Item "The Iron Bomber"
+			ItemAttributes
+			{
+				ItemName "The Iron Bomber"
+				"damage penalty"					0.25
+				"fire rate bonus"					0.2
+				"faster reload rate"				-0.8
+				"Projectile speed increased"		0.01
+				"projectile spread angle penalty"	3
+				"fuse bonus"						3
+				"blast dmg to self increased"		0
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					1.85
+				"head scale"						3.2
+				"torso scale"						0
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		7
+				"cannot be backstabbed"				1
+			}
+		}
+		T_TFBot_Meme_SentryBuster_Charge
+		{
+			Class Demoman
+			Name "Sentry Charger"
+			ClassIcon sentry_buster
+			Skill Expert
+			Health 2500
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes IgnoreEnemies
+			Attributes DisableDodge
+			Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+			Item "The Tide Turner"
+			Item "The Lightning Lid"
+			ItemAttributes
+			{
+				ItemName "The Tide Turner"
+				"charge recharge rate increased"			10
+				"charge impact damage increased"			0
+				"lose demo charge on damage when charging"	0
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					1.85
+				"head scale"						3.2
+				"torso scale"						0
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		7
+				"cannot be backstabbed"				1
+			}
+		}
+		T_TFBot_Meme_SentryBuster_Broken
+		{
+			Class Heavyweapons
+			Name "Busted Buster"
+			ClassIcon sentry_buster
+			Skill Expert
+			Health 4000
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Attributes IgnoreEnemies
+			Attributes DisableDodge
+			Item "The Dalokohs Bar"
+			Item "Upgradeable TF_WEAPON_FISTS"
+			Item "Horrific Headsplitter"
+			ItemAttributes
+			{
+				ItemName "The Dalokohs Bar"
+				"item_meter_charge_rate"	8
+				"force weapon switch"		1
+				"alt-fire disabled"			1
+			}
+			CharacterAttributes
+			{
+				"attach particle effect"			3028	// terrifying thunder
+				"gesture speed increase"			1.75
+				"voice pitch scale"					0
+				"deploy time increased"				0.5
+				"move speed bonus"					2.25
+				"head scale"						3.2
+				"torso scale"						0
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		7
+				"cannot be backstabbed"				1
+			}
+		}
+		T_TFBot_Meme_SentryBuster_Heal
+		{
+			Class Medic
+			Name "Healy Buster"
+			ClassIcon sentry_buster
+			Skill Expert
+			Health 2250
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Attributes IgnoreEnemies
+			Attributes DisableDodge
+			Item "The Amputator"
+			Item "The Surgeon's Stahlhelm"
+			CharacterAttributes
+			{
+				"move speed bonus"					1.55
+				"head scale"						3.2
+				"torso scale"						0
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		7
+				"cannot be backstabbed"				1
+			}
+		}
+		T_TFBot_Meme_SentryBuster_PurpleGuy
+		{
+			Class Demoman
+			Name "The Man Behind The Laughter"
+			ClassIcon sentry_buster
+			Skill Expert
+			Health 2500
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes IgnoreEnemies
+			Attributes DisableDodge
+			Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+			CharacterAttributes
+			{
+				"move speed bonus"					1.85
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		7
+				"cannot be backstabbed"				1
+			}
+			UseCustomModel "models/bots/demo/bot_purpleguy_buster.mdl" [$SIGSEGV]
+		}
+		T_TFBot_Meme_SentryBuster_PurpleGuy_Spam
+		{
+			Class Demoman
+			Name "The Man Behind The Slaughter"
+			ClassIcon sentry_buster
+			Skill Expert
+			Health 2500
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes AlwaysCrit
+			Attributes DisableDodge
+			Attributes AlwaysFireWeapon
+			Item "The Iron Bomber"
+			ItemAttributes
+			{
+				ItemName "The Iron Bomber"
+				"damage penalty"					0.1
+				"fire rate bonus"					0.01
+				"faster reload rate"				-0.8
+				"projectile spread angle penalty"	10
+				"blast dmg to self increased"		0
+				"dmg bonus vs buildings"			3
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"					1.85
+				"damage force reduction"			0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"		7
+				"cannot be backstabbed"				1
+			}
+			UseCustomModel "models/bots/demo/bot_purpleguy_buster.mdl" [$SIGSEGV]
+		}
+	}
+	Mission // Waves 1 and 2 Sentry Busters
+	{
+		Objective	DestroySentries
+		Where	spawnbot
+		BeginAtWave	1
+		RunForThisManyWaves	2
+		InitialCooldown	30
+		CooldownTime	45
+		DesiredCount	1
+		RandomChoice
+		{
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+				Name	"Cone-head Buster"
+				Health	3000
+				Item	"Traffic Cone"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+				Name	"Bucket-head Buster"
+				Health	4000
+				Item	"Bucket Hat"
+			}
+		}
+	}
+	Mission // Wave 3 Purple Guy Sentry Busters
+	{
+		Objective	DestroySentries
+		Where	spawnbot
+		BeginAtWave	3
+		RunForThisManyWaves	1
+		InitialCooldown	30
+		CooldownTime	45
+		DesiredCount	1
+        SuppressSentryBusterModel	1 [$SIGSEGV]
+		RandomChoice
+		{
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_PurpleGuy
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_PurpleGuy
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_PurpleGuy
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_PurpleGuy
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_PurpleGuy_Spam
+			}
+		}
+	}
+	Mission // Waves 4 and 5 Sentry Busters
+	{
+		Objective	DestroySentries
+		Where	spawnbot
+		BeginAtWave	4
+		RunForThisManyWaves	2
+		InitialCooldown	30
+		CooldownTime	45
+		DesiredCount	1
+		RandomChoice
+		{
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+				Name	"Cone-head Buster"
+				Health	3000
+				Item	"Traffic Cone"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+				Name	"Bucket-head Buster"
+				Health	4000
+				Item	"Bucket Hat"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_Charge
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_Conch
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_Broken
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_Heal
+			}
+		}
+	}
+	Mission // Wave 6 Sentry Busters
+	{
+		Objective	DestroySentries
+		Where	spawnbot
+		BeginAtWave	6
+		RunForThisManyWaves	1
+		InitialCooldown	30
+		CooldownTime	45
+		DesiredCount	1
+		RandomChoice
+		{
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+				Item	"EOTL_Demopants"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+				Item	"EOTL_Demopants"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+				Name	"Cone-head Buster"
+				Health	3000
+				Item	"Traffic Cone"
+				Item	"EOTL_Demopants"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster
+				Name	"Bucket-head Buster"
+				Health	4000
+				Item	"Bucket Hat"
+				Item	"EOTL_Demopants"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_Charge
+				Item	"EOTL_Demopants"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_Conch
+				Item	"EOTL_Demopants"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_Broken
+				Item	"EOTL_Demopants"
+			}
+			TFBot
+			{
+				Template	T_TFBot_Meme_SentryBuster_Heal
+				Item	"EOTL_Demopants"
+			}
+		}
+	}
+	Mission // Wave 1 Smokers
+	{
+		Objective	Sniper
+		Where	spawnbot_flank
+		BeginAtWave	1
+		RunForThisManyWaves	1
+		InitialCooldown	40
+		CooldownTime	40
+		DesiredCount	1
+		TFBot
+		{
+			Template	T_TFBot_W1Meme_Sniper_Smoker
+		}
+	}
+	Mission // Wave 3 Snipers
+	{
+		Objective	Sniper
+		Where	spawnbot_flank
+		BeginAtWave	3
+		RunForThisManyWaves	1
+		InitialCooldown	75
+		CooldownTime	30
+		DesiredCount	2
+		TFBot
+		{
+			Template	T_TFBot_W3Meme_Sniper_Long
+		}
+	}
+	Mission // Wave 6 Razorback Snipers
+	{
+		Objective	Sniper
+		Where	spawnbot_flank
+		BeginAtWave	6
+		RunForThisManyWaves	1
+		InitialCooldown	45
+		CooldownTime	30
+		DesiredCount	2
+		TFBot
+		{
+			Template	T_TFBot_W6Meme_Sniper_Razorback
+		}
+	}
+	Mission // Wave 1 Boomers
+	{
+		Objective	Spy
+		Where	Behind
+		BeginAtWave	1
+		RunForThisManyWaves	1
+		InitialCooldown	20
+		CooldownTime	40
+		DesiredCount	1
+		TFBot
+		{
+			Template	T_TFBot_W1Meme_Sniper_Boomer
+		}
+	}
+	Mission // Wave 5 Camo Blue Bloons
+	{
+		Objective	Spy
+		Where	spawnbot_flank
+		BeginAtWave	5
+		RunForThisManyWaves	1
+		InitialCooldown	45
+		CooldownTime	15
+		DesiredCount	1
+		TFBot
+		{
+			Template	T_TFBot_W5Meme_Bloon_Blue_Camo
+		}
+	}
+	Mission // Wave 4 Angry Dandelions
+	{
+		Objective	Engineer
+		Where	spawnbot_flank
+		BeginAtWave	4
+		RunForThisManyWaves	1
+		InitialCooldown	30
+		CooldownTime	30
+		DesiredCount	2
+		TFBot
+		{
+			Template	T_TFBot_W4Meme_Engineer_AngryDandelion
+		}
+	}
+	Mission // Wave 6 Engineers
+	{
+		Objective	Engineer
+		Where	spawnbot_flank
+		BeginAtWave	6
+		RunForThisManyWaves	1
+		InitialCooldown	60
+		CooldownTime	60
+		DesiredCount	1
+		TFBot
+		{
+			Template	T_TFBot_W6Meme_Engineer_Teleport
+			TeleportWhere	spawnbot
+			TeleportWhere	spawnbot_flank
+			TeleportWhere	spawnbot_invasion
+		}
+	}
+/////////////////
+//WAVES
+//POPFILE PAYOUT
+//START $700
+//DROP W1 $700 / W2 $800 / W3 $700 / W4 $700 / W5 $700 / W6 $600
+//START: $700 / DROP: $4200 / TOTAL: $4900 / TOTAL PLUS BONUS: $5400
+/////////////////	
+
+//WAVE 1  /////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// A - 1 Giant Sandman Scout, (0)
+// B - 24 Punch Heavies, (95)
+// B - 8 Chargers, (80)
+// C - 8 Chargers, (80)
+// C - 8 Chargers, (80)
+// D1 - 24 Punch Heavies, (95)
+// D2 - 8 Gas Passer Pyros, (80)
+// E - 1 Comically Large Shovel, (100)
+// D Support - Bat Scouts, (90)
+// Smoker mission active
+// Boomer mission active
+// Total cash in this wave is $700
+///////////////////////////////////////////////////////////////////////////
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		WaveSpawn // A - 1 Giant Sandman Scout
+		{
+			Name	Wave1a
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Meme_Scout_Giant_Sandman
+			}
+		}
+		WaveSpawn // B - 24 Punch Heavies
+		{
+			Name	Wave1b
+			WaitForAllDead	Wave1a
+			TotalCurrency	95
+			TotalCount	24
+			MaxActive	10
+			SpawnCount	2
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	2
+			Where	spawnbot
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Heavy_Punchy
+					Name	"Welcome to Pound Town"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Heavy_Punchy
+					Name	"BUMBO BASH"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Heavy_Punchy
+					Name	"PUNCH EM"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Heavy_Punchy
+					Name	"My pecs have pecs"
+				}
+			}
+		}
+		WaveSpawn // B - 8 Chargers
+		{
+			Name	Wave1b
+			WaitForAllDead	Wave1a
+			TotalCurrency	80
+			TotalCount	8
+			MaxActive	4
+			SpawnCount	2
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	10
+			Where	spawnbot_flank
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Demoman_Charger
+					Name	"AAAAAAAAAAAAAAAAAAAAAA"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Demoman_Charger
+					Name	"a"
+				}
+			}
+		}
+		WaveSpawn // C - 8 Chargers
+		{
+			Name	Wave1c
+			WaitForAllDead	Wave1b
+			TotalCurrency	80
+			TotalCount	8
+			MaxActive	8
+			SpawnCount	8
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			Where	spawnbot
+			StartWaveWarningSound	"weapons\demo_charge_windup1.wav"
+			FirstSpawnWarningSound	"weapons\demo_charge_windup2.wav"
+			LastSpawnWarningSound	"weapons\demo_charge_windup3.wav"
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Demoman_Charger
+					Name	"AAAAAAAAAAAAAAAAAAAAAA"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Demoman_Charger
+					Name	"a"
+				}
+			}
+		}
+		WaveSpawn // C - 8 Chargers
+		{
+			Name	Wave1c
+			WaitForAllDead	Wave1b
+			TotalCurrency	80
+			TotalCount	8
+			MaxActive	8
+			SpawnCount	8
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			Where	spawnbot
+			StartWaveWarningSound	"weapons\demo_charge_windup1.wav"
+			FirstSpawnWarningSound	"weapons\demo_charge_windup2.wav"
+			LastSpawnWarningSound	"weapons\demo_charge_windup3.wav"
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Demoman_Charger
+					Name	"AAAAAAAAAAAAAAAAAAAAAA"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Demoman_Charger
+					Name	"a"
+				}
+			}
+		}
+		WaveSpawn // D1 - 24 Punch Heavies
+		{
+			Name	Wave1d1
+			WaitForAllSpawned	Wave1c
+			TotalCurrency	95
+			TotalCount	24
+			MaxActive	8
+			SpawnCount	2
+			WaitBeforeStarting	25
+			WaitBetweenSpawns	2
+			Where	spawnbot
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Heavy_Punchy
+					Name	"Welcome to Pound Town"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Heavy_Punchy
+					Name	"BUMBO BASH"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Heavy_Punchy
+					Name	"PUNCH EM"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Heavy_Punchy
+					Name	"My pecs have pecs"
+				}
+			}
+		}
+		WaveSpawn // D2 - 8 Gas Passer Pyros
+		{
+			Name	Wave1d2
+			WaitForAllSpawned	Wave1c
+			TotalCurrency	80
+			TotalCount	8
+			MaxActive	3
+			SpawnCount	1
+			WaitBeforeStarting	25
+			WaitBetweenSpawns	10
+			Where	spawnbot_flank
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Pyro_Gas
+					Name	"Pyro Ape"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Pyro_Gas
+					Name	"Brainless Gas User"
+				}
+				TFBot
+				{
+					Template	T_TFBot_W1Meme_Pyro_Gas
+					Name	"CHANGE CLASS APE"
+				}
+			}
+		}
+		WaveSpawn // E - 1 Comically Large Shovel
+		{
+			Name	Wave1e
+			WaitForAllSpawned	Wave1d1
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	0
+			Where	spawnbot
+			FirstSpawnWarningSound	"r2m_wave1e_fnaf2hallway.mp3"
+			LastSpawnWarningSound	"r2m_wave1e_fnaf2hallway.mp3"
+			TFBot
+			{
+				Template	T_TFBot_W1Meme_Soldier_Giant_Shovel
+			}
+		}
+		WaveSpawn // D Support - Bat Scouts
+		{
+			WaitForAllSpawned	Wave1c
+			TotalCurrency	90
+			TotalCount	30
+			MaxActive	8
+			SpawnCount	2
+			WaitBeforeStarting	40
+			WaitBetweenSpawns	5
+			Where	spawnbot
+			Support	1
+			TFBot
+			{
+				Template	T_TFBot_W1Meme_Scout_Melee
+			}
+		}
+		WaveSpawn [$SIGSEGV] // Clem arrives with his Grakata!
+		{
+			WaitForAllDead	Wave1a
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	0
+			Where	spawnbot_fuckdamn
+			Support	Limited
+			TFBot
+			{
+				Template	T_TFBot_W1Meme_Clem
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave1a
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  Well well well. Look who finally decided to show up.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave1a
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  I hope you are all ready for a ride of absolute mediocrity.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave1a
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  Because you're all about to step onto the most unremarkable ride of your lives!)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllSpawned	Wave1d1
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  Oh no...)"
+			}
+		}
+	}
+//WAVE 2  /////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// A - 2 Giant Sandman Scouts, (0)
+// B - 48 Random Spawned Thieves, Iceskimos, (190)
+// B - 36 Random Spawned Barbarians, Stove Faces, (180)
+// B - 8 Beefy Brutes, (80)
+// C - War Machine, (100)
+// C - 38 Barbarians, (150)
+// D - Orange Princess, (100)
+// D Support - Jesters, (0)
+// D Support - Clowns, (0)
+// Total cash in this wave is $800
+///////////////////////////////////////////////////////////////////////////
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		WaveSpawn // A - 2 Giant Sandman Scouts
+		{
+			Name	Wave2a
+			TotalCurrency	0
+			TotalCount	2
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	1
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Meme_Scout_Giant_Sandman
+			}
+		}
+		WaveSpawn // B - 48 Random Spawned Thieves, Iceskimos
+		{
+			Name	Wave2b
+			WaitForAllDead	Wave2a
+			TotalCurrency	190
+			TotalCount	48
+			MaxActive	8
+			SpawnCount	4
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	10
+			RandomSpawn	1
+			Where	spawnbot
+			StartWaveWarningSound	"r2m_wave2b_spacepirates.mp3"
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_W2Meme_Sniper_Thief
+				}
+				TFBot
+				{
+					Template	T_TFBot_W2Meme_Sniper_Thief
+				}
+				TFBot
+				{
+					Template	T_TFBot_W2Meme_Sniper_Thief
+				}
+				TFBot
+				{
+					Template	T_TFBot_W2Meme_Sniper_Iceskimo
+				}
+			}
+		}
+		WaveSpawn // B - 36 Random Spawned Barbarians, Stove Faces
+		{
+			Name	Wave2b
+			WaitForAllDead	Wave2a
+			TotalCurrency	180
+			TotalCount	36
+			MaxActive	6
+			SpawnCount	2
+			WaitBeforeStarting	25
+			WaitBetweenSpawns	5
+			RandomSpawn	1
+			Where	spawnbot
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_W2Meme_Heavy_Barbarian
+				}
+				TFBot
+				{
+					Template	T_TFBot_W2Meme_Heavy_Barbarian
+				}
+				TFBot
+				{
+					Template	T_TFBot_W2Meme_Soldier_StoveFace
+				}
+			}
+		}
+		WaveSpawn // B - 8 Beefy Brutes
+		{
+			Name	Wave2b
+			WaitForAllDead	Wave2a
+			TotalCurrency	80
+			TotalCount	8
+			MaxActive	4
+			SpawnCount	2
+			WaitBeforeStarting	75
+			WaitBetweenSpawns	10
+			RandomSpawn	1
+			Where	spawnbot_flank
+			TFBot
+			{
+				Template	T_TFBot_W2Meme_Demoman_Brute_Beefy
+			}
+		}
+		WaveSpawn // C - War Machine
+		{
+			Name	Wave2c
+			WaitForAllSpawned	Wave2b
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	0
+			FirstSpawnWarningSound	"r2m_wave2c_warmachine.mp3"
+			Tank
+			{
+				Health	20000
+				Name	"tankboss"
+				Speed	75
+				StartingPathTrackNode	tank_path_a_10
+				ClassIcon cc_war_machine [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target	boss_dead_relay
+					Action	Trigger
+				}
+				OnBombDroppedOutput
+				{
+					Target	boss_deploy_relay
+					Action	Trigger
+				}
+			}
+		}
+		WaveSpawn // C - 38 Barbarians
+		{
+			Name	Wave2c
+			WaitForAllSpawned	Wave2b
+			TotalCurrency	150
+			TotalCount	38
+			MaxActive	12
+			SpawnCount	2
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	2
+			RandomSpawn	1
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W2Meme_Heavy_Barbarian
+			}
+		}
+		WaveSpawn // D - Orange Princess
+		{
+			Name	Wave2d
+			WaitForAllDead	Wave2c
+			TotalCurrency	100
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0
+			Where	spawnbot
+			FirstSpawnWarningSound	"r2m_wave2e_theshow.mp3"
+			TFBot
+			{
+				Template	T_TFBot_W2Meme_Pyro_Chief_Orange
+			}
+		}
+		WaveSpawn // D Support - Jesters
+		{
+			WaitForAllDead	Wave2c
+			TotalCurrency	0
+			TotalCount	20
+			MaxActive	8
+			SpawnCount	2
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	5
+			Where	spawnbot_invasion
+			Support	1
+			TFBot
+			{
+				Template	T_TFBot_W2Meme_Demoman_Jester
+			}
+		}
+		WaveSpawn // D Support - Clowns
+		{
+			WaitForAllDead	Wave2c
+			TotalCurrency	0
+			TotalCount	20
+			MaxActive	4
+			SpawnCount	4
+			WaitBeforeStarting	25
+			WaitBetweenSpawns	0
+			Where	spawnbot_flank
+			Support	1
+			TFBot
+			{
+				Template	T_TFBot_W2Meme_Spy_Clown
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave2a
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  You may have noticed that some of your upgrades are a bit different.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave2a
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  I made some weaker ones are a bit stronger and some strong ones are a bit weaker.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave2a
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  Just because I can.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllSpawned	Wave2b
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  I swear that thing was supposed to have cannons attached to it...)"
+			}
+		}
+		WaveSpawn [$SIGSEGV] // The King swings by!
+		{
+			WaitForAllDead	Wave2c
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0
+			Where	spawnbot_fuckdamn
+			Support	Limited
+			TFBot
+			{
+				Template	T_TFBot_W2Meme_King
+			}
+		}
+	}
+//WAVE 3  /////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// A - 3 Giant Giant Sandman Scouts, (0)
+// B1 - 1 Aimbot, (50)
+// B2 - 1 Aimbot, (50)
+// C1 - 5 Squads; 1 Giant Pyro, 2 Smol Medics, (225)
+// C2 - 36 Mildly Overweight Scouts, (145)
+// D - 44 Crunch Scouts, (130)
+// D - 20 Crunch Soldiers, (100)
+// LAR Sniper mission active
+// Total cash in this wave is $700
+///////////////////////////////////////////////////////////////////////////
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		WaveSpawn // A - 3 Giant Sandman Scouts
+		{
+			Name	Wave3a
+			TotalCurrency	0
+			TotalCount	3
+			MaxActive	3
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	1
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Meme_Scout_Giant_Sandman
+			}
+		}
+		WaveSpawn // B1 - 1 Aimbot
+		{
+			Name	Wave3b1
+			WaitForAllDead	Wave3a
+			TotalCurrency	50
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	25
+			WaitBetweenSpawns	0
+			Where	spawnbot
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(CAN YOU QUACK was automatically assigned to team ROBOTS)"
+			}
+			TFBot
+			{
+				Template	T_TFBot_W3Meme_Sniper_Aimbot1
+			}
+		}
+		WaveSpawn // B2 - 1 Aimbot
+		{
+			Name	Wave3b2
+			WaitForAllDead	Wave3a
+			TotalCurrency	50
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	40
+			WaitBetweenSpawns	0
+			Where	spawnbot_flank
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(MYGOT was automatically assigned to team ROBOTS)"
+			}
+			TFBot
+			{
+				Template	T_TFBot_W3Meme_Sniper_Aimbot2
+			}
+		}
+		WaveSpawn // C1 - 5 Squads; 1 Giant Glitch Pyro, 2 Smol Glitch Medics
+		{
+			Name	Wave3c1
+			WaitForAllDead	Wave3b2
+			TotalCurrency	225
+			TotalCount	15
+			MaxActive	6
+			SpawnCount	3
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	35
+			Where	spawnbot
+			Squad
+			{
+				TFBot
+				{
+					Template	T_TFBot_W3Meme_Pyro_Giant_Glitch
+				}
+				TFBot
+				{
+					Template	T_TFBot_W3Meme_Medic_Glitch
+				}
+				TFBot
+				{
+					Template	T_TFBot_W3Meme_Medic_Glitch
+				}
+			}
+		}
+		WaveSpawn // C2 - 36 Mildly Overweight Scouts
+		{
+			Name	Wave3c2
+			WaitForAllDead	Wave3b2
+			TotalCurrency	145
+			TotalCount	36
+			MaxActive	12
+			SpawnCount	4
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	5
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W3Meme_Engineer_Glitch
+			}
+		}
+		WaveSpawn // D - 44 Crunch Scouts
+		{
+			Name	Wave3d
+			WaitForAllSpawned	Wave3c2
+			TotalCurrency	130
+			TotalCount	44
+			MaxActive	12
+			SpawnCount	4
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	5
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W3Meme_Scout_Glitch
+			}
+		}
+		WaveSpawn // D - 20 Crunch Soldiers
+		{
+			Name	Wave3d
+			WaitForAllSpawned	Wave3c2
+			TotalCurrency	100
+			TotalCount	20
+			MaxActive	6
+			SpawnCount	2
+			WaitBeforeStarting	25
+			WaitBetweenSpawns	5
+			Where	spawnbot_flank
+			TFBot
+			{
+				Template	T_TFBot_W3Meme_Soldier_Glitch
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3a
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  God dammit. Reality is falling apart again.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3a
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  Hopefully you can deal with whatever the rift throws at you.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3a
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  Hell it may even give you something to help. I'll be right back.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3a
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	0
+			FirstSpawnWarningSound	"r2m_wave3b_collapsingtimerift.mp3"
+			LastSpawnWarningSound	"r2m_wave3b_collapsingtimerift.mp3"
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(CAN YOU QUACK has joined the game)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3a
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(MYGOT has joined the game)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3a
+			WaitBeforeStarting	45
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(jerry has joined the game)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b1
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(CAN YOU QUACK left the game (Kicked by administrator.))"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(MYGOT left the game (Kicked by administrator.))"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	18
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  stop today's youth from becoming brainwashed... uninstall team fortress two NOW!!!)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	32
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  the captain is in rehab. please pray for his quick recovery)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	49
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  THE KING SAID BREAK TIME)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	64
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  takes a real man to get stoned and listen to creepypasta)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	77
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  the real funny here is that i'm trolling everyone)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	91
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  do not listen to anything dante says. he is fried off that pack)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	106
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  thinking about faking some videos of me saying austin powers quotes flawlessly)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	119
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  my man is real slick on the keyboard. he plays heavy)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	135
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  you called me a bug for the 4rd time and enough is enough... stop it)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave3b2
+			WaitBeforeStarting	148
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF3D3DFFjerry \x08FBECCBFF:  Who is Tindall Berry?)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllSpawned	Wave3d
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  Okay I think I've almost fixed it. Just a little bit longer...)"
+			}
+		}
+		WaveSpawn [$SIGSEGV] // Jerry clicks on some heads!
+		{
+			WaitForAllDead	Wave3a
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	55
+			WaitBetweenSpawns	0
+			Where	spawnbot_fuckdamn
+			Support	Limited
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(jerry was automatically assigned to team DEFENDERS)"
+			}
+			//FirstSpawnMessage	"Jerry was automatically assigned to team DEFENDERS" [$SIGSEGV]
+			TFBot
+			{
+				Template	T_TFBot_W3Meme_Jerry
+			}
+		}
+	}
+//WAVE 4  /////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// A - 4 Giant Sandman Scouts, (0)
+// B - 32 Cannon Demos, (130)
+// B - 24 Airblast Pyros, (95)
+// B - 12 Push Deflectors, (60)
+// C - 45 Force-a-Nature Scouts, (90)
+// C - 3 Giant Blast Soldiers, (75)
+// D - Skeletron Prime, (250)
+// B Support - Balloon Slimes, (0)
+// Angry Dandelion mission active
+// Total cash in this wave is $700
+///////////////////////////////////////////////////////////////////////////
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		WaveSpawn // A - 4 Giant Sandman Scouts
+		{
+			Name	Wave4a
+			TotalCurrency	0
+			TotalCount	4
+			MaxActive	4
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	1
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Meme_Scout_Giant_Sandman
+			}
+		}
+		WaveSpawn // B - 32 Cannon Demos
+		{
+			Name	Wave4b
+			WaitForAllDead	Wave4a
+			TotalCurrency	130
+			TotalCount	32
+			MaxActive	8
+			SpawnCount	4
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	10
+			Where	spawnbot
+			StartWaveWarningSound	"r2m_wave4b_windyday.mp3"
+			TFBot
+			{
+				Template	T_TFBot_W4Meme_Demoman_Cannon
+			}
+		}
+		WaveSpawn // B - 24 Airblast Pyros
+		{
+			Name	Wave4b
+			WaitForAllDead	Wave4a
+			TotalCurrency	95
+			TotalCount	24
+			MaxActive	6
+			SpawnCount	3
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	10
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W4Meme_Pyro_AirBlast
+			}
+		}
+		WaveSpawn // B - 12 Push Deflectors
+		{
+			Name	Wave4b
+			WaitForAllDead	Wave4a
+			TotalCurrency	60
+			TotalCount	12
+			MaxActive	4
+			SpawnCount	2
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	10
+			Where	spawnbot_flank
+			TFBot
+			{
+				Template	T_TFBot_W4Meme_Heavy_Deflector_Push
+			}
+		}
+		WaveSpawn // C - 44 Force-a-Nature Scouts
+		{
+			Name	Wave4c
+			WaitForAllSpawned	Wave4b
+			TotalCurrency	90
+			TotalCount	44
+			MaxActive	8
+			SpawnCount	4
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	5
+			Where	spawnbot_invasion
+			TFBot
+			{
+				Template	T_TFBot_W4Meme_Scout_FaN
+			}
+		}
+		WaveSpawn // C - 3 Giant Blast Soldiers
+		{
+			Name	Wave4c
+			WaitForAllSpawned	Wave4b
+			TotalCurrency	75
+			TotalCount	3
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	20
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W4Meme_Soldier_Giant_Blast
+			}
+		}
+		WaveSpawn // D - Skeletron Prime
+		{
+			Name	Wave4d
+			WaitForAllDead	Wave4c
+			TotalCurrency	250
+			TotalCount	5
+			MaxActive	5
+			SpawnCount	5
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	0
+			Where	spawnbot
+			FirstSpawnWarningSound	"r2m_wave4d_playingwithfirepower.mp3"
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF66FFFFSkeletron Prime has awoken!)"
+			}
+			DoneOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08FF66FFFFSkeletron Prime has been defeated.)"
+			}
+			// AB40FF
+			Squad
+			{
+				TFBot
+				{
+					Template	T_TFBot_W4Meme_SkeletronPrime_Head
+				}
+				TFBot
+				{
+					Template	T_TFBot_W4Meme_SkeletronPrime_Saw
+				}
+				TFBot
+				{
+					Template	T_TFBot_W4Meme_SkeletronPrime_Vice
+				}
+				TFBot
+				{
+					Template	T_TFBot_W4Meme_SkeletronPrime_Laser
+				}
+				TFBot
+				{
+					Template	T_TFBot_W4Meme_SkeletronPrime_Cannon
+				}
+			}
+		}
+		WaveSpawn // B Support - Balloon Slimes
+		{
+			WaitForAllDead	Wave4a
+			TotalCurrency	0
+			TotalCount	10
+			MaxActive	4
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	5
+			Where	spawnbot
+			Support	1
+			TFBot
+			{
+				Template	T_TFBot_W4Meme_Soldier_BalloonSlime
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave4a
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  It has come to my attention that most of you watching this are not subscribed.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave4a
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  If you enjoy this content then please be sure to hit that subscribe button!)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave4a
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  Also smash that like button and hit the notification bell like a good little consumer.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave4c
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x0866FF66FFThe air is getting colder around you...)"
+			}
+		}
+		WaveSpawn [$SIGSEGV] // Glup Shitto is in this one!
+		{
+			WaitForAllDead	Wave4c
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	40
+			WaitBetweenSpawns	0
+			Where	spawnbot_fuckdamn
+			Support	Limited
+			TFBot
+			{
+				Template	T_TFBot_W4Meme_GlupShitto
+			}
+		}
+	}
+//WAVE 5  /////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// A - 5 Giant Sandman Scouts, (0)
+// B - 20 Blue Bloons, (20)
+// B - 10 Blue Bloons, (10)
+// C - 10 Blue Bloons, (10)
+// C - 10 Green Bloons, (15)
+// C - 8 Yellow Bloons, (16)
+// D - 12 Pink Bloons, (30)
+// D - 16 Green Bloons, (24)
+// E - 20 Yellow Bloons, (40)
+// E - 5 White Bloons, (15)
+// E - 5 Black Bloons, (15)
+// E - 1 MOAB, (75)
+// F - 10 Black Bloons, (30)
+// F - 10 White Bloons, (30)
+// F - 10 Purple Bloons, (30)
+// G - 1 MOAB, (75)
+// G - 18 Lead Bloons, (63)
+// G - 8 Ceramic Bloons, (40)
+// G - 1 MOAB, (75)
+// B Support - Red Bloons, (87)
+// Camo Blue Bloon mission active
+// Total cash in this wave is $700
+///////////////////////////////////////////////////////////////////////////
+// B = Round 4
+// C = Round 14
+// D = Round 36
+// E = Round 34
+// F = Round 32
+// G = Round 50
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		WaveSpawn // A - 5 Giant Sandman Scouts
+		{
+			Name	Wave5a
+			TotalCurrency	0
+			TotalCount	5
+			MaxActive	5
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	1
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Meme_Scout_Giant_Sandman
+			}
+		}
+		WaveSpawn // B - 20 Blue Bloons
+		{
+			Name	Wave5b
+			WaitForAllDead	Wave5a
+			TotalCurrency	20
+			TotalCount	20
+			MaxActive	5
+			SpawnCount	1
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	1
+			Where	spawnbot_invasion
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Blue
+			}
+		}
+		WaveSpawn // B - 10 Blue Bloons
+		{
+			Name	Wave5b
+			WaitForAllDead	Wave5a
+			TotalCurrency	10
+			TotalCount	10
+			MaxActive	10
+			SpawnCount	10
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	0
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Blue
+			}
+		}
+		WaveSpawn // C - 10 Blue Bloons
+		{
+			Name	Wave5c
+			WaitForAllSpawned	Wave5b
+			TotalCurrency	10
+			TotalCount	10
+			MaxActive	5
+			SpawnCount	5
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	15
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Blue
+			}
+		}
+		WaveSpawn // C - 10 Green Bloons
+		{
+			Name	Wave5c
+			WaitForAllSpawned	Wave5b
+			TotalCurrency	15
+			TotalCount	10
+			MaxActive	5
+			SpawnCount	5
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	15
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Green
+			}
+		}
+		WaveSpawn // C - 8 Yellow Bloons
+		{
+			Name	Wave5c
+			WaitForAllSpawned	Wave5b
+			TotalCurrency	16
+			TotalCount	8
+			MaxActive	4
+			SpawnCount	4
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	15
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Yellow
+			}
+		}
+		WaveSpawn // D - 12 Pink Bloons
+		{
+			Name	Wave5d
+			WaitForAllSpawned	Wave5c
+			TotalCurrency	30
+			TotalCount	12
+			MaxActive	6
+			SpawnCount	6
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	20
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Pink
+			}
+		}
+		WaveSpawn // D - 16 Green Bloons
+		{
+			Name	Wave5d
+			WaitForAllSpawned	Wave5c
+			TotalCurrency	24
+			TotalCount	16
+			MaxActive	8
+			SpawnCount	8
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	20
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Green
+			}
+		}
+		WaveSpawn // E - 20 Yellow Bloons
+		{
+			Name	Wave5e
+			WaitForAllSpawned	Wave5d
+			TotalCurrency	40
+			TotalCount	20
+			MaxActive	7
+			SpawnCount	1
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	1
+			Where	spawnbot_invasion
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Yellow
+			}
+		}
+		WaveSpawn // E - 5 White Bloons
+		{
+			Name	Wave5e
+			WaitForAllSpawned	Wave5d
+			TotalCurrency	15
+			TotalCount	5
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	10
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_White
+			}
+		}
+		WaveSpawn // E - 5 Black Bloons
+		{
+			Name	Wave5e
+			WaitForAllSpawned	Wave5d
+			TotalCurrency	15
+			TotalCount	5
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	10
+			Where	spawnbot_flank
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Black
+			}
+		}
+		WaveSpawn // E - 1 MOAB
+		{
+			Name	Wave5e
+			WaitForAllSpawned	Wave5d
+			TotalCurrency	75
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	0
+			Tank
+			{
+				Health	10000
+				Name	"tankboss"
+				Speed	75
+				StartingPathTrackNode	tank_path_b1
+				ClassIcon bloon_moab [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target	boss_dead_relay
+					Action	Trigger
+				}
+				OnBombDroppedOutput
+				{
+					Target	boss_deploy_relay
+					Action	Trigger
+				}
+			}
+		}
+		WaveSpawn // F - 10 Black Bloons
+		{
+			Name	Wave5f
+			WaitForAllSpawned	Wave5e
+			TotalCurrency	30
+			TotalCount	10
+			MaxActive	5
+			SpawnCount	1
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	1
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Black
+			}
+		}
+		WaveSpawn // F - 10 White Bloons
+		{
+			Name	Wave5f
+			WaitForAllSpawned	Wave5e
+			TotalCurrency	30
+			TotalCount	10
+			MaxActive	5
+			SpawnCount	1
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	1
+			Where	spawnbot_flank
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_White
+			}
+		}
+		WaveSpawn // F - 10 Purple Bloons
+		{
+			Name	Wave5f
+			WaitForAllSpawned	Wave5e
+			TotalCurrency	30
+			TotalCount	10
+			MaxActive	5
+			SpawnCount	1
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	1
+			Where	spawnbot_invasion
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Purple
+			}
+		}
+		WaveSpawn // G - 1 MOAB
+		{
+			Name	Wave5g
+			WaitForAllSpawned	Wave5f
+			TotalCurrency	75
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0
+			Tank
+			{
+				Health	10000
+				Name	"tankboss"
+				Speed	75
+				StartingPathTrackNode	tank_path_b1
+				ClassIcon bloon_moab [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target	boss_dead_relay
+					Action	Trigger
+				}
+				OnBombDroppedOutput
+				{
+					Target	boss_deploy_relay
+					Action	Trigger
+				}
+			}
+		}
+		WaveSpawn // G - 18 Lead Bloons
+		{
+			Name	Wave5g
+			WaitForAllSpawned	Wave5f
+			TotalCurrency	63
+			TotalCount	18
+			MaxActive	9
+			SpawnCount	1
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	1
+			Where	spawnbot_invasion
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Lead
+			}
+		}
+		WaveSpawn // G - 8 Ceramic Bloons
+		{
+			Name	Wave5g
+			WaitForAllSpawned	Wave5f
+			TotalCurrency	40
+			TotalCount	8
+			MaxActive	4
+			SpawnCount	1
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	5
+			Where	spawnbot_flank
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Ceramic
+			}
+		}
+		WaveSpawn // G - 1 MOAB
+		{
+			Name	Wave5g
+			WaitForAllSpawned	Wave5f
+			TotalCurrency	75
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	40
+			WaitBetweenSpawns	0
+			Tank
+			{
+				Health	10000
+				Name	"tankboss"
+				Speed	75
+				StartingPathTrackNode	tank_path_b1
+				ClassIcon bloon_moab [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target	boss_dead_relay
+					Action	Trigger
+				}
+				OnBombDroppedOutput
+				{
+					Target	boss_deploy_relay
+					Action	Trigger
+				}
+			}
+		}
+		WaveSpawn // B Support - Red Bloons
+		{
+			WaitForAllDead	Wave5a
+			TotalCurrency	87
+			TotalCount	87
+			MaxActive	5
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	1
+			Where	spawnbot_invasion
+			Support	1
+			StartWaveWarningSound	"r2m_wave5b_jazztheme.mp3"
+			TFBot
+			{
+				Template	T_TFBot_W5Meme_Bloon_Red
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave5a
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  The time has come. Now you must all return to monke!)"
+			}
+		}
+		WaveSpawn [$SIGSEGV] // The Jungle Jokers pop in!
+		{
+			WaitForAllDead	Wave5a
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			Where	spawnbot_fuckdamn
+			Support	Limited
+			RandomChoice
+			{
+				TFBot
+				{
+					Template	T_TFBot_W5Meme_Abibe
+				}
+				TFBot
+				{
+					Template	T_TFBot_W5Meme_Floppa
+				}
+				TFBot
+				{
+					Template	T_TFBot_W5Meme_Pungo
+				}
+				TFBot
+				{
+					Template	T_TFBot_W5Meme_Condor
+				}
+			}
+		}
+	}
+//WAVE 6  /////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// A - 6 Giant Sandman Scouts, (0)
+// B - 25 Funny Samurai Demoknights, (125)
+// C1 - 5 Force-a-Nature Super Scouts, (100)
+// C2 - 28 Conch Soldiers, (85)
+// C2 - 24 Dragon's Fury Pyros, (95)
+// D - 3 Giant Deflector Heavies, (60)
+// D - 33 Bomber Demos, (135)
+// Razorback Sniper mission active
+// Engineer mission active
+// Total cash in this wave is $600
+///////////////////////////////////////////////////////////////////////////
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target	wave_start_relay
+			Action	Trigger
+		}
+		DoneOutput
+		{
+			Target	wave_finished_relay
+			Action	Trigger
+		}
+		WaveSpawn // A - 6 Giant Sandman Scouts
+		{
+			Name	Wave6a
+			TotalCurrency	0
+			TotalCount	6
+			MaxActive	6
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	1
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_Meme_Scout_Giant_Sandman
+			}
+		}
+		WaveSpawn // B - 25 Funny Samurai Demoknights
+		{
+			Name	Wave6b
+			WaitForAllDead	Wave6a
+			TotalCurrency	125
+			TotalCount	25
+			MaxActive	15
+			SpawnCount	5
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	10
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W6Meme_Demoman_Knight_Samurai_Funny
+			}
+		}
+		WaveSpawn // C1 - 5 Force-a-Nature Super Scouts
+		{
+			Name	Wave6c1
+			WaitForAllDead	Wave6b
+			TotalCurrency	100
+			TotalCount	5
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	40
+			Where	spawnbot
+			FirstSpawnWarningSound	"r2m_wave6c_buckleyourpants.mp3"
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	relay_rave
+				Action	Trigger
+			}
+			TFBot
+			{
+				Template	T_TFBot_W6Meme_Scout_Giant_FaN
+			}
+		}
+		WaveSpawn // C2 - 28 Conch Soldiers
+		{
+			Name	Wave6c2
+			WaitForAllDead	Wave6b
+			TotalCurrency	85
+			TotalCount	28
+			MaxActive	8
+			SpawnCount	2
+			WaitBeforeStarting	25
+			WaitBetweenSpawns	5
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W6Meme_Soldier_Conch
+			}
+		}
+		WaveSpawn // C2 - 24 Dragon's Fury Pyros
+		{
+			Name	Wave6c2
+			WaitForAllDead	Wave6b
+			TotalCurrency	95
+			TotalCount	24
+			MaxActive	8
+			SpawnCount	4
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	10
+			Where	spawnbot_flank
+			TFBot
+			{
+				Template	T_TFBot_W6Meme_Pyro_Fury
+			}
+		}
+		WaveSpawn // D - 3 Giant Deflector Heavies
+		{
+			Name	Wave6d
+			WaitForAllSpawned	Wave6c2
+			TotalCurrency	60
+			TotalCount	3
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	25
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W6Meme_Heavy_Giant_Deflector
+			}
+		}
+		WaveSpawn // D - 33 Bomber Demos
+		{
+			Name	Wave6d
+			WaitForAllSpawned	Wave6c2
+			TotalCurrency	135
+			TotalCount	33
+			MaxActive	9
+			SpawnCount	3
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	5
+			Where	spawnbot
+			TFBot
+			{
+				Template	T_TFBot_W6Meme_Demoman_Bomber
+			}
+		}
+		WaveSpawn // E - Chief Blast Soldier
+		{
+			Name	Wave6e
+			WaitForAllDead	Wave6d
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			Where	spawnbot
+			DoneWarningSound	"music\hl2_song23_suitsong3.mp3"
+			TFBot
+			{
+				Template	T_TFBot_W6Meme_Soldier_Chief_Blast
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave6a
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  I hear that some are you aren't laughing at these jokes like I wouldn't find out.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave6a
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  To those people I ask that you feast your sides on THIS!)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave6b
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  With that out of the way I am going to turn myself into a pickle.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave6b
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  It will be the funniest shit anyone's ever seen.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave6b
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFThe Overseer \x08FFB1C7FF:  Farewell.)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave6e
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFPickle Overseer \x08FFB1C7FF:  This is so sad...)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave6e
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFPickle Overseer \x08FFB1C7FF:  Chief Blast Soldier is dead...)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave6e
+			WaitBeforeStarting	15
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFPickle Overseer \x08FFB1C7FF:  Gamers please type F in chat to pay respects...)"
+			}
+		}
+		WaveSpawn	// Dummy spawn for text
+		{
+			WaitForAllDead	Wave6e
+			WaitBeforeStarting	23
+			WaitBetweenSpawns	0
+			FirstSpawnOutput [$SIGSEGV]
+			{
+				Target	sourcemod_plugin
+				Action	"PrintMessage(\x08EE82EEFFPickle Overseer \x08FFB1C7FF:  I think I'm going to need a moment...)"
+			}
+		}
+		WaveSpawn [$SIGSEGV] // F - To Pay Respects
+		{
+			Name	Wave6f
+			WaitForAllDead	Wave6e
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	35
+			WaitBetweenSpawns	0
+			Where	spawnbot_fuckdamn
+			RandomChoice
+			{
+				Squad
+				{
+					TFBot
+					{
+						Template	T_TFBot_Meme_Scout_Timer
+					}
+				}
+			}
+		}
+		WaveSpawn [$SIGSEGV] // Legs runs into battle!
+		{
+			WaitForAllDead	Wave6b
+			TotalCurrency	0
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	45
+			WaitBetweenSpawns	0
+			Where	spawnbot_fuckdamn
+			Support	Limited
+			TFBot
+			{
+				Template	T_TFBot_W6Meme_Legs
+			}
+		}
+	}
+}

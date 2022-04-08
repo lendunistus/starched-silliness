@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_splatoon/salmonid/griller/griller_salmon"
+	"$bumpmap" "models/props_splatoon/salmonid/griller/griller_salmon_normal"
+
+	"$phong" "1"
+	"$phongexponenttexture" "models/props_splatoon/salmonid/griller/griller_salmon_exponent"
+	"$phongboost" "10"	
+	"$phongfresnelranges"	"[.1 .5 1]"
+
+}

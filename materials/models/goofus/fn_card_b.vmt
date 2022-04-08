@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/goofus/6426792_sb"
+	$bumpmap "models/flat_normal"
+
+	"$phong" "1"
+	"$phongexponent" "10"
+	"$phongboost" "2"
+	$phongfresnelranges "[0.2 0.5 1]"
+}

@@ -1,0 +1,800 @@
+//meme 2021 epic ngl
+
+WaveSchedule
+{
+	Templates 
+	{
+		//Sentrybusters
+		T_TFBot_SEEntryBuster
+		{
+			Name "SEEntry Buster"
+			Class Demoman
+			ClassIcon sentry_buster
+			Health 2500
+			Skill Expert
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss Tag bot_giant
+			Attributes DisableDodge
+			Item "The Ullapool Caber"
+			UseCustomModel "models/bots/demo/sentry_buster_meme.mdl"
+			CharacterAttributes
+			{
+				"move speed bonus" 1.86
+				"damage force reduction" 0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set" 7
+				"cannot be backstabbed" 1
+			}
+		}
+		T_TFBot_SentryBuster
+		{
+			Class Demoman
+			Name "Titanium Buster"
+			Skill Expert
+			Health 2500
+			Item "The Ullapool Caber"
+			Item "The U-clank-a"
+			WeaponRestrictions MeleeOnly
+			ClassIcon sentry_buster
+			Attributes MiniBoss Tag bot_giant
+			Attributes DisableDodge
+			CharacterAttributes
+			{
+				"move speed bonus" 1.5
+				"damage force reduction" 0.0 
+				"airblast vulnerability multiplier" 0.0 
+				"override footstep sound set" 7
+				"cannot be backstabbed" 1
+			}
+		}
+		T_TFBot_SEEntryBuster_Urine //this is so bad this is the worst template block ive seen god GOD
+		{
+			Name "Take piss Fill glass"
+			Class Sniper
+			ClassIcon sentry_buster
+			Health 3600
+			Skill Expert
+			Item "The Ullapool Caber"
+			Item "Jarate"
+			Attributes MiniBoss Tag bot_giant 
+			Attributes DisableDodge
+			Attributes AlwaysFireWeapon
+			WeaponRestrictions SecondaryOnly
+			UseCustomModel "models/bots/demo/sentry_buster_meme.mdl"
+			AddCond [$SIGSEGV]
+			{
+				Name TF_COND_URINE      // <-- here we use a condition number
+				Duration 999.0 // <-- here we specify a limited duration
+			}
+			CharacterAttributes
+			{
+				"move speed bonus" 1.25
+				"damage force reduction" 0.0 
+				"airblast vulnerability multiplier" 0.0 
+				"override footstep sound set" 7
+				"cannot be backstabbed" 1
+			}			
+			ItemAttributes 
+			{
+				ItemName "Jarate"
+				"effect bar recharge rate increased" 0.0001
+			}
+		}
+		//Wave 3
+		T_TFBot_UIGoku
+		{
+			Name "UI Goku Player"
+			Class Heavyweapons
+			ClassIcon ult_ui
+			Item "The Heavy Lifter"
+			Item "The Wilson Weave"
+			Skill Hard
+			WeaponRestrictions MeleeOnly
+			Attributes AlwaysFireWeapon
+			UseHumanModel 1
+			CharacterAttributes
+			{
+				"melee range multiplier" 5
+			}
+			ItemAttributes
+			{
+				ItemName "The Wilson Weave"
+				"set item tint rgb" 11049612
+			}
+		}
+		T_TFBot_VegetaBlue
+		{
+			Name "Vegeta Blue Player"
+			Class Demoman
+			ClassIcon ult_vegeta
+			Skill Hard
+			WeaponRestrictions PrimaryOnly
+			Attributes HoldFireUntilFullReload
+			Item "The Crafty Hair"
+			Item "Dynamite Abs"
+			UseHumanModel 1
+			ItemAttributes
+			{
+				ItemName "The Crafty Hair"
+				"set item tint rgb" 5801378
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"is invisible" 1
+				"faster reload rate" 0.5
+				"fire rate bonus" 0.6
+				"clip size penalty" 0.5
+				"projectile spread angle penalty" 20
+			}
+		}
+		T_TFBot_Ghost
+		{
+			Name "Super Ghost Kamikaze Attack!"
+			Class Soldier
+			ClassIcon ghost
+			Health 3500
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			Item "The Brutal Bouffant"
+			RocketCustomModel "models/props_halloween/ghost_no_hat.mdl"
+			ItemAttributes
+			{
+				ItemName "The Brutal Bouffant"
+				"set item tint rgb" 15787660
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set" 3
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				"damage bonus" 1
+				"fire rate bonus" 0.2
+				"faster reload rate" 1.5
+				"projectile spread angle penalty" 20
+			}
+			HomingRockets [$SIGSEGV]
+			{
+				RocketSpeed			0.5							//Multiplier of rocket speed. 1 for default speed
+				TurnPower			250							//How fast should the rocket rotate to face the target
+				MaxAimError			150							//Max angle between rocket and the target
+				IgnoreDisguisedSpies 0
+				IgnoreStealthedSpies 0
+			}
+		}
+		T_TFBot_Broly
+		{
+			Name "DBZ Broly Player"
+			Class Heavyweapons
+			ClassIcon ult_broly
+			Health 3500
+			Skill Expert
+			WeaponRestrictions MeleeOnly
+			Attributes MiniBoss
+			Attributes AlwaysCrit
+			RocketCustomParticle eyeboss_projectile
+			Item "The Crafty Hair"
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SHOTGUN_HWG"
+				"override projectile type" 2
+				"damage bonus" 2
+				"fire rate bonus" 5
+				"faster reload rate" -0.8
+				"use large smoke explosion" 1
+				"is invisible" 1
+				"is_passive_weapon" 1
+			}
+			ItemAttributes
+			{
+				ItemName "TF_Weapon_Fists"
+				"damage causes airblast" 1
+				"fire rate bonus" 2
+			}
+			ItemAttributes
+			{
+				ItemName "The Crafty Hair"
+				"set item tint rgb" 15787660
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.3
+				"airblast vulnerability multiplier" 0.3
+			}
+		}
+		T_TFBot_Gogeta
+		{
+			Name "Gogeta, the Ultimate Fusion!"
+			Class Heavyweapons
+			ClassIcon ult_gogeta
+			Health 15000
+			Scale 1.25
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			Attributes AlwaysCrit
+			UseCustomModel "models/players/gogetassj4.mdl" //Use custom model
+			CharacterAttributes
+			{
+				"move speed bonus"	0.6
+				"damage force reduction" 0.1
+				"airblast vulnerability multiplier" 0.1
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_MINIGUN"
+				"weapon spread bonus" 0.5
+				"fire rate bonus" 0.1
+				"minigun spinup time increased"	6
+				"is invisible" 1
+			}
+		}
+		//Wave 4
+		T_TFBot_Scout_Blaster
+		{
+			Name "Potentially Fast Scout"
+			Class Scout
+			ClassIcon scout_giant_fast
+			WeaponRestrictions PrimaryOnly
+			Item "Baby Face's Blaster"
+			ItemAttributes
+			{
+				ItemName "Baby Face's Blaster"
+				"hype resets on jump" 0
+				"lose hype on take damage" 0
+			}
+		}
+		T_TFBot_Pyro_Powerjack
+		{
+			Name "Fast Pyro"
+			Class Pyro
+			ClassIcon scout_giant_fast
+			Skill Hard
+			WeaponRestrictions MeleeOnly
+			Item "The Powerjack"
+			ItemAttributes
+			{
+				ItemName "The Powerjack"
+				"move speed bonus" 1.25
+			}
+		}
+		T_TFBot_Giant_Soldier_EscapePlan
+		{
+			Name "Giant Faster-ing Soldier"
+			Class Soldier
+			Skill Expert
+			Health 3800
+			ClassIcon scout_giant_fast
+			WeaponRestrictions MeleeOnly
+			Item "The Escape Plan"
+			Attributes MiniBoss
+			ItemAttributes
+			{
+				ItemName "The Escape Plan"
+				"self mark for death" 0
+			}
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.4
+				"damage force reduction" 0.4
+				"move speed bonus" 1
+				"override footstep sound set" 3
+			}
+		}
+		T_TFBot_Heavy_Fast
+		{
+			Name "Fast Heavy"
+			Class HeavyWeapons
+			Item "tomislav"
+			ClassIcon scout_giant_fast
+			ItemAttributes
+			{
+				ItemName "tomislav"
+				"aiming movespeed increased" 2
+				"move speed bonus" 1.3
+				"weapon spread bonus" 4
+			}
+		}
+		T_TFBot_Medic_Fast
+		{
+			Name "Fast Medic"
+			Class Medic
+			Item "The Overdose"
+			ClassIcon scout_giant_fast
+			WeaponRestrictions PrimaryOnly
+			Attributes SpawnWithFullCharge
+			Action FetchFlag [$SIGSEGV]
+			ItemAttributes
+			{
+				ItemName "The Overdose"
+				"move speed bonus resource level" 1.25
+			}
+		}
+		T_TFBot_FASTDEMOBOYYYYY
+		{
+			Name "Drift Demo Master"
+			Class Demoman
+			Health 15000
+			Skill Expert
+			Action Mobber [$SIGSEGV]
+			Attributes IgnoreFlag
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			WeaponRestrictions MeleeOnly
+			ClassIcon demoknight_fast
+			Item "The Splendid Screen"
+			Item "The Persian Persuader"
+			ItemAttributes
+			{
+				ItemName "The Splendid Screen"
+				"Attack not cancel charge" 1
+				"charge time increased" 10
+				"mult charge turn control" 200
+				"charge recharge rate increased" 5
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set" 4
+			}
+			FireWeapon [$SIGSEGV] //Periodically fires weapon
+            {
+                Delay 5 //Time before the first fire input starts (Default: 10)
+                Cooldown 10 //Time between each fire input (Default: 10)
+                Repeats 0 //How many times should bot use the fire input in total (Default: 0 - Infinite)
+				IfSeeTarget 0 //When set to 1, this task activates only when the bot can see the target player (Default 0 - Always activate)
+				Type "Secondary" // Type of fire input, Possible values:
+			}
+		}
+		//wave 7
+		T_TFBot_Demomedal
+		{
+			Name "Free Medals!!!!!!"
+			Class Demoman
+			ClassIcon ult_medal
+			Skill Hard
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"damage bonus" 0.6
+				"damage causes airblast" 1
+				"fuse bonus" 2
+				//"custom projectile model"
+			}
+		}
+		T_TFBot_Soldiermedal
+		{
+			Name "Epic Medals to win!!!!!"
+			Class Soldier
+			ClassIcon ult_medal
+			Skill Hard
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				"damage bonus" 0.6
+				"damage causes airblast" 1
+				"Projectile speed increased" 0.6
+			}
+		}
+		T_TFBot_Bumpercar
+		{
+			Name "Bumper Car Wizard"
+			Class Sniper
+			ClassIcon ult_bumpercar
+			Health 1000
+			WeaponRestrictions MeleeOnly
+			Skill Expert
+			Scale 0.8
+			UseCustomModel "models/bots/merasmus/merasmus.mdl"
+			UseHumanModel 1
+			Action Mobber
+			Attributes IgnoreFlag
+			CharacterAttributes
+			{
+				"melee range multiplier" 2
+			}
+			DamageAppliesCond //Adds conditions to players on hit
+			{
+				Index 82
+				Duration 5
+			}
+		}
+		//waves 8 and 9
+		T_TFBot_DemoTank
+		{
+			Name "Totally a Tank"
+			Class Demoman
+			ClassIcon tank_spammer
+			Health 40000
+			Skill Easy
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			Attributes AlwaysFireWeapon
+			Scale 1
+			UseCustomModel "models/bots/boss_bot/static_boss_tank.mdl"
+			CharacterAttributes
+			{
+				"move speed bonus" 0.25
+				"airblast vulnerability multiplier" 0
+				"damage force reduction" 0
+				"airblast vertical vulnerability multiplier" 0
+				"rage giving scale" 0.5
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"fire rate bonus" 12
+				"faster reload rate" -0.8
+				"is invisible" 1
+				"fuse bonus" 5
+				"damage bonus" 5
+				"blast radius increased" 2
+				"use large smoke explosion" 1
+				"grenade no spin" 1
+				"grenade no bounce" 1
+				"grenade not explode on impact" 1
+				"custom projectile model" "models/bots/boss_bot/static_boss_tank.mdl"
+			}
+		}
+		T_TFBot_AMOGUS_SUS //use changeattributes to make them stationary for a bit (10.2 seconds)
+		{
+			Class Sniper
+			Name "PISSES ON AMOGUS 2???????"
+			Health 1420
+			Skill Expert
+			ClassIcon imposter_drip
+			Attributes UseBossHealthBar
+			Attributes MiniBoss
+			ChangeAttributes [$SIGSEGV] 
+			{
+				Delay  0
+				Cooldown  999
+				Name  "Wait"
+			}
+			ChangeAttributes [$SIGSEGV] 
+			{
+				Delay  10.2
+				Cooldown  999
+				Name  "Jarate"
+			}
+			AddCond [$SIGSEGV]
+			{
+				Name TF_COND_URINE      // <-- here we use a condition number
+				Duration 999.0 // <-- here we specify a limited duration
+			}
+			EventChangeAttributes
+			{
+				Wait
+				{
+					Item "Jarate"
+					Item "The MK 50"
+					WeaponRestrictions SecondaryOnly
+					MaxVisionRange 1
+					CharacterAttributes
+					{
+						"dmg taken increased" 0
+						"mult stun resistance" 0
+						"head scale" 10
+						"move speed bonus" 0
+						"airblast vulnerability multiplier" 0
+						"airblast vertical vulnerability multiplier" 0
+						"damage force reduction" 0
+					}
+				}
+				Jarate
+				{
+					
+					Item "Jarate"
+					Item "The MK 50"
+					WeaponRestrictions SecondaryOnly
+					Attributes AlwaysFireWeapon
+					MaxVisionRange 99999
+					CharacterAttributes
+					{
+						"dmg taken increased" 1
+						"head scale" 10
+						"move speed bonus" 0.5
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"airblast vertical vulnerability multiplier" 1
+					}
+					ItemAttributes 
+					{
+						ItemName "Jarate"
+						"effect bar recharge rate increased" 0.0001
+					}
+				}	
+			}
+		}
+		T_TFBot_Scout_TPose
+		{
+			Name "a s s e r t   d o m i n a n c e"
+			Class Scout
+			ClassIcon scout_reference
+			Skill Expert
+			WeaponRestrictions MeleeOnly
+			Attributes AutoJump
+			AutoJumpMin 0.5
+			AutoJumpMax 2
+			UseCustomModel "models/player/scout.mdl"
+			Item "The Thermal Thruster"
+			CharacterAttributes
+			{
+				"gesture speed increase" 10
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_BAT"
+				"is invisible" 1
+				"fire rate bonus" 0.5
+			}
+			ItemAttributes
+			{
+				ItemName "The Thermal Thruster"
+				"is invisible" 1
+				"is_passive_weapon" 1
+			}
+		}
+		T_TFBot_Engineer_Chungus
+		{
+			Name "Big Chungus"
+			Class Engineer
+			ClassIcon ult_chungus
+			Health 20000
+			Skill Expert
+			WeaponRestrictions MeleeOnly
+			Scale 4
+			UseHumanModel 1
+			UseCustomModel "models/player/engineer.mdl"
+			Item "The Level Three Chin"
+			Item "The Egghead's Overalls"
+			Item "TTG Max Hat"
+			MaxVisionRange 1
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			CharacterAttributes
+			{
+				"move speed bonus" 0
+				"mult stun resistance" 0
+				"airblast vulnerability multiplier" 0
+				"airblast vertical vulnerability multiplier" 0
+				"damage force reduction" 0
+			}
+		}
+		//other
+        boss_trash_ngl
+		{
+			Class Soldier
+			ClassIcon boss_atomic_admiral_centered
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			Name "Extremely Good Boss!!!!!"
+			Item "The Team Captain"
+			Item "The Black Box"
+			Item "Fancy Dress Uniform"
+			Item "The Gunboats"
+			Health 4000000 //effectively 20k hp
+			Scale 1.9
+			Attributes MiniBoss Tag bot_giant 
+			Attributes UseBossHealthBar
+			Attributes HoldFireUntilFullReload
+			Attributes AlwaysCrit
+			ItemAttributes
+			{
+				ItemName "The Black Box"
+				"damage bonus" 999
+				"damage causes airblast" 1
+				"faster reload rate" 1
+				"fire rate bonus" -1
+				"projectile spread angle penalty" 360
+				"use large smoke explosion" 1
+				"blast radius increased" 3
+				"Projectile speed increased" 0.25
+			}
+			CharacterAttributes
+			{
+				"health regen"	1
+				"move speed bonus"	0.4
+				"damage force reduction" 0.0 
+				"airblast vulnerability multiplier" 0.0 
+				"override footstep sound set" 3
+				"airblast vertical vulnerability multiplier" 0.0 // 0.0 //0.1
+				"dmg taken increased" 200
+			}
+        }
+
+		T_TFBot_Sniper_Piss
+		{
+			Class Sniper
+			Name "Sydney Sniper"
+			Skill Hard
+			ClassIcon sniper_sydneysleeper
+			Item "The Sydney Sleeper"
+			Item "Rifleman's Regalia"
+			MaxVisionRange 3000
+		}
+
+		T_TFBot_Demoknight
+		{
+			Class Demoman
+			Name "Demoknight"
+			ClassIcon demoknight
+			Skill Hard
+			Health 150
+			Item "The Chargin' Targe"
+			Item "The Eyelander"
+			Item "The Dark Falkirk Helm"
+			WeaponRestrictions MeleeOnly
+			ItemAttributes
+			{
+				ItemName "The Eyelander"
+				"critboost on kill" 3
+				"max health additive penalty" -0
+			}
+		}
+
+		T_TFBot_Giant_Soldier_Cringe
+		{
+			Class Soldier
+			Name "Giant Soldier"
+			ClassIcon soldier_giant
+			Skill Expert
+			Health 3800
+			WeaponRestrictions PrimaryOnly
+			Attributes HoldFireUntilFullReload
+			Attributes MiniBoss Tag bot_giant 
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.0 
+				"airblast vulnerability multiplier" 0.0 
+				"override footstep sound set" 3
+			}
+		}
+
+		T_TFBot_Soldier_Extended_Buff_Banner_Cringe
+		{
+			Class Soldier
+			Name "Extended Buff Soldier"
+			Skill Normal
+			ClassIcon soldier_buff
+			Attributes SpawnWithFullCharge
+			Item "The Buff Banner"
+			CharacterAttributes
+			{
+				"increase buff duration"	9.0
+				"deploy time increased" .5
+			}
+		}
+
+		T_TFBot_Soldier_Extended_Concheror_Cringe
+		{
+			Class Soldier
+			Name "Extended Conch Soldier"
+			Skill Normal
+			ClassIcon soldier_conch
+			Attributes SpawnWithFullCharge
+			Item "The Concheror"
+			CharacterAttributes
+			{
+				"increase buff duration"	9.0
+				"deploy time increased" .5
+			}
+		}
+
+		T_TFBot_Soldier_Extended_Battalion_Cringe
+		{
+			Class Soldier
+			Name "Extended Backup Soldier"
+			Skill Normal
+			ClassIcon soldier_backup
+			Attributes SpawnWithFullCharge
+			Item "The Battalion's Backup"
+			Item "The Aztec Aggressor"
+			CharacterAttributes
+			{
+				"increase buff duration"	9.0
+				"deploy time increased" .5
+			}
+		}
+
+		T_TFBot_Soldier_Bison
+		{
+			Class Soldier
+			Name "Bison Soldier"
+			Item "The Righteous Bison"
+			ClassIcon soldier_bison
+			WeaponRestrictions SecondaryOnly
+		}
+
+		T_TFBot_Soldier_Cow_Mangler
+		{
+			Class Soldier
+			Name "Space Soldier"
+			//Item "The MK 50"
+			Item "The Cow Mangler 5000"
+			Skill Easy
+			ClassIcon soldier_mangler
+			ItemAttributes
+			{
+				ItemName "The Cow Mangler 5000"
+				"dmg bonus vs buildings" 5
+			}
+		}
+
+		T_TFBot_Sniper_Jarate_Cringe
+		{
+			Class Sniper
+			Name "Jarate Thrower"
+			Skill Expert
+			ClassIcon sniper_jarate
+			Item "Jarate"
+			//Item "Desert Marauder"
+			Item "The Jarmaments"
+			WeaponRestrictions SecondaryOnly
+			Attributes AlwaysFireWeapon
+			ItemAttributes 
+			{
+				ItemName "Jarate"
+				"effect bar recharge rate increased" 0.0001
+			}
+		}
+
+		T_TFBot_Giant_Sniper_SMG
+		{
+			Class Sniper
+			Name "Giant SMG Sniper"
+			ClassIcon sniper_smg_giant ///custom icon
+			Skill Expert
+			Health 3000
+			Attributes MiniBoss Tag bot_giant 
+			Tag bot_giant
+			WeaponRestrictions SecondaryOnly
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.0 
+				"airblast vulnerability multiplier" 0.0 
+				"override footstep sound set" 4
+				"head scale" 0.7
+			}
+		}
+
+		T_TFBot_Giant_Soldier_Spammer_Cringe
+		{
+			Class Soldier
+			Name "Giant Rapid Fire Soldier"
+			ClassIcon soldier_spammer
+			Health 3800
+			Skill Expert
+			Item "The Lucky Shot"	
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss Tag bot_giant 
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				"faster reload rate" -0.8
+				"fire rate bonus" 0.5
+				"Projectile speed increased" 0.65
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.0 
+				"airblast vulnerability multiplier" 0.0 
+				"override footstep sound set" 3
+			}
+		}
+	}
+}

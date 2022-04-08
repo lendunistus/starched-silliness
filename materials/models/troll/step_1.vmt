@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\troll\step_1"
+	"$translucent" 1
+	"$vertexcolor" 1
+}

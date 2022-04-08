@@ -1,0 +1,32 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/player/demo/eyeball_r_veiny"
+	//"$bumpmap"     "models/player/demo/hwm/demoman_head_phongmask"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .3]"
+
+	"$lightwarptexture"   "models/player/shared/eye_lightwarp"       
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "0.6"
+	"$phongfresnelranges"	"[.25 1 4]"
+	//"$halflambert" "0"
+
+	// Rim lighting parameters
+	"$rimlight" "1"					// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"			// Exponent for phong component of rim lighting	
+	"$rimlightboost" "2"			// Boost for ambient cube component of rim lighting
+	"$rimmask" "1"                  // Use the alpha channel of the $phongexponenttexture as a rim mask.
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"$cloakColorTint" "[0.4 0.5 1]"
+	"Proxies"
+	{
+		"spy_invis"
+		{
+		}
+	}
+}

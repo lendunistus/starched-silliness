@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\props_construction\steamroller"
+	"$surfaceprop" "metal"
+	
+        // (Enabled)
+        "$phong" "1"
+
+        // Universal Phong Reflection
+	"$lightwarptexture" "models/props_construction/prop_lightwarp"
+
+        // PHONG SPECULAR Control - Overall Brightness
+	"$phongfresnelranges"	"[1 0 0]"
+
+        // PHONG SPECULAR Control - Brightness Amplifier (very sensitive)
+        "$phongboost" ".1"
+
+        // PHONG SPECULAR Control - Tightness
+	"$phongexponent" "1"
+
+        // PHONG from .VMT Alpha Channel ON
+	"$basemapalphaphongmask" "1"								// Boost for ambient cube component of rim lighting
+}

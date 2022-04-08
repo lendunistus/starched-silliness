@@ -1,0 +1,2725 @@
+//	MvM Thematic: intermemeiate_cringe by randomguy and UltimentM
+//	@ https://steamcommunity.com/profiles/76561198056380662 & http://steamcommunity.com/id/ultimentm
+//	Starting Money: $800
+#base robot_cringe.pop
+#base robot_giant.pop
+#base robot_standard.pop
+WaveSchedule
+{
+	StartingCurrency 800
+	CanBotsAttackWhileInSpawnRoom no
+	RespawnWaveTime	1
+	CustomUpgradesFile "mvm_upgrades_cringe.txt"
+	FixSetCustomModelInput 1
+	NoRomevisionCosmetics 1
+    MaxSpeedLimit 1200 [$SIGSEGV] // Max speed limit override. Values above 520 fix max speed on non scout bots. Values above 521 disable jumping on stuck
+	TextPrintTime 0 [$SIGSEGV]
+	BodyPartScaleSpeed 5 [$SIGSEGV]
+	//general memes
+	PrecacheModel "models/bots/demo/sentry_buster_meme.mdl" [$SIGSEGV]
+	PrecacheModel "models/players/gogetassj4.mdl" [$SIGSEGV]
+    PrecacheModel "models/props_movies/campervan/campervan.mdl" [$SIGSEGV]
+	PrecacheModel "models/props_halloween/ghost_no_hat.mdl" [$SIGSEGV]
+	PrecacheModel "models/props_construction/steamroller.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/merasmus/merasmus.mdl" [$SIGSEGV]
+	PrecacheModel "models/weapons/c_models/c_merasmus_staff/c_merasmus_staff.mdl" [$SIGSEGV]
+	//medals
+	PrecacheModel "models/workshop/player/items/all_class/robotarm_donator_rainbow/robotarm_donator_rainbow_gem.mdl" [$SIGSEGV]
+	PrecacheModel "models/workshop/player/items/all_class/titanium_tank_participant/titanium_tank_participant_demo.mdl" [$SIGSEGV]
+	PrecacheModel "models/workshop/player/items/all_class/canteen_crasher_platinum/canteen_crasher_platinum_demo.mdl" [$SIGSEGV]
+	PrecacheModel "models/workshop/player/items/all_class/robotarm_creator/robotarm_creator_gem.mdl" [$SIGSEGV]
+	PrecacheModel "models/workshop/player/items/all_class/mvm_memes_player_s2/mvm_memes_player_s2_demo.mdl" [$SIGSEGV]
+	PrecacheModel "models/workshop/player/items/all_class/mvm_memes_creator/mvm_memes_creator_demo.mdl" [$SIGSEGV]
+	PrecacheModel "models/workshop/player/items/all_class/robotarm_platinum/robotarm_platinum_gem.mdl" [$SIGSEGV]
+	PrecacheModel "models/workshop/player/items/all_class/robotarm_silver/robotarm_silver_gem.mdl" [$SIGSEGV]
+	PrecacheSound "cringe_sb_intro.wav" [$SIGSEGV]
+	PrecacheSound "cringe_sb_loop.wav" [$SIGSEGV]
+	PrecacheSound "cringe_sb_spin.wav" [$SIGSEGV]
+// Wave 1
+// obligatory batscout memes + tank that uses bullet vacc model 
+
+// Wave 2
+// minecraft wave
+
+// Wave 3
+// Anime wave
+
+// Wave 4
+// fast as fuck boiiis wave
+
+// Wave 5
+// piss wave
+
+// Wave 6
+// "die" wave
+
+// Wave 7
+// medal wave and other memes
+
+// Wave 8
+// pisses on the moon redemption
+
+// Wave 9
+// Last wave
+	PlayerAttributes //Player attributes appied for the whole mission
+	{
+		"powerup duration" 24
+	}
+	ItemAttributes //Adds attributes to specified item given to players
+	{
+		ItemName "The Gas Passer"
+		"dmg penalty vs players" 0.197
+	}
+	OverrideSounds [$SIGSEGV]
+	{
+		"MVM.SentryBusterIntro" "cringe_sb_intro.wav"
+		"MVM.SentryBusterLoop" "cringe_sb_loop.wav"
+		"MVM.SentryBusterSpin" "cringe_sb_spin.wav"
+	}
+	ExtraTankPath
+	{
+		Name "caravan_path_b" //name of the starting path node prefix. First tank node name would be name_1
+		Node "667 926 137" // note XYZ coordinates. First node is the starting point
+		Node "0 350 137"
+		Node "-750 350 137"//loop 1
+		Node "-900 500 137"
+		Node "-900 800 137"
+		Node "-500 900 137"
+		Node "-50 900 137"
+		Node "130 700 137"
+		Node "35 350 137"
+		Node "-750 350 137"//loop 2
+		Node "-900 500 137"
+		Node "-900 800 137"
+		Node "-500 900 137"
+		Node "-50 900 137"
+		Node "130 700 137"
+		Node "35 350 137"
+		Node "-750 350 137"//loop 3
+		Node "-900 500 137"
+		Node "-900 800 137"
+		Node "-500 900 137"
+		Node "-50 900 137"
+		Node "130 700 137"
+		Node "35 350 137"
+		Node "-750 350 137"//loop 4
+		Node "-900 500 137"
+		Node "-900 800 137"
+		Node "-500 900 137"
+		Node "-50 900 137"
+		Node "130 700 137"
+		Node "35 350 137"//end of small loop
+		Node "-300 200 137"
+		Node "-300 -1050 137"
+		Node "-300 -500 137"
+		Node "-750 -500 137"
+		Node "-750 -1500 200"//start of big loop
+		Node "-1300 -1500 200"
+		Node "-1300 -2850 200"
+		Node "600 -2850 200"
+		Node "1000 -2100 200"
+		Node "500 -1600 200"
+		Node "-1300 -1500 200"//end of big loop
+		Node "-1350 -1600 200"
+		Node "-1350 -1700 200"
+		Node "-1300 -1800 200"
+		Node "-1300 -2850 200"
+		Node "-600 -2850 200"
+		Node "-600 -3850 200"
+		Node "-200 -4126 0"
+	}
+	ExtraTankPath [$SIGSEGV] //Adds tank path to follow
+	{
+		Name "caravan_path_a" //name of the starting path node prefix. First tank node name would be name_1
+		Node "667 926 137" // note XYZ coordinates. First node is the starting point
+		Node "-426 43 137"
+        Node "-416 43 137"
+        Node "-426 43 137"
+		Node "-658 76 222"
+		Node "-913 880 152"
+		Node "123 882 149"
+        Node "-291 205 143"
+        Node "-284 -1043 136"
+        Node "-800 -1035 139"
+        Node "-746 -515 140"
+        Node "634 -669 133"
+        Node "646 149 372"
+        Node "1200 217 372"
+        Node "1300 -1109 372"
+        Node "1744 -1122 372"
+        Node "1730 -1300 372"
+        Node "1253 -1429 372"
+        Node "836 -1742 130"
+        Node "926 -2412 135"
+        Node "274 -3174 79"
+        Node "230 -4253 27"
+        Node "-104 -4241 -15"
+	}
+	ExtraTankPath
+	{
+		Name "roller1" //name of the starting path node
+		Node "0 200 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraTankPath
+	{
+		Name "roller2" //name of the starting path node
+		Node "100 700 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraTankPath
+	{
+		Name "roller3" //name of the starting path node
+		Node "-950 500 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraTankPath
+	{
+		Name "roller4" //name of the starting path node
+		Node "-250 0 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraTankPath
+	{
+		Name "roller5" //name of the starting path node
+		Node "-250 -500 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraTankPath
+	{
+		Name "roller6" //name of the starting path node
+		Node "40 -600 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraTankPath
+	{
+		Name "roller7" //name of the starting path node
+		Node "-750 -1000 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraTankPath
+	{
+		Name "roller8" //name of the starting path node
+		Node "-750 -500 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraTankPath
+	{
+		Name "roller9" //name of the starting path node
+		Node "-750 -1500 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraTankPath
+	{
+		Name "roller10" //name of the starting path node
+		Node "-360 600 1000" // note XYZ coordinates. First node is the starting point
+	}
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_secret_shit" // <-- Name to give the info_player_teamspawn entity
+        TeamNum 3                       // <-- Create a blue-team spawn point
+        X    "-900.0"                      //
+        Y "-4200.0"                      // <-- X/Y/Z location on the map at which to place the spawn point
+        Z  "-63.0"                      //
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_red" // <-- Name to give the info_player_teamspawn entity
+        TeamNum 3                       // <-- Create a blue-team spawn point
+        X    "-100.0"                      //
+        Y "-5000.0"                      // <-- X/Y/Z location on the map at which to place the spawn point
+        Z  "40.0"                      //
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_tank" // <-- Name to give the info_player_teamspawn entity
+        TeamNum 3                       // <-- Create a blue-team spawn point
+        X "692.0"                      //
+        Y "932.0"                      // <-- X/Y/Z location on the map at which to place the spawn point
+        Z "132.0"                      //
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "200.0"
+        Y "300.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "0.0"
+        Y "300.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "-200.0"
+        Y "300.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "-400.0"
+        Y "300.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "-600.0"
+        Y "300.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "-800.0"
+        Y "300.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "200.0"
+        Y "100.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "0.0"
+        Y "100.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "-200.0"
+        Y "100.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_amogus"
+        TeamNum 3
+        X "-400.0"
+        Y "100.0"
+        Z "200.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_chungus"
+        TeamNum 3
+        X "-300.0"
+        Y "600.0"
+        Z "400.0"
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_hydrogen"
+        TeamNum 3
+        X "1800.0"
+        Y "-1900.0"
+        Z "400.0"
+    }
+	PointTemplates [$SIGSEGV]
+	{
+		Cow
+		{
+			prop_dynamic
+			{
+				"model"				"models/props_2fort/cow001_reference.mdl"
+				"solid"				"0"
+				"disableshadows"	"1"
+				"modelscale"		"1.0"
+			}
+		}
+		Spycrab
+		{
+			prop_dynamic
+			{
+				"model"				"models/workshop/player/items/spy/spycrab/spycrab.mdl"
+				"solid"				"1"
+				"disableshadows"	"1"
+				"modelscale"		"15.0"
+				"skin"				"1"
+				"origin" "50 -150 -1050"
+			}
+		}
+		PISSING
+        {
+			KeepAlive 1
+            NoFixup 1
+            env_shake
+            {
+                "spawnflags" "1" 
+                "amplitude" "16"
+                "duration" "7"
+                "frequency" "200"
+				"radius" "10000"
+                "targetname" "shake_pissing"
+            }
+        }
+		HydroTeleport
+		{
+			trigger_teleport
+			{
+				"target" "teleport"
+				"mins" "-1 -1 -1"
+				"maxs" "1 1 1"
+				"spawnflags" "1"
+				"filtername" "telefilter"
+				"OnStartTouch" "!self,Kill,,0.05,-1"
+			}
+		}
+		HydroTeleportPos
+		{
+			NoFixup 1
+			info_target
+			{
+				"targetname" "teleport"
+				"origin" "-8250 555 700"
+			}
+		}
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"-200 -6300 -50"
+		Angles	"0 90 0"
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"-100 -5900 -50"
+		Angles	"0 90 0"
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"103 -6072 -50"
+		Angles	"0 121 0"
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"376 -6526 -50"
+		Angles	"0 121 0"
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"-530 -6200 -50"
+		Angles	"0 40 0"
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"-370 -6571 -50"
+		Angles	"0 72 0"
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"300 -6127 -50"
+		Angles	"0 160 0"
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"-400 -5950 -50"
+		Angles	"0 0 0"
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"16 -6440 -50"
+		Angles	"0 -80 0"
+	}
+	SpawnTemplate
+	{
+		Name	"Cow"
+		Origin	"300 -5940 -50"
+		Angles	"0 -140 0"
+	}
+	SpawnTemplate
+	{
+		Name	"PISSING"
+		Origin	"0 0 0"
+	}
+	Mission
+	{
+		Objective Sniper
+		Where spawnbot_mission_sniper
+		BeginAtWave 1
+		RunForThisManyWaves 1
+		InitialCooldown 11
+		CooldownTime 30
+		DesiredCount 1
+		TFBot
+		{
+			Template T_TFBot_Sniper_Piss
+			Skill Easy
+			CharacterAttributes
+			{
+				"damage penalty" 0.2
+				"move speed bonus" 0.5
+			}
+			Name "Epic Glass Filler"
+			DamageAppliesCond [$SIGSEGV]
+			{
+				Name TF_COND_MAD_MILK // <-- required: condition name/index
+				Duration 10.0         // <-- optional: limited duration
+			}
+			AddCond [$SIGSEGV]
+			{
+				Name TF_COND_INVULNERABLE_USER_BUFF      // <-- here we use a condition number
+				Duration 300.0 // <-- here we specify a limited duration
+			}
+		}
+	}
+	Mission
+	{
+		Objective DestroySentries
+		Where spawnbot
+		InitialCooldown 45
+		CooldownTime 30
+		BeginAtWave 1
+		RunForThisManyWaves 4
+		SuppressSentryBusterModel 1
+		TFBot
+		{
+			Template T_TFBot_SEEntryBuster
+		}
+	}
+	Mission
+	{
+		Objective DestroySentries
+		Where spawnbot
+		InitialCooldown 5
+		CooldownTime 45
+		BeginAtWave 5
+		RunForThisManyWaves 1
+		SuppressSentryBusterModel 1
+		TFBot
+		{
+			Template T_TFBot_SEEntryBuster_Urine
+		}
+	}
+    Mission
+	{
+		Objective DestroySentries
+		Where spawnbot
+		InitialCooldown 45
+		CooldownTime 30
+		BeginAtWave 6
+		RunForThisManyWaves 4
+		SuppressSentryBusterModel 1
+		TFBot
+		{
+			Template T_TFBot_SEEntryBuster
+		}
+	}
+// WAVE 1 //////////////////////////////////////////////////////////////////
+// Currency: $800 / $800 Current ///////////////////////////////////////////
+//ok so wave 1: obligatory batscout memes + tank that uses bullet vacc model 
+//(it's blue and it'll be invisible so it's like a funny ghost tank)
+//ok this version of sig is shit nvm
+//fucking crap shit meme time it is then ig
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		Explanation [$SIGSEGV] //Dispayed once the wave is initialized
+		{
+			Line "{orange}Okay"
+			Line "{red}This is epic."
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 0
+			FirstSpawnMessage "{green}This mission utilises several custom audio tracks." [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 3
+			FirstSpawnMessage "{green}If a track is playing longer than what you would like, type snd_restart in the console to make it stop playing." [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 8
+			FirstSpawnMessage "{green}Thanks, and have fun." [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			Name stage1
+			Where spawnbot
+			TotalCount 69
+			MaxActive 20
+			SpawnCount 5
+			WaitBeforeStarting 10
+			WaitBetweenSpawns 4
+			TotalCurrency 300
+			FirstSpawnWarningSound "mvm/giant_heavy/giant_heavy_entrance.wav"
+			
+			
+				TFBot
+				{
+					Template T_TFBot_Scout_Melee
+					Skill Expert
+					ClassIcon heavy_stoopid_lite
+					Name "Extremely Good Bot Die to me please i am useless"
+					Attributes AlwaysFireWeapon
+				}
+		}
+
+		WaveSpawn
+		{
+			Name dummyone
+			WaitForAllDead dummytwo
+			TotalCount 400
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 42069
+			FirstSpawnWarningSound "mvm/giant_heavy/giant_heavy_entrance.wav"
+			
+			
+				TFBot
+				{
+					Template T_TFBot_Scout_Melee
+					Skill Expert
+					ClassIcon heavy_stoopid_lite_giant
+					Name "Extremely Good Bot Die to me please i am useless"
+					Attributes AlwaysFireWeapon
+				}
+		}
+
+		WaveSpawn
+		{
+			Name dummytwo
+			WaitForAllDead dummyone
+			TotalCount 20
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 42069
+			FirstSpawnWarningSound "mvm/giant_heavy/giant_heavy_entrance.wav"
+			
+			
+				TFBot
+				{
+					Template T_TFBot_Scout_Melee
+					Skill Expert
+					ClassIcon heavy_stoopid_lite_giant
+					Name "Extremely Good Bot Die to me please i am useless"
+					Attributes AlwaysFireWeapon
+				}
+		}
+
+		WaveSpawn
+		{
+			Name stage1
+			Where spawnbot
+			TotalCount 3
+			MaxActive 3
+			SpawnCount 1
+			WaitBeforeStarting 10
+			WaitBetweenSpawns 30
+			TotalCurrency 500
+			FirstSpawnWarningSound "mvm/giant_heavy/giant_heavy_entrance.wav"
+			
+			
+			Tank
+			{
+				Health 7000
+				Speed 75
+				Name "tankboss"
+				Skin 0								// 0 - normal skin, 1 - final wave skin
+				StartingPathTrackNode "boss_path_1"		// if this is not here have fun with the hatch tank
+
+				OnKilledOutput							// output sent when the Tank is killed (almost never used)
+				{
+					Target tank_died_relay
+					Action Trigger                         
+				}
+
+				OnBombDroppedOutput						// output sent when the Tank drops its bomb once it reaches the end of its path 
+				{
+					Target boss_deploy_relay
+					Action Trigger                         
+				}
+				IsMiniBoss 0 [$SIGSEGV]
+				MaxTurnRate 1 [$SIGSEGV]
+                Scale 0.5 [$SIGSEGV]
+			}
+		}
+	}
+// WAVE 2 //////////////////////////////////////////////////////////////////
+// Currency: $900 / $1600 + $100 Current ///////////////////////////////////
+//ok so wave 2: M I N E C R A F T!!!
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		
+		WaveSpawn
+		{
+			Name stage1
+			Where spawnbot
+			TotalCount 40
+			MaxActive 20
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 1
+			TotalCurrency 200
+			
+			
+				TFBot
+				{
+					Template T_TFBot_Demoknight
+					ClassIcon minecraft_sword
+					Item "The Top Notch"
+					Name "Epic Knight"
+					ItemAttributes
+					{
+						ItemName "The Eyelander"
+						"item style override" 1
+						"is australium item" 1
+						"fire rate bonus" 0.4
+						"damage penalty" 0.2
+					}
+				}
+		}
+
+		WaveSpawn
+		{
+			Name stage1
+			Where spawnbot
+			TotalCount 4
+			MaxActive 2
+			SpawnCount 1
+			WaitBeforeStarting 1
+			WaitBetweenSpawns 10
+			TotalCurrency 200
+			
+			
+				TFBot
+				{
+					Name "Charged Creeper"
+					Class Demoman
+					Skill Expert
+					ClassIcon mccreeper
+					WeaponRestrictions MeleeOnly
+					MaxVisionRange 400
+					Attributes AlwaysCrit
+					Item "The Top Notch"
+					Item "The Ullapool Caber"
+					Health 450
+					Scale 1.5
+					ItemAttributes
+					{
+						ItemName "The Ullapool Caber"
+						"damage bonus" 999
+						"blast dmg to self increased" 42069
+					}
+					Action Mobber [$SIGSEGV]
+				}
+		}
+
+		WaveSpawn
+		{
+			Name retardedsupport
+			WaitForAllDead stage1
+			Where spawnbot_secret_shit [$SIGSEGV]
+			TotalCount 4
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 5
+			Support 1
+			
+			
+				TFBot
+				{
+					Name "Creeper"
+					Class Demoman
+					Skill Easy
+					ClassIcon mccreeper
+					WeaponRestrictions MeleeOnly
+					MaxVisionRange 400
+					Item "The Top Notch"
+					Item "The Ullapool Caber"
+					ItemAttributes
+					{
+						ItemName "The Ullapool Caber"
+						"damage bonus" 2
+						"blast dmg to self increased" 666
+					}
+					Action Mobber [$SIGSEGV]
+				}
+		}
+
+		WaveSpawn
+		{
+			Name stage2
+			WaitForAllDead stage1
+			Where spawnbot
+			TotalCount 6
+			MaxActive 6
+			SpawnCount 1
+			WaitBeforeStarting 5
+			WaitBetweenSpawns 5
+			TotalCurrency 200
+			
+			
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Cringe
+					Name "Dirt Shoveller"
+					ClassIcon minecraft_shovel
+					WeaponRestrictions MeleeOnly
+					MaxVisionRange 400
+					Item "The Top Notch"
+					Health 1600
+					CharacterAttributes
+					{
+						"move speed bonus" 0.8
+					}
+				}
+		}
+
+		WaveSpawn
+		{
+			Name stage3
+			WaitForAllDead stage2
+			Where spawnbot
+			TotalCount 40
+			MaxActive 8
+			SpawnCount 8
+			WaitBeforeStarting 5
+			WaitBetweenSpawns 0
+			TotalCurrency 200
+			Support Limited
+			
+			
+			RandomChoice
+			{
+				TFBot
+				{
+					Template T_TFBot_Soldier_Extended_Concheror_Cringe
+					Name "Potion Splasher"
+					ClassIcon mcpotion
+					WeaponRestrictions MeleeOnly
+					MaxVisionRange 400
+					Item "The Top Notch"
+					CharacterAttributes
+					{
+						"hand scale" 0
+					}
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Extended_Buff_Banner_Cringe
+					Name "Potion Splasher"
+					ClassIcon mcpotion
+					WeaponRestrictions MeleeOnly
+					MaxVisionRange 400
+					Item "The Top Notch"
+					CharacterAttributes
+					{
+						"hand scale" 0
+					}
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Extended_Battalion_Cringe
+					Name "Potion Splasher"
+					ClassIcon mcpotion
+					WeaponRestrictions MeleeOnly
+					MaxVisionRange 400
+					Item "The Top Notch"
+					CharacterAttributes
+					{
+						"hand scale" 0
+					}
+				}
+			}
+		}
+
+		WaveSpawn
+		{
+			Name stage3
+			WaitForAllDead stage2
+			Where spawnbot
+			TotalCount 4
+			MaxActive 4
+			SpawnCount 1
+			WaitBeforeStarting 10
+			WaitBetweenSpawns 5
+			TotalCurrency 100
+			
+			
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Cringe
+					Name "Redstone Miner"
+					ClassIcon minecraft_pickaxe
+					WeaponRestrictions MeleeOnly
+					MaxVisionRange 400
+					Item "The Top Notch"
+					Item "The Equalizer"
+					Health 2500
+				}
+		}
+	}
+// WAVE 3 //////////////////////////////////////////////////////////////////
+// Currency: $700 / $2500 + $200 Current ///////////////////////////////////
+//anime
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 0
+			FirstSpawnWarningSound "cringe_w3.mp3"
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller1_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller2_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller3_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller4_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller5_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller6_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller7_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller8_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller9_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3a
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 0
+			WaitBeforeStarting 2.75
+			Tank
+			{
+				Health 100
+				StartingPathTrackNode roller10_1
+				IsMiniBoss 0
+				ClassIcon ult_dio [$SIGSEGV]
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				Model "models/props_construction/steamroller.mdl" [$SIGSEGV] //Use custom model
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				IsCrit 1 [$SIGSEGV] //Set to 1 to enable crit  treads and the bomb will remain invisible
+				DeploySound "MVM.FallDamageBots" [$SIGSEGV]
+				PingSound "MVM.FallDamageBots" [$SIGSEGV]
+				OnKilledOutput
+				{
+					Target boss_dead_relay
+					Action Trigger
+				}
+			}
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 5
+			WaitForAllDead wave3a
+			FirstSpawnWarningSound "cringe_w3a.mp3"
+		}
+		WaveSpawn
+		{
+			Name			wave3b
+			WaitForAllDead	wave3a
+			Where spawnbot
+			TotalCount 38
+			MaxActive 10
+			SpawnCount 2
+			TotalCurrency 200
+			WaitBeforeStarting 5
+			WaitBetweenSpawns 4
+			TFBot
+			{
+				Template T_TFBot_UIGoku
+			}
+		}
+		WaveSpawn
+		{
+			Name			wave3b
+			WaitForAllDead	wave3a
+			Where spawnbot
+			TotalCount 32
+			MaxActive 8
+			SpawnCount 2
+			TotalCurrency 100
+			WaitBeforeStarting 7
+			WaitBetweenSpawns 5
+			TFBot
+			{
+				Template T_TFBot_VegetaBlue
+			}
+		}
+		WaveSpawn
+		{
+			Name			wave3c
+			WaitForAllDead	wave3a
+			Where spawnbot
+			TotalCount 3
+			MaxActive 2
+			SpawnCount 1
+			TotalCurrency 100
+			WaitBeforeStarting 15
+			WaitBetweenSpawns 35
+			TFBot
+			{
+				Template T_TFBot_Ghost
+			}
+		}
+		WaveSpawn
+		{
+			Name			wave3c
+			WaitForAllDead	wave3a
+			Where spawnbot
+			TotalCount 2
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 100
+			WaitBeforeStarting 30
+			WaitBetweenSpawns 35
+			TFBot
+			{
+				Template T_TFBot_Broly
+			}
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 0
+			WaitForAllDead wave3c
+			FirstSpawnWarningSound "cringe_w3b.mp3"
+		}
+		WaveSpawn
+		{
+			Name			wave3d
+			WaitForAllDead	wave3c
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 200
+			WaitBeforeStarting 5
+			TFBot
+			{
+				Template T_TFBot_Gogeta
+			}
+		}
+		WaveSpawn
+		{
+			Name			wave3drip
+			WaitForAllDead	wave3d
+			TotalCurrency 0
+			Where spawnbot_secret_shit
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	0
+			Support Limited
+			FirstSpawnWarningSound "cringe_w3c.mp3"
+			RandomChoice
+			{
+				RandomChoice
+				{
+					TFBot
+					{
+						Template T_TFBot_Chief_Gauntlet
+						Name "*GASP* DRI-"
+						ClassIcon ult_drip
+						CharacterAttributes
+						{
+							"health regen" -99999
+						}
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave3end
+			WaitForAllDead wave3drip
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 0
+		}
+	}
+// WAVE 4 //////////////////////////////////////////////////////////////////
+// Currency: $800 / $3200 + $300 Current ///////////////////////////////////
+//i'm so fucking fast
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 0
+			FirstSpawnWarningSound "cringe_w4.mp3"
+		}
+		WaveSpawn
+		{
+			Name wave4a
+			TotalCurrency 1
+			Where spawnbot
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	3.5
+			WaitBetweenSpawns	0
+			TFBot
+			{
+				Template T_TFBot_Giant_Scout_Fast
+				Name "da super scout"
+				CharacterAttributes
+				{
+					"move speed bonus" 1.3
+				}
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead wave4a
+			WaitBeforeStarting 0
+			FirstSpawnWarningSound "cringe_w4a.mp3"
+		}
+		WaveSpawn
+		{
+			Name			wave4b
+			WaitForAllDead	wave4a
+			TotalCurrency 49
+			Where spawnbot
+			TotalCount	24
+			MaxActive	8
+			SpawnCount	2
+			WaitBeforeStarting	2.6
+			WaitBetweenSpawns	5
+			TFBot
+			{
+				Template T_TFBot_Scout_Blaster
+			}
+		}
+		WaveSpawn
+		{
+			Name			wave4b
+			WaitForAllDead	wave4a
+			TotalCurrency 100
+			Where spawnbot
+			TotalCount	35
+			MaxActive	10
+			SpawnCount	3
+			WaitBeforeStarting	2.6
+			WaitBetweenSpawns	5
+			TFBot
+			{
+				Template T_TFBot_Pyro_Powerjack
+			}
+		}
+		WaveSpawn
+		{
+			Name			wave4b
+			WaitForAllDead	wave4a
+			TotalCurrency 100
+			Where spawnbot
+			TotalCount	3
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	15.1
+			WaitBetweenSpawns	20
+			TFBot
+			{
+				Template T_TFBot_Giant_Soldier_EscapePlan
+			}
+		}
+		WaveSpawn
+		{
+			Name				wave4c
+			WaitForAllSpawned	wave4b
+			TotalCurrency 50
+			Where spawnbot
+			TotalCount	20
+			MaxActive	8
+			SpawnCount	2
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	6
+			TFBot
+			{
+				Template T_TFBot_Heavy_Fast
+			}
+		}
+		WaveSpawn
+		{
+			Name				wave4c
+			WaitForAllSpawned	wave4b
+			TotalCurrency 100
+			Where spawnbot
+			TotalCount	39
+			MaxActive	10
+			SpawnCount	3
+			WaitBeforeStarting	8
+			WaitBetweenSpawns	6
+			TFBot
+			{
+				Template T_TFBot_Medic_Fast
+			}
+		}
+		WaveSpawn
+		{
+			Name				wave4fast1
+			WaitForAllSpawned	wave4b
+			TotalCurrency 100
+			Where spawnbot
+			TotalCount	4
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	13
+			TFBot
+			{
+				Template T_TFBot_Giant_Scout_Fast
+				Name "FAST"
+				CharacterAttributes
+				{
+					"move speed bonus" 1.75
+					"dmg taken increased" 2
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name				wave4fast2
+			WaitForAllSpawned	wave4fast1
+			TotalCurrency 75
+			Where spawnbot
+			TotalCount	3
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	13
+			WaitBetweenSpawns	13
+			TFBot
+			{
+				Template T_TFBot_Giant_Scout_Fast
+				Name "FASTER"
+				CharacterAttributes
+				{
+					"dmg taken increased" 3
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name				wave4fast3
+			WaitForAllSpawned	wave4fast2
+			TotalCurrency 50
+			Where spawnbot
+			TotalCount	2
+			MaxActive	2
+			SpawnCount	1
+			WaitBeforeStarting	13
+			WaitBetweenSpawns	13
+			TFBot
+			{
+				Template T_TFBot_Giant_Scout_Fast
+				Name "THE FASTEST"
+				CharacterAttributes
+				{
+					"move speed bonus" 3
+					"dmg taken increased" 6
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name				wave4fast4
+			WaitForAllSpawned	wave4fast3
+			TotalCurrency 25
+			Where spawnbot
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	13
+			WaitBetweenSpawns	0
+			TFBot
+			{
+				Template T_TFBot_Giant_Scout_Fast
+				Name "FAST AS FUCK BOYYYYYYY"
+				CharacterAttributes
+				{
+					"move speed bonus" 4
+					"dmg taken increased" 12
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name			wave4boss
+			WaitForAllDead	wave4a
+			TotalCurrency 50
+			Where spawnbot
+			TotalCount	1
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	77.3
+			WaitBetweenSpawns	0
+			Support Limited
+			RandomChoice
+			{
+				RandomChoice
+				{
+					TFBot
+					{
+						Template T_TFBot_FASTDEMOBOYYYYY
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave4end
+			WaitForAllDead wave4boss
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 0
+		}
+        WaveSpawn
+		{
+			Name			wave4t
+			WaitForAllDead	wave4a
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 139.8
+			TotalCurrency 100
+			FirstSpawnMessage "{red}GAS GAS GAS" [$SIGSEGV]
+			Tank
+			{
+				Health 20000
+				Speed 1500
+				Name "tankboss"
+				StartingPathTrackNode "caravan_path_b_1"		// if this is not here have fun with the hatch tank
+				OnKilledOutput							// output sent when the Tank is killed (almost never used)
+				{
+					Target tank_died_relay
+					Action Trigger                         
+				}
+				OnBombDroppedOutput						// output sent when the Tank drops its bomb once it reaches the end of its path 
+				{
+					Target tankboss
+					Action kill
+				}
+				DisableSmokestack 1 [$SIGSEGV] //Disable smoke particles
+				ClassIcon van_lite [$SIGSEGV] //Use custom icon for a tank
+				DisableChildModels 1 [$SIGSEGV] //If set to 1, bomb and treads models will be disabled
+				DisableTracks 1 [$SIGSEGV] //If set to 1, treads models will be disabled
+				Model "models/props_movies/campervan/campervan.mdl" [$SIGSEGV] //Use custom model
+				MaxTurnRate 1000 [$SIGSEGV] //How fast the tank turns. Faster turns allows for higher speed tanks. Default: 25
+			}
+		}
+	}
+// WAVE 5 //////////////////////////////////////////////////////////////////
+// Currency: $1000 / $4000 + $400 Current //////////////////////////////////
+//Take piss fill glass
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+
+		Explanation [$SIGSEGV]
+		{
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+			Line "{yellow}Take piss fill glass."
+		}
+		WaveSpawn
+		{
+			Name stage1
+			Where spawnbot
+			TotalCount 36
+			MaxActive 12
+			SpawnCount 6
+			WaitBeforeStarting 5
+			WaitBetweenSpawns 4
+			TotalCurrency 100
+			
+			
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Cringe
+                    Name "Epic Glasser"
+				}
+		}
+
+		WaveSpawn
+		{
+			Name stage1
+			Where spawnbot
+			TotalCount 4
+			MaxActive 4
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 10
+			TotalCurrency 200
+			
+			
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Cringe
+					Name "Giant Glass Filler Soldier"
+					ClassIcon soldier_golden_lite
+					WeaponRestrictions SecondaryOnly
+					CharacterAttributes
+					{
+						"Damage Penalty" 0.6
+					}
+					DamageAppliesCond [$SIGSEGV]
+					{
+						Name TF_COND_URINE // <-- required: condition name/index
+						Duration 5.0         // <-- optional: limited duration
+					}
+				}
+		}
+
+		WaveSpawn
+		{
+			Name stage2
+			WaitForAllSpawned stage1
+			Where spawnbot
+			TotalCount 32
+			MaxActive 16
+			SpawnCount 4
+			WaitBeforeStarting 15
+			WaitBetweenSpawns 4
+			TotalCurrency 300
+			
+			
+				TFBot
+				{
+					Class HeavyWeapons
+					Name "Glass Filler Heavy"
+					ClassIcon heavy_golden_lite
+					CharacterAttributes
+					{
+						"Damage Penalty" 0.3
+					}
+					DamageAppliesCond [$SIGSEGV]
+					{
+						Name TF_COND_URINE // <-- required: condition name/index
+						Duration 5.0         // <-- optional: limited duration
+					}
+				}
+		}
+
+		WaveSpawn
+		{
+			Name stage3
+			WaitForAllDead stage2
+			Where spawnbot
+			TotalCount 4
+			MaxActive 4
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_SMG
+					Name "Ultimate Glass Filler"
+					ClassIcon sniper_golden_lite
+					WeaponRestrictions SecondaryOnly
+					Attributes UseBossHealthBar
+					Health 4000
+					DamageAppliesCond [$SIGSEGV]
+					{
+						Name TF_COND_URINE // <-- required: condition name/index
+						Duration 5.0         // <-- optional: limited duration
+					}
+				}
+		}
+	}
+
+// WAVE 6 //////////////////////////////////////////////////////////////////
+// Currency: $500 / $5000 + $500 Current ///////////////////////////////////
+//you are all going to die
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		Explanation [$SIGSEGV] //Dispayed once the wave is initialized
+		{
+			Line "Biggie Smalls has joined the game"
+		}
+		WaveSpawn
+		{
+			SpawnCount 1
+			MaxActive 1
+			TotalCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 0
+			TotalCurrency 0
+			Where spawnbot_red
+			Support Limited
+			FirstSpawnMessage "Biggie Smalls was automatically assigned to team DEFENDERS" [$SIGSEGV]
+			RandomChoice
+			{
+				RandomChoice
+				{
+					TFBot
+					{
+						Name "Biggie Smalls"
+						Class Scout
+						Item "The Hardy Laurel"
+						Attributes IgnoreFlag
+						Action Mobber [$SIGSEGV]
+						UseHumanModel 1 [$SIGSEGV]
+						ItemAttributes
+						{
+							ItemName "The Hardy Laurel"
+							"vision opt in flags" 0
+							"always_transmit_so" 0
+						}
+						CharacterAttributes
+						{
+							"reduced_healing_from_medics" 0
+							"health from healers reduced" 0
+							"mod weapon blocks healing" 1
+							"dmg taken increased" 999
+						}
+						AddCond [$SIGSEGV]
+						{
+							Name TF_COND_REPROGRAMMED
+						}
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 5
+			FirstSpawnMessage "{9AFF9A}Biggie Smalls {FBECCB}has the Hardy Laurel which enables Romevision for everyone to share!" [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 10
+			FirstSpawnMessage "{FF3D3D}Biggie Smalls {FBECCB}:  hey guys :)" [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 15
+			FirstSpawnMessage "{FF3D3D}Biggie Smalls {FBECCB}:  i got this cool new hat recently" [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 20
+			FirstSpawnMessage "{FF3D3D}Biggie Smalls {FBECCB}:  it turns robots into romans!" [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 25
+			FirstSpawnMessage "{FF3D3D}Biggie Smalls {FBECCB}:  pretty cool, huh?" [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 30
+			FirstSpawnMessage "{FF3D3D}Biggie Smalls {FBECCB}:  by the way, i'm gonna go pyro" [$SIGSEGV]
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 35
+			FirstSpawnMessage "{9AFF9A}Biggie Smalls {FBECCB}has the Hardy Laurel which enables Romevision for everyone to share!" [$SIGSEGV]
+			FirstSpawnWarningSound "cringe_w6.mp3"
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 37
+			FirstSpawnMessage "{9AFF9A}Biggie Smalls {FBECCB}has the Hardy Laurel which enables Romevision for everyone to share!" [$SIGSEGV]
+			FirstSpawnWarningSound "cringe_w6.mp3"
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 38
+			FirstSpawnMessage "{9AFF9A}Biggie Smalls {FBECCB}has the Hardy Laurel which enables Romevision for everyone to share!" [$SIGSEGV]
+			FirstSpawnWarningSound "cringe_w6.mp3"
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 38.5
+			FirstSpawnMessage "{9AFF9A}Biggie Smalls {FBECCB}has the Hardy Laurel which enables Romevision for everyone to share!" [$SIGSEGV]
+			FirstSpawnWarningSound "cringe_w6.mp3"
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 38.8
+			FirstSpawnMessage "{9AFF9A}Biggie Smalls {FBECCB}has the Hardy Laurel which enables Romevision for everyone to share!" [$SIGSEGV]
+			FirstSpawnWarningSound "cringe_w6.mp3"
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 39
+			FirstSpawnMessage "{9AFF9A}Biggie Smalls {FBECCB}has the Hardy Laurel which enables Romevision for everyone to share!" [$SIGSEGV]
+			FirstSpawnWarningSound "cringe_w6.mp3"
+		}
+		WaveSpawn
+		{
+			Name wave6a
+			SpawnCount 1
+			MaxActive 5
+			TotalCount 10
+			WaitBeforeStarting 39
+			WaitBetweenSpawns 0
+			TotalCurrency 50
+			Where spawnbot
+			TFBot
+			{
+				Class Scout
+				Attributes AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus" 0.1
+				}
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6a
+			SpawnCount 1
+			MaxActive 5
+			TotalCount 10
+			WaitBeforeStarting 39
+			WaitBetweenSpawns 0
+			Where spawnbot
+			TotalCurrency 50
+			TFBot
+			{
+				Class Soldier
+				Attributes AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus" 0.1
+				}
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6a
+			SpawnCount 1
+			MaxActive 5
+			TotalCount 10
+			WaitBeforeStarting 39
+			WaitBetweenSpawns 0
+			Where spawnbot
+			TotalCurrency 50
+			TFBot
+			{
+				Class Pyro
+				Attributes AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus" 0.1
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave6a
+			SpawnCount 1
+			MaxActive 5
+			TotalCount 10
+			WaitBeforeStarting 39
+			WaitBetweenSpawns 0
+			Where spawnbot
+			TotalCurrency 50
+			TFBot
+			{
+				Class Demoman
+				Attributes AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus" 0.1
+				}
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6a
+			SpawnCount 1
+			MaxActive 5
+			TotalCount 10
+			WaitBeforeStarting 39
+			WaitBetweenSpawns 0
+			Where spawnbot
+			TotalCurrency 50
+			TFBot
+			{
+				Class Heavyweapons
+				Attributes AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus" 0.1
+				}
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6a
+			SpawnCount 1
+			MaxActive 5
+			TotalCount 10
+			WaitBeforeStarting 39
+			WaitBetweenSpawns 0
+			Where spawnbot
+			TotalCurrency 50
+			TFBot
+			{
+				Class Engineer
+				Action FetchFlag [$SIGSEGV]
+				Attributes AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus" 0.1
+				}
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6a
+			SpawnCount 1
+			MaxActive 5
+			TotalCount 10
+			WaitBeforeStarting 39
+			WaitBetweenSpawns 0
+			Where spawnbot
+			TotalCurrency 50
+			TFBot
+			{
+				Class Medic
+				Action FetchFlag [$SIGSEGV]
+				Attributes AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus" 0.1
+				}
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6a
+			SpawnCount 1
+			MaxActive 5
+			TotalCount 10
+			WaitBeforeStarting 39
+			WaitBetweenSpawns 0
+			Where spawnbot
+			TotalCurrency 50
+			TFBot
+			{
+				Class Sniper
+				Action FetchFlag [$SIGSEGV]
+				Attributes AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus" 0.1
+				}
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6a
+			SpawnCount 1
+			MaxActive 5
+			TotalCount 10
+			WaitBeforeStarting 39
+			WaitBetweenSpawns 0
+			Where spawnbot
+			TotalCurrency 50
+			TFBot
+			{
+				Class Spy
+				Action FetchFlag [$SIGSEGV]
+				Attributes AlwaysCrit
+				CharacterAttributes
+				{
+					"damage bonus" 0.1
+				}
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6lel
+			WaitForAllDead wave6lol
+			SpawnCount 0
+			MaxActive 0
+			TotalCount 656
+			WaitBeforeStarting 99999
+			WaitBetweenSpawns 99999
+			Where spawnbot
+			TotalCurrency 50
+			TFBot
+			{
+				Class Scout
+				Attributes MiniBoss
+				Attributes AlwaysCrit
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6lol
+			WaitForAllDead wave6lel
+			SpawnCount 0
+			MaxActive 0
+			TotalCount 656
+			WaitBeforeStarting 99999
+			WaitBetweenSpawns 99999
+			Where spawnbot
+			TFBot
+			{
+				Class Soldier
+				Attributes MiniBoss
+				Attributes AlwaysCrit
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6lol
+			WaitForAllDead wave6lel
+			SpawnCount 0
+			MaxActive 0
+			TotalCount 656
+			WaitBeforeStarting 99999
+			WaitBetweenSpawns 99999
+			Where spawnbot
+			TFBot
+			{
+				Class Pyro
+				Attributes MiniBoss
+				Attributes AlwaysCrit
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6lol
+			WaitForAllDead wave6lel
+			SpawnCount 0
+			MaxActive 0
+			TotalCount 656
+			WaitBeforeStarting 99999
+			WaitBetweenSpawns 99999
+			Where spawnbot
+			TFBot
+			{
+				Class Demoman
+				Attributes MiniBoss
+				Attributes AlwaysCrit
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6lol
+			WaitForAllDead wave6lel
+			SpawnCount 0
+			MaxActive 0
+			TotalCount 656
+			WaitBeforeStarting 99999
+			WaitBetweenSpawns 99999
+			Where spawnbot
+			TFBot
+			{
+				Class Heavyweapons
+				Attributes MiniBoss
+				Attributes AlwaysCrit
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6lol
+			WaitForAllDead wave6lel
+			SpawnCount 0
+			MaxActive 0
+			TotalCount 656
+			WaitBeforeStarting 99999
+			WaitBetweenSpawns 99999
+			Where spawnbot
+			TFBot
+			{
+				Class Engineer
+				Attributes MiniBoss
+				Attributes AlwaysCrit
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6lol
+			WaitForAllDead wave6lel
+			SpawnCount 0
+			MaxActive 0
+			TotalCount 656
+			WaitBeforeStarting 99999
+			WaitBetweenSpawns 99999
+			Where spawnbot
+			TFBot
+			{
+				Class Medic
+				Attributes MiniBoss
+				Attributes AlwaysCrit
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6lol
+			WaitForAllDead wave6lel
+			SpawnCount 0
+			MaxActive 0
+			TotalCount 656
+			WaitBeforeStarting 99999
+			WaitBetweenSpawns 99999
+			Where spawnbot
+			TFBot
+			{
+				Class Sniper
+				Attributes MiniBoss
+				Attributes AlwaysCrit
+			}		
+		}
+		WaveSpawn
+		{
+			Name wave6lol
+			WaitForAllDead wave6lel
+			SpawnCount 0
+			MaxActive 0
+			TotalCount 656
+			WaitBeforeStarting 99999
+			WaitBetweenSpawns 99999
+			Where spawnbot
+			TFBot
+			{
+				Class Spy
+				Attributes MiniBoss
+				Attributes AlwaysCrit
+			}		
+		}
+	}
+// WAVE 7 //////////////////////////////////////////////////////////////////
+// Currency: $400 / $5500 + $600 Current ///////////////////////////////////
+//mmmmmmedals
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		WaveSpawn
+		{
+			WaitBeforeStarting 0
+			FirstSpawnWarningSound "cringe_w7.mp3"
+		}
+		SpawnTemplate "HydroTeleportPos" [$SIGSEGV]
+		WaveSpawn
+		{
+			Where spawnbot_hydrogen
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 0
+			Support 1
+			RandomChoice
+			{
+				RandomChoice
+				{
+					TFBot
+					{
+						Name "Hydrogen TF2"
+						Class Soldier
+						Item "The Beggar's Bazooka"
+						Item "Mann Co. Online Cap"
+						Item "Titanium Tank Participant Medal 2017"
+						Item "Battery Canteens"
+						SpawnTemplate "HydroTeleport" [$SIGSEGV]
+						WeaponRestrictions PrimaryOnly
+						Attributes IgnoreFlag
+						UseHumanModel 1 [$SIGSEGV]
+						AddCond [$SIGSEGV]
+						{
+							Name TF_COND_REPROGRAMMED
+						}
+						VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
+						{
+							Delay 5 //Time before the first voice command starts (Default: 10)
+							Cooldown 5 //Time between each voice command (Default: 10)
+							Repeats 0
+							Type "Help"
+						}
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave7a
+			Where spawnbot_invasion
+			TotalCurrency 200
+			TotalCount 49
+			MaxActive 8
+			SpawnCount 2
+			WaitBeforeStarting 3.3
+			WaitBetweenSpawns 3
+			RandomChoice
+			{
+				TFBot
+				{
+					Template T_TFBot_Soldiermedal
+					RocketCustomModel "models/workshop/player/items/all_class/robotarm_donator_rainbow/robotarm_donator_rainbow_gem.mdl"
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldiermedal
+					RocketCustomModel "models/workshop/player/items/all_class/titanium_tank_participant/titanium_tank_participant_demo.mdl"
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldiermedal
+					RocketCustomModel "models/workshop/player/items/all_class/canteen_crasher_platinum/canteen_crasher_platinum_demo.mdl"
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldiermedal
+					RocketCustomModel "models/workshop/player/items/all_class/robotarm_creator/robotarm_creator_gem.mdl"
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldiermedal
+					RocketCustomModel "models/workshop/player/items/all_class/mvm_memes_player_s2/mvm_memes_player_s2_demo.mdl"
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldiermedal
+					RocketCustomModel "models/workshop/player/items/all_class/mvm_memes_creator/mvm_memes_creator_demo.mdl"
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldiermedal
+					RocketCustomModel "models/workshop/player/items/all_class/robotarm_platinum/robotarm_platinum_gem.mdl"
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldiermedal
+					RocketCustomModel "models/workshop/player/items/all_class/robotarm_silver/robotarm_silver_gem.mdl"
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave7a
+			Where spawnbot_invasion
+			TotalCurrency 200
+			TotalCount 50
+			MaxActive 8
+			SpawnCount 2
+			WaitBeforeStarting 3.3
+			WaitBetweenSpawns 3
+			RandomChoice
+			{
+				TFBot
+				{
+					Template T_TFBot_Demomedal
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model" "models/workshop/player/items/all_class/robotarm_donator_rainbow/robotarm_donator_rainbow_gem.mdl"
+					}
+					Template T_TFBot_Demomedal
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model" "models/workshop/player/items/all_class/titanium_tank_participant/titanium_tank_participant_demo.mdl"
+					}
+					Template T_TFBot_Demomedal
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model" "models/workshop/player/items/all_class/canteen_crasher_platinum/canteen_crasher_platinum_demo.mdl"
+					}
+					Template T_TFBot_Demomedal
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model" "models/workshop/player/items/all_class/robotarm_creator/robotarm_creator_gem.mdl"
+					}
+					Template T_TFBot_Demomedal
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model" "models/workshop/player/items/all_class/mvm_memes_player_s2/mvm_memes_player_s2_demo.mdl"
+					}
+					Template T_TFBot_Demomedal
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model" "models/workshop/player/items/all_class/mvm_memes_creator/mvm_memes_creator_demo.mdl"
+					}
+					Template T_TFBot_Demomedal
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model" "models/workshop/player/items/all_class/robotarm_platinum/robotarm_platinum_gem.mdl"
+					}
+					Template T_TFBot_Demomedal
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"custom projectile model" "models/workshop/player/items/all_class/robotarm_silver/robotarm_silver_gem.mdl"
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Where spawnbot_invasion
+			TotalCount 2
+			MaxActive 2
+			SpawnCount 1
+			WaitBeforeStarting 15
+			WaitBetweenSpawns 15
+			Support 1
+			TFBot
+			{
+				Template T_TFBot_Bumpercar
+			}
+		}
+	}
+// WAVE 8 //////////////////////////////////////////////////////////////////
+// Currency: $600 / $5900 + $700 Current ///////////////////////////////////
+//pisses on the moon 2??????
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		WaveSpawn
+		{
+			Name wave8a
+			Where spawnbot_tank
+			TotalCurrency 200
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 0
+			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			LastSpawnWarningSound "vo/mvm_tank_alerts02.mp3"
+			DoneOutput //FirstSpawnOutput might break sometimes                                                                                                                                                            
+			{
+				Target automoneycollect
+				Action Disable
+			}
+			TFBot
+			{
+				Template T_TFBot_DemoTank
+			}
+		}
+		WaveSpawn
+		{
+			Name wave8a
+			Where spawnbot_invasion
+			TotalCurrency 100
+			TotalCount 32
+			MaxActive 12
+			SpawnCount 2
+			WaitBeforeStarting 10
+			WaitBetweenSpawns 1
+			TFBot
+			{
+				Name "Spy Crab"
+				Class Spy
+				//ClassIcon spycrab
+				WeaponRestrictions MeleeOnly
+				Action Mobber [$SIGSEGV]
+				Scale 1.25
+				SpawnTemplate Spycrab [$SIGSEGV]
+				UseCustomModel	"models/empty.mdl"
+				CharacterAttributes
+				{
+					"move speed bonus" 0.75
+					"cannot disguise" 1
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave8b
+			WaitForAllDead wave8a
+			Where spawnbot_chungus
+			TotalCurrency 100
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 5
+			WaitBetweenSpawns 2
+			FirstSpawnWarningSound "cringe_w8a.mp3"
+			Support Limited
+			RandomChoice
+			{
+				RandomChoice
+				{
+					TFBot
+					{
+						Template T_TFBot_Engineer_Chungus
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave8b
+			WaitForAllDead wave8a
+			Where spawnbot_invasion
+			TotalCurrency 100
+			TotalCount 36
+			MaxActive 16
+			SpawnCount 2
+			WaitBeforeStarting 8
+			WaitBetweenSpawns 2
+			TFBot
+			{
+				Template T_TFBot_Scout_TPose
+			}
+		}
+		WaveSpawn
+		{
+			Name eggman_fucks
+			WaitForAllDead eggman
+			WaitBeforeStarting 99999
+			RandomChoice
+			{
+				RandomChoice
+				{
+					TFBot
+					{
+						Class Scout
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name eggman
+			WaitForAllDead eggman_fucks
+			WaitBeforeStarting 99999
+			TotalCount 1
+			TFBot
+            {
+                Class Scout
+				ClassIcon ult_eggman
+				Attributes MiniBoss
+            }
+		}
+		WaveSpawn
+		{
+			WaitForAllDead wave8b
+			WaitBeforeStarting 5
+			FirstSpawnWarningSound "cringe_w8.mp3"
+			DoneOutput
+			{
+				Target shake_pissing
+				Action StartShake
+			}
+		}
+		WaveSpawn
+		{
+			WaitForAllDead wave8b
+			Name amogus
+			Where spawnbot_amogus
+			TotalCount 10
+			MaxActive 10
+			SpawnCount 1
+			TotalCurrency 100
+			WaitBeforeStarting 11
+			Support Limited
+			RandomChoice
+			{
+				RandomChoice
+				{
+					TFBot
+					{
+						Template T_TFBot_AMOGUS_SUS
+					}
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name wave8end
+			WaitForAllDead amogus
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 0
+			DoneOutput //FirstSpawnOutput might break sometimes                                                                                                                                                            
+			{
+				Target automoneycollect
+				Action Enable
+			}
+		}
+	}
+// WAVE 9 //////////////////////////////////////////////////////////////////
+// Currency: $0 / $6500 + $800 Current /////////////////////////////////////
+//This is the end
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		WaveSpawn
+		{
+			Name wave9a
+			Where spawnbot_mid
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			TotalCurrency 69
+			WaitBeforeStarting 7
+			TFBot
+			{
+				Template boss_trash_ngl
+			}
+		}
+		WaveSpawn
+		{
+			Name funy_ubertank
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 0
+			FirstSpawnWarningSound "mvm/giant_heavy/giant_heavy_entrance.wav"
+			LastSpawnOutput //FirstSpawnOutput might break sometimes                                                                                                                                                            
+			{
+				Target tank_uber_start_relay                                            
+				Action trigger                         
+			}
+			Tank
+			{
+				Health	16969
+				Name	tankboss_uber
+				Speed	75
+				StartingPathTrackNode "boss_path_1"
+				ClassIcon tank_uber
+				OnKilledOutput
+				{
+					Target	boss_dead_relay
+					Action	Trigger
+				}
+				OnBombDroppedOutput
+				{
+					Target	tankboss_uber
+					Action	kill
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name funy_ubertank
+			Where spawnbot
+			TotalCount 1
+			MaxActive 1
+			SpawnCount 1
+			WaitBeforeStarting 7
+			FirstSpawnWarningSound "mvm/giant_heavy/giant_heavy_entrance.wav"
+			LastSpawnOutput //FirstSpawnOutput might break sometimes                                                                                                                                                            
+			{
+				Target tank_uber_start_relay_2                                            
+				Action trigger                         
+			}
+			Tank
+			{
+				Health	16969
+				Name	tankboss_uber_2
+				Speed	75
+				StartingPathTrackNode "boss_path_short_1"
+				ClassIcon tank_uber
+				OnKilledOutput
+				{
+					Target	boss_dead_relay
+					Action	Trigger
+				}
+				OnBombDroppedOutput
+				{
+					Target	tankboss_uber_2
+					Action	kill
+				}
+			}
+		}
+		WaveSpawn
+		{
+			Name bakamitai
+			WaitBeforeStarting 68.2	//time it takes for both tanks to deploy their bombs: 1min 52 secs (112 seconds) - 43.8 (song length)
+			FirstSpawnWarningSound "cringe_w9.mp3"
+		}
+	}
+}

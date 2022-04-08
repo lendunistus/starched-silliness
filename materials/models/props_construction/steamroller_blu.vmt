@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\props_construction\steamroller_blu"
+	"$surfaceprop" "metal"
+	"$phong" "1"
+	"$phongexponent" "33"
+	"$phongboost" ".100"
+        // Universal Phong Reflection
+	"$lightwarptexture" "models/props_construction/prop_lightwarp"
+	"$phongfresnelranges"	"[2 1 6]"
+	"$basemapalphaphongmask" "1"
+
+}

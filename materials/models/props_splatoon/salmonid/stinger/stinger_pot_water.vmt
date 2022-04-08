@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_splatoon/salmonid/stinger/stinger_pot_water"
+	"$bumpmap" "models/props_splatoon/salmonid/stinger/stinger_pot_water_normal"
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "20"	
+	"$phongfresnelranges"	"[.1 .5 1]"
+
+//	"$color2" "{92 92 92}"
+}
